@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>Connecting to Naja Safety | WhatsApp Enquiry</title>
+  <title>Connecting to Naja Safety Support...</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -13,6 +13,8 @@
       --primary-dark: #154360;
       --accent: #F39C12;
       --accent-dark: #D68910;
+      --whatsapp: #25D366;
+      --whatsapp-dark: #20ba5a;
       --white: #ffffff;
       --light: #f8f9fa;
       --text: #333333;
@@ -44,13 +46,32 @@
       text-align: center;
       border: 1px solid var(--border);
     }
-    .logo-area {
-      margin-bottom: 1.5rem;
-    }
-    .logo-area svg {
+    .icon-box {
+      position: relative;
       width: 80px;
       height: 80px;
-      margin: 0 auto;
+      margin: 0 auto 1.5rem;
+    }
+    .spinner {
+      box-sizing: border-box;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 3px solid var(--border);
+      border-radius: 50%;
+      border-top-color: var(--whatsapp);
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
     }
     h1 {
       font-size: 1.35rem;
@@ -63,39 +84,18 @@
       font-size: 0.95rem;
       margin-bottom: 1.5rem;
     }
-    .pulse {
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      background: var(--accent);
-      border-radius: 50%;
-      margin-right: 0.5rem;
-      animation: pulse 1.5s infinite;
-    }
-    @keyframes pulse {
-      0% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.3); opacity: 0.7; }
-      100% { transform: scale(1); opacity: 1; }
-    }
-    .status {
-      font-size: 0.9rem;
-      color: var(--gray);
-      margin-bottom: 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .message-preview {
+    .campaign-preview {
       background: var(--light);
-      border: 1px solid var(--border);
+      border: 1px dashed var(--border);
       border-radius: var(--radius);
       padding: 1rem;
       text-align: left;
       margin-bottom: 1.5rem;
       font-size: 0.9rem;
       color: var(--text);
+      word-break: break-word;
     }
-    .message-preview strong {
+    .campaign-preview strong {
       color: var(--primary);
       display: block;
       margin-bottom: 0.5rem;
@@ -116,12 +116,18 @@
       border: none;
       cursor: pointer;
       width: 100%;
+      text-decoration: none;
     }
     .btn-whatsapp {
-      background: #25D366;
+      background: var(--whatsapp);
       color: var(--white);
+      box-shadow: 0 4px 12px rgba(37,211,102,0.2);
     }
-    .btn-whatsapp:hover { background: #1DA851; }
+    .btn-whatsapp:hover {
+      background: var(--whatsapp-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(37,211,102,0.3);
+    }
     .countdown {
       font-size: 0.8rem;
       color: var(--gray);
@@ -162,12 +168,11 @@
     }
   </style>
 
-  <!-- JSON-LD: Track this as a DiscoverAction -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "DiscoverAction",
-    "name": "WhatsApp Ad Landing",
+    "name": "Naja Safety B2B WhatsApp Lead Routing Action",
     "agent": {
       "@type": "Organization",
       "name": "Naja Safety Sdn Bhd"
@@ -186,37 +191,30 @@
 <body>
 
 <div class="lander-card">
-  <div class="logo-area">
-    <!-- Naja Safety Logo SVG placeholder -->
-    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Naja Safety logo">
-      <rect width="100" height="100" rx="16" fill="#1B4F72"/>
-      <path d="M30 70L50 30L70 70H30Z" fill="#F39C12"/>
-      <circle cx="50" cy="55" r="8" fill="#ffffff"/>
+  <div class="icon-box">
+    <div class="spinner" aria-hidden="true"></div>
+    <svg class="logo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="WhatsApp">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.454 5.709 1.455h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413" fill="#25D366"/>
     </svg>
   </div>
 
-  <h1>Let's Get You Sorted</h1>
-  <p class="subtitle">Tap below to start a WhatsApp chat with our team — we're here to help with training schedules, quotations, or just a quick question.</p>
+  <h1 id="headline">Connecting with Support</h1>
+  <p class="subtitle" id="subtext">Transferring you directly to our corporate safety division via WhatsApp in <span id="countdown">3</span> seconds...</p>
 
-  <div class="status">
-    <span class="pulse" aria-hidden="true"></span>
-    <span id="statusText">Preparing your message...</span>
-  </div>
-
-  <div class="message-preview">
+  <div class="campaign-preview">
     <strong>Your pre-filled message:</strong>
-    <span id="messagePreview">Loading...</span>
+    <span id="messagePreview">Preparing encrypted inquiry string...</span>
   </div>
 
-  <a id="whatsappBtn" href="#" class="btn btn-whatsapp" target="_blank" rel="noopener">
+  <a href="#" class="btn btn-whatsapp" id="whatsappBtn" target="_blank" rel="noopener">
     <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.45A11.83 11.83 0 0012 0 11.83 11.83 0 003.48 3.45 11.87 11.87 0 000 12a11.8 11.8 0 001.74 6.2L0 24l5.94-1.56A11.9 11.9 0 0012 24a11.87 11.87 0 008.52-3.45A11.87 11.87 0 0024 12a11.87 11.87 0 00-3.48-8.55zM12 21.5a9.44 9.44 0 01-4.82-1.32l-.34-.2-3.54.93.95-3.45-.23-.37A9.46 9.46 0 012.5 12 9.5 9.5 0 0112 2.5 9.5 9.5 0 0121.5 12a9.5 9.5 0 01-9.5 9.5zm5.2-7.07c-.28-.14-1.66-.82-1.92-.91-.26-.1-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.16.18-.32.2-.6.07-.28-.14-1.18-.43-2.25-1.38a8.38 8.38 0 01-1.55-1.9c-.16-.28 0-.43.12-.57.13-.13.28-.32.42-.48.14-.16.18-.28.28-.46.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.1-.23-.55-.46-.47-.64-.48-.16 0-.35 0-.54 0-.19 0-.49.07-.74.35-.26.28-1 1.1-1 2.67 0 1.58 1.15 3.1 1.31 3.31.16.21 2.27 3.47 5.5 4.87.77.33 1.37.53 1.84.68.77.25 1.47.21 2.02.13.62-.1 1.92-.78 2.19-1.54.27-.76.27-1.4.19-1.54-.08-.14-.26-.22-.54-.36z"/></svg>
-    Open WhatsApp
+    Chat with Our Team Instantly
   </a>
 
-  <p class="countdown" id="countdown">Redirecting automatically in 3 seconds...</p>
+  <p class="countdown" id="countdownText">Redirecting automatically...</p>
 
   <div class="fallback">
-    <p>Not redirecting? <a href="https://wa.me/601155890005">Click here to open WhatsApp manually</a>.</p>
+    <p>Not redirecting? <a href="#" id="fallbackLink">Click here to open WhatsApp manually</a>.</p>
     <p>Or call us directly: <a href="tel:+6073612506">07-3612506</a></p>
   </div>
 
@@ -231,105 +229,100 @@
 (function() {
   'use strict';
 
-  // Configuration
-  const PHONE = '601155890005';
-  const DEFAULT_MESSAGE = 'Hi Naja Safety, I am interested in your safety training services. Please share more details.';
+  // Master routing configuration
+  const TARGET_PHONE = '601155890005';
 
-  // UTM-aware message templates for each campaign
+  // Standard B2B Compliance Campaign Strategy Matrix
   const CAMPAIGNS = {
     'cidb-green-card': {
-      label: 'CIDB Green Card / SICW',
-      message: 'Hi Naja Safety, I saw your ad for CIDB Green Card (SICW) training. I need to register my construction workers. Can you share the next available slot and pricing?'
+      headline: 'CIDB Green Card Certification',
+      message: 'Hi Naja Safety team, I came across your ad. We need to register our construction workforce for the mandatory CIDB Green Card training. Please provide pricing and upcoming slot schedules.'
     },
     'scaffold-safety': {
-      label: 'Scaffold Safety Awareness',
-      message: 'Hi Naja Safety, I am interested in the Scaffold Safety Awareness program for my team. We have an active project in Johor. Can you arrange on-site training?'
+      headline: 'DOSH Registered Scaffold Systems',
+      message: 'Hi Naja Safety, I saw your ad regarding scaffolding operations. We require competent, DOSH-registered scaffolders/inspectors for an industrial site deployment. Let\'s discuss availability.'
     },
     'working-at-height': {
-      label: 'Working at Height (WAH)',
-      message: 'Hi Naja Safety, I need Working at Height (WAH) safety training for my crew. Please send details on duration, certification, and whether you can conduct it at our site.'
+      headline: 'Working at Height (WAH) Safety',
+      message: 'Greetings Naja Safety, we are planning our high-risk compliance framework for 2026. Please share your complete course outline and fee structures for Working at Height (WAH) safety training.'
     },
     'osh-coordinator': {
-      label: 'OSH Coordinator Training',
-      message: 'Hi Naja Safety, our company needs to appoint an OSH Coordinator under the OSH Act. Do you provide the mandatory training? Please advise on the syllabus and schedule.'
+      headline: 'OSH Coordinator Mandate (Act 514)',
+      message: 'Hi Naja Safety, under the OSH (Amendment) Act 2022, our organization requires an official OSH Coordinator (OSH-C). Please guide us through your training timeline and requirements.'
     },
     'fire-fighting': {
-      label: 'Fire Fighting & ERT',
-      message: 'Hi Naja Safety, I would like to arrange Fire Fighting and Emergency Response Team (ERT) training for our factory. Can you provide a quotation?'
+      headline: 'Emergency Response & Fire Safety',
+      message: 'Hi Naja Safety support, we need to train and certify our internal Emergency Response Team (ERT) for an upcoming audit. Please send over information on your Fire Safety and Drill programs.'
     },
     'forklift-safety': {
-      label: 'Forklift & Machinery Safety',
-      message: 'Hi Naja Safety, we need Forklift Safety Certification for our operators. Do you provide both classroom and practical assessment? Please share details.'
+      headline: 'Forklift & Heavy Equipment Operations',
+      message: 'Hello Naja Safety, I would like to get a quotation for an on-site Forklift Safety Certification program tailored to our warehouse operators. What are your corporate packages?'
     },
     'hrdcorp-claim': {
-      label: 'HRD Corp Claimable Training',
-      message: 'Hi Naja Safety, I am looking for HRD Corp claimable safety training programs. Can you advise which of your courses are eligible and assist with the claim process?'
+      headline: 'HRD Corp 100% Levy Claim Training',
+      message: 'Dear Naja Safety, we are looking to optimize our HRD Corp training fund allocations. Could you assist us in mapping out your claimable OSH programs to achieve zero net out-of-pocket costs?'
     },
     'safety-consultancy': {
-      label: 'Safety Consultancy',
-      message: 'Hi Naja Safety, we need a safety audit and compliance advisory for our manufacturing plant in Johor. Can we schedule a site assessment?'
+      headline: 'HSE Compliance & Safety Audit Support',
+      message: 'Hi Naja Safety, we need an experienced independent auditor to review our workplace risk assessments, safety records, and general compliance standing ahead of an official regulatory inspection.'
     },
     'manpower-supply': {
-      label: 'Safety Manpower Supply',
-      message: 'Hi Naja Safety, we need to hire a competent Safety Supervisor / Site Safety Officer for a 6-month project. Do you supply trained personnel?'
+      headline: 'HSE Specialist & Officer Placement',
+      message: 'Greetings Naja Safety, our project requires dedicated, on-site safety specialists. Please provide deployment frameworks and commercial terms for Safety & Health Officers (SHO) and Site Safety Supervisors.'
+    },
+    'default': {
+      headline: 'Naja Safety B2B Corporate Support',
+      message: 'Hello Naja Safety, I am contacting you through your digital advertising portal. I would like to arrange a discussion regarding custom OSH compliance configurations for our company operations.'
     }
   };
 
-  // Parse URL parameters
+  // Parse URL parameters safely
   function getParam(name) {
     const params = new URLSearchParams(window.location.search);
-    return params.get(name);
+    const val = params.get(name);
+    return val ? val.trim().toLowerCase() : null;
   }
 
-  // Build the message
   const utmCampaign = getParam('utm_campaign');
   const utmSource = getParam('utm_source') || 'direct';
-  const utmMedium = getParam('utm_medium') || 'organic';
-  const utmContent = getParam('utm_content') || '';
+  const utmMedium = getParam('utm_medium') || 'cpc';
 
-  let campaign = CAMPAIGNS[utmCampaign];
-  let message = DEFAULT_MESSAGE;
-  let campaignLabel = 'General Enquiry';
+  // Select campaign or fall back safely
+  const selectedCampaign = CAMPAIGNS[utmCampaign] || CAMPAIGNS['default'];
 
-  if (campaign) {
-    message = campaign.message;
-    campaignLabel = campaign.label;
-  } else if (utmContent) {
-    // If no campaign match but content exists, use it in the message
-    message = `Hi Naja Safety, I am interested in ${utmContent}. Please share more details and pricing.`;
-    campaignLabel = utmContent;
-  }
+  // Build tracking tag and full message
+  const trackingTag = ` [Tracking Ref: ${utmSource} / ${utmMedium} / ${utmCampaign || 'general-inquiry'}]`;
+  const fullMessage = selectedCampaign.message + trackingTag;
 
-  // Append UTM tracking to message for internal analytics
-  message += `\n\n[Ref: ${utmSource}/${utmMedium}${utmCampaign ? '/' + utmCampaign : ''}]`;
-
-  // Build WhatsApp URL
-  const encodedMessage = encodeURIComponent(message);
-  const whatsappUrl = `https://wa.me/${PHONE}?text=${encodedMessage}`;
+  // Build WhatsApp URL (wa.me for maximum cross-platform compatibility)
+  const encodedMessage = encodeURIComponent(fullMessage);
+  const whatsappUrl = `https://wa.me/${TARGET_PHONE}?text=${encodedMessage}`;
 
   // Update DOM
-  document.getElementById('messagePreview').textContent = message;
+  document.getElementById('headline').innerText = 'Inquiry: ' + selectedCampaign.headline;
+  document.getElementById('messagePreview').innerText = fullMessage;
   document.getElementById('whatsappBtn').href = whatsappUrl;
-  document.getElementById('statusText').textContent = `Ready: ${campaignLabel}`;
+  document.getElementById('fallbackLink').href = whatsappUrl;
 
-  // Auto-redirect countdown
-  let seconds = 3;
+  // Countdown engine
+  let count = 3;
   const countdownEl = document.getElementById('countdown');
+  const countdownTextEl = document.getElementById('countdownText');
+
   const timer = setInterval(function() {
-    seconds--;
-    if (seconds > 0) {
-      countdownEl.textContent = `Redirecting automatically in ${seconds} seconds...`;
-    } else {
+    count--;
+    countdownEl.innerText = count;
+    if (count <= 0) {
       clearInterval(timer);
-      countdownEl.textContent = 'Opening WhatsApp now...';
+      countdownTextEl.innerText = 'Opening WhatsApp now...';
       window.location.href = whatsappUrl;
     }
   }, 1000);
 
-  // If user clicks the button manually, stop auto-redirect
+  // Manual click stops auto-redirect
   document.getElementById('whatsappBtn').addEventListener('click', function() {
     clearInterval(timer);
-    countdownEl.textContent = 'Opening WhatsApp...';
+    countdownTextEl.innerText = 'Opening WhatsApp...';
   });
 
 })();
