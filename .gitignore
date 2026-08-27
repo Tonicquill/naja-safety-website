@@ -1,0 +1,37 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.log
+
+# Large video files (keep references only)
+collaterals/*.mp4
+
+# Python scripts
+generate_checklist*.py
+__pycache__/
+*.pyc
+
+# Playwright / MCP logs
+.playwright-mcp/
+
+# Old checklist versions
+Naja_Safety_IT_Handover_Checklist_v2.docx
+Naja_Safety_IT_Handover_Checklist.docx
+naja-safety-it-handover-checklist.md

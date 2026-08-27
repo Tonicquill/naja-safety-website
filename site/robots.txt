@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://safetyconsultants.com.my/sitemap.xml
