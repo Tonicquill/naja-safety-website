@@ -458,6 +458,41 @@ header {
 }
 
 /* ---------- Client Wall ---------- */
+.client-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+}
+.client-stat {
+  text-align: center;
+}
+.client-stat-num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.client-stat-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-top: 0.4rem;
+  letter-spacing: 0.02em;
+}
+.client-divider {
+  width: 48px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+  margin: 0 auto 2rem;
+  opacity: 0.6;
+}
 .client-wall {
   display: flex;
   flex-wrap: wrap;
@@ -465,19 +500,45 @@ header {
   gap: 0.7rem;
 }
 .client-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   background: var(--surface-elevated);
   border: 1px solid var(--border);
-  padding: 0.5rem 1.1rem;
+  padding: 0.55rem 1.1rem;
   border-radius: 50px;
   font-size: 0.82rem;
   font-weight: 500;
   color: var(--primary);
   transition: var(--transition);
+  cursor: default;
 }
 .client-tag:hover {
   border-color: var(--accent);
   color: var(--accent-dark);
   transform: translateY(-2px);
+}
+.client-tag svg {
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+.client-tag-gov {
+  background: rgba(27,79,114,0.04);
+  border-color: rgba(27,79,114,0.12);
+}
+.client-tag-gov:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.client-footnote {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 2.5rem;
+  max-width: 55ch;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
 /* ---------- Hero Subtext ---------- */
@@ -805,6 +866,18 @@ footer {
   overflow: hidden;
   clip: rect(0,0,0,0);
   border: 0;
+}
+
+/* ---------- Client Wall Responsive ---------- */
+@media (max-width: 480px) {
+  .client-stats {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .client-tag {
+    font-size: 0.78rem;
+    padding: 0.5rem 0.9rem;
+  }
 }
 
 /* ---------- Industries ---------- */
