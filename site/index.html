@@ -198,6 +198,69 @@
     ]
   }
   </script>
+  <!-- JSON-LD: Unified Statutory Certificate Package -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://safetyconsultants.com.my/",
+        "name": "Naja Safety Sdn Bhd",
+        "legalName": "Naja Safety Sdn Bhd",
+        "identifier": "1126512-D",
+        "image": "https://safetyconsultants.com.my/images/logo-placeholder.svg",
+        "telephone": "+6073612506",
+        "email": "info@safetyconsultants.com.my",
+        "url": "https://safetyconsultants.com.my/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "No 09-03, Block C, Kompleks Austin Perdana, Jalan Austin Perdana 2, Taman Austin Perdana",
+          "addressLocality": "Johor Bahru",
+          "addressRegion": "Johor",
+          "postalCode": "81100",
+          "addressCountry": "MY"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "1.54316",
+          "longitude": "103.77854"
+        }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "@id": "https://safetyconsultants.com.my/#trainer-james",
+        "credentialCategory": "HRD Corp Accredited Trainer",
+        "validFrom": "2025-12-23",
+        "validUntil": "2028-12-23",
+        "credentialId": "cae92820-d572-11f0-8cb8-89cbb602004a",
+        "recognizedBy": {
+          "@type": "GovernmentOrganization",
+          "name": "Human Resource Development Corporation (HRD Corp)"
+        },
+        "about": {
+          "@type": "Person",
+          "name": "James Issachar A/L Daniel",
+          "jobTitle": "Director & Lead Trainer",
+          "identifier": "62976"
+        }
+      },
+      {
+        "@type": "GovernmentService",
+        "@id": "https://safetyconsultants.com.my/#cidb-accreditation",
+        "name": "Kursus Induksi Keselamatan Bagi Pekerja Binaan (CIDB Green Card)",
+        "serviceCode": "PLSICW20231022-068",
+        "provider": {
+          "@id": "https://safetyconsultants.com.my/"
+        },
+        "serviceOperator": {
+          "@type": "GovernmentOrganization",
+          "name": "Lembaga Pembangunan Industri Pembinaan (CIDB) Malaysia"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
@@ -340,12 +403,23 @@
             <div class="card-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
             <h3>OSH Training</h3>
             <p>Incident investigation, HIRARC, first aid, forklift safety, emergency response, chemical safety, and tailor-made HSE programmes.</p>
+            <ul class="semantic-course-index">
+              <li>Incident & Accident Investigation</li>
+              <li>Chemical & Electrical Safety Handling</li>
+              <li>Forklift & Machinery Competency Training</li>
+              <li>OSH Coordinator (OSH-C) Development</li>
+            </ul>
             <a href="services.html#osh-training">Learn more</a>
           </article>
           <article class="card">
             <div class="card-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></div>
             <h3>CIDB & Construction Safety</h3>
             <p>Safety induction, working at height, site safety management, toolbox talks, Green Card training, and scaffold safety awareness.</p>
+            <ul class="semantic-course-index">
+              <li>CIDB Green Card Induction (SICW)</li>
+              <li>Working at Height (WAH) Safety Certification</li>
+              <li>Scaffold Safety Awareness Program</li>
+            </ul>
             <a href="services.html#cidb-training">Learn more</a>
           </article>
           <article class="card">
@@ -412,11 +486,15 @@
             </div>
             <p>Fire Fighting Briefing</p>
           </div>
-          <div class="video-card">
+          <div class="video-card" itemscope itemtype="https://schema.org/VideoObject">
+            <meta itemprop="name" content="Naja Safety Live Forklift Competency Certification Training">
+            <meta itemprop="description" content="On-site industrial forklift handling and safety audit demonstration conducted for manufacturing facilities in Johor.">
+            <meta itemprop="uploadDate" content="2026-08-28">
+            <meta itemprop="contentUrl" content="assets/videos/Forklift_Training_1.mp4">
             <div class="video-thumb" aria-label="Forklift Training video thumbnail">
               <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
             </div>
-            <p>Forklift Training</p>
+            <p><span itemprop="name">Forklift Training</span></p>
           </div>
           <div class="video-card">
             <div class="video-thumb" aria-label="Importance of OSH video thumbnail">
@@ -430,11 +508,15 @@
             </div>
             <p>Safety Training & Fire Drill</p>
           </div>
-          <div class="video-card">
+          <div class="video-card" itemscope itemtype="https://schema.org/VideoObject">
+            <meta itemprop="name" content="DOSH Framework Scaffold Safety Awareness Program">
+            <meta itemprop="description" content="Live demonstration of safe scaffolding erection, high-risk site compliance, and technical inspection methods by certified instructors.">
+            <meta itemprop="uploadDate" content="2026-08-28">
+            <meta itemprop="contentUrl" content="assets/videos/Scaffold_Safety_Awareness_Program_1.mp4">
             <div class="video-thumb" aria-label="Scaffold Safety Awareness Program video thumbnail">
               <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
             </div>
-            <p>Scaffold Safety Awareness Program</p>
+            <p><span itemprop="name">Scaffold Safety Awareness Program</span></p>
           </div>
         </div>
         <p class="text-center text-gray mt-1" style="font-size:0.85rem;">Videos available in collaterals folder. Contact us for high-resolution copies.</p>
@@ -734,7 +816,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© Naja Safety Sdn Bhd. All rights reserved. | James Issachar is Chairman of <a href="#" style="color:rgba(255,255,255,0.55);">Shechinah Association Johor Bahru</a>.</p>
+        <p>© Naja Safety Sdn Bhd. All rights reserved. | Director James Issachar serves as Chairman of the <a href="https://safetyconsultants.com.my/" target="_blank" rel="noopener">Pertubuhan Kebajikan Shechinah Johor Bahru</a> charity network.</p>
       </div>
     </div>
   </footer>

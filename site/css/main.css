@@ -457,6 +457,34 @@ header {
   margin-top: 2px;
 }
 
+/* ---------- Semantic Course Index (Service Cards) ---------- */
+.semantic-course-index {
+  list-style: none;
+  margin: 0.75rem 0 1rem;
+  padding: 0;
+}
+.semantic-course-index li {
+  position: relative;
+  padding-left: 1.3rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+  line-height: 1.5;
+}
+.semantic-course-index li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.35rem;
+  width: 14px;
+  height: 14px;
+  background: var(--accent);
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") no-repeat center;
+  mask-size: contain;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask-size: contain;
+}
+
 /* ---------- Client Wall ---------- */
 .client-stats {
   display: grid;
