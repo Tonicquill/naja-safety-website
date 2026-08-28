@@ -1,5 +1,7 @@
 /* ============================================
    Naja Safety Sdn Bhd — Main JavaScript
+   Taste-Skill Edition: scroll reveals, liquid nav,
+   clean accordion, zero emoji policy.
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -7,19 +9,27 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---------- Mobile menu toggle ----------
   const menuBtn = document.querySelector('.mobile-menu-btn');
   const navLinks = document.querySelector('.nav-links');
+  const iconMenu = menuBtn ? menuBtn.querySelector('.icon-menu') : null;
+  const iconClose = menuBtn ? menuBtn.querySelector('.icon-close') : null;
+
   if (menuBtn && navLinks) {
     menuBtn.addEventListener('click', () => {
       const isOpen = navLinks.classList.toggle('active');
       menuBtn.setAttribute('aria-expanded', String(isOpen));
-      menuBtn.textContent = isOpen ? '✕' : '☰';
+      if (iconMenu && iconClose) {
+        iconMenu.style.display = isOpen ? 'none' : 'block';
+        iconClose.style.display = isOpen ? 'block' : 'none';
+      }
     });
 
-    // Close menu when a link is clicked
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('active');
         menuBtn.setAttribute('aria-expanded', 'false');
-        menuBtn.textContent = '☰';
+        if (iconMenu && iconClose) {
+          iconMenu.style.display = 'block';
+          iconClose.style.display = 'none';
+        }
       });
     });
   }
@@ -83,37 +93,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ---------- Header shadow on scroll ----------
-  const header = document.querySelector('header');
-  if (header) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 5) {
-        header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.08)';
-      } else {
-        header.style.boxShadow = 'none';
-      }
-    });
-  }
-
-  // ---------- Intersection fade-in ----------
-  const observer = new IntersectionObserver((entries) => {
+  // ---------- Scroll Reveal (Taste-Skill) ----------
+  const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
-  document.querySelectorAll('.card, .course-card, .service-pillar, .video-card').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(16px)';
-    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    observer.observe(el);
+  document.querySelectorAll('.reveal, .stagger-children').forEach(el => {
+    revealObserver.observe(el);
   });
-
-  // Add visible class styles via a <style> element using textContent
-  const style = document.createElement('style');
-  style.textContent = '.visible { opacity: 1 !important; transform: translateY(0) !important; }';
-  document.head.appendChild(style);
 
 });
