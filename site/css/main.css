@@ -655,6 +655,35 @@ header {
   color: var(--primary);
   font-family: 'SF Mono', monospace;
 }
+.affiliate-recruitment-bar {
+  margin-top: 1.75rem;
+  padding: 1rem 1.25rem;
+  background: rgba(27,79,114,0.04);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.affiliate-recruitment-bar p {
+  margin-bottom: 0;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.affiliate-recruitment-bar svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.3rem;
+  color: var(--accent);
+}
+.affiliate-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color var(--transition);
+}
+.affiliate-link:hover {
+  color: var(--accent-dark);
+}
 
 /* ---------- Video Evidence ---------- */
 .video-grid {
