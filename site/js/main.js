@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ctaTitle: { en:"Ready to Secure Your Workforce?", ms:"Sedia untuk Lindungi Tenaga Kerja Anda?", zh:"准备好保护您的员工了吗？", ta:"உங்கள் பணியாளர்களை பாதுகாக்க தயாரா?" },
     ctaSubtitle: { en:"Book a training session, request a site audit, or enquire about HRD Corp claimable programmes. Our team responds within 24 hours.", ms:"Tempah sesi latihan, minta audit tapak, atau tanya tentang program tuntut HRD Corp. Pasukan kami menjawab dalam masa 24 jam.", zh:"预约培训课程、请求现场审计或咨询HRD Corp可索回项目。我们的团队在24小时内回复。", ta:"பயிற்சி அமர்வை முன்பதிவு செய்யுங்கள், தள தணிக்கையை கோருங்கள், அல்லது HRD Corp திரும்பப் பெறக்கூடிய திட்டங்களைப் பற்றி விசாரியுங்கள். எங்கள் குழு 24 மணி நேரத்திற்குள் பதிலளிக்கிறது." },
     ctaBtnContact: { en:"Get in Touch", ms:"Hubungi Kami", zh:"联系我们", ta:"தொடர்பு கொள்ளுங்கள்" },
-    ctaBtnWhatsApp: { en:"WhatsApp Sujen", ms:"WhatsApp Sujen", zh:"WhatsApp Sujen", ta:"வாட்ஸ்அப் சுஜென்" },
+    ctaBtnWhatsApp: { en:"WhatsApp Us", ms:"WhatsApp Us", zh:"WhatsApp Us", ta:"வாட்ஸ்அப் சுஜென்" },
 
     // Footer (shared)
     footerCol1Title: { en:"Naja Safety", ms:"Naja Safety", zh:"Naja Safety", ta:"Naja Safety" },
@@ -276,9 +276,9 @@ document.addEventListener('DOMContentLoaded', () => {
     footerCol2Title: { en:"Quick Links", ms:"Pautan Pantas", zh:"快速链接", ta:"விரைவு இணைப்புகள்" },
     footerCol3Title: { en:"Services", ms:"Perkhidmatan", zh:"服务", ta:"சேவைகள்" },
     footerCol4Title: { en:"Contact", ms:"Hubungi", zh:"联系", ta:"தொடர்பு" },
-    footerOffice: { en:"Office: 07-3612506", ms:"Pejabat: 07-3612506", zh:"办公室：07-3612506", ta:"அலுவலகம்: 07-3612506" },
-    footerJames: { en:"James: 016-7160462", ms:"James: 016-7160462", zh:"James：016-7160462", ta:"James: 016-7160462" },
-    footerWhatsApp: { en:"WhatsApp: 011-55890005", ms:"WhatsApp: 011-55890005", zh:"WhatsApp：011-55890005", ta:"வாட்ஸ்அப்: 011-55890005" },
+    footerPhone: { en:"Phone: 016-730-1802", ms:"Telefon: 016-730-1802", zh:"电话：016-730-1802", ta:"தொலைபேசி: 016-730-1802" },
+    footerJames: { en:"Stephanie: 016-730-1802", ms:"Stephanie: 016-730-1802", zh:"Stephanie：016-730-1802", ta:"Stephanie: 016-730-1802" },
+    footerWhatsApp: { en:"WhatsApp: 016-730-1802", ms:"WhatsApp: 016-730-1802", zh:"WhatsApp：016-730-1802", ta:"வாட்ஸ்அப்: 016-730-1802" },
     footerEmail: { en:"info@safetyconsultants.com.my", ms:"info@safetyconsultants.com.my", zh:"info@safetyconsultants.com.my", ta:"info@safetyconsultants.com.my" },
     footerAddr: { en:"No 09-03, Block C, Kompleks Austin Perdana, Taman Austin Perdana, 81100 Johor Bahru", ms:"No 09-03, Block C, Kompleks Austin Perdana, Taman Austin Perdana, 81100 Johor Bahru", zh:"No 09-03, Block C, Kompleks Austin Perdana, Taman Austin Perdana, 81100 Johor Bahru", ta:"No 09-03, Block C, Kompleks Austin Perdana, Taman Austin Perdana, 81100 Johor Bahru" },
     footerRights: { en:"All rights reserved.", ms:"Hak cipta terpelihara.", zh:"版权所有。", ta:"அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை." },
@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
     oshcHeroTitle: { en:"OSH Coordinator (OSH-C) Training & Appointment", ms:"Latihan & Pelantikan Penyelaras OSH (OSH-C)", zh:"OSH协调员（OSH-C）培训与任命", ta:"OSH ஒருங்கிணைப்பாளர் (OSH-C) பயிற்சி & நியமனம்" },
     oshcHeroSubtitle: { en:"Statutory compliance under Section 29A of the OSH (Amendment) Act 2022. Protect your organisation, directors, and board from criminal liability.", ms:"Pematuhan undang-undang di bawah Seksyen 29A Akta OSHA (Pindaan) 2022. Lindungi organisasi, pengarah, dan lembaga anda dari liabiliti jenayah.", zh:"根据2022年《职业安全卫生法（修正）法》第29A条的法定合规。保护您的组织、董事及董事会免于刑事责任。", ta:"2022 OSH சட்டத்தின் பிரிவு 29A இன் கீழ் சட்டபூர்வ இணக்கம். உங்கள் நிறுவனத்தை, இயக்குநர்களை மற்றும் வாரியத்தை குற்றவியல் பொறுப்பிலிருந்து பாதுகாக்கவும்." },
     oshcHeroBtnBook: { en:"Book OSH-C Training", ms:"Tempah Latihan OSH-C", zh:"预约OSH-C培训", ta:"OSH-C பயிற்சியை முன்பதிவு செய்யுங்கள்" },
-    oshcHeroBtnCall: { en:"Speak to James", ms:"Bercakap dengan James", zh:"与James交谈", ta:"James உடன் பேசுங்கள்" },
+    oshcHeroBtnCall: { en:"Speak to Stephanie", ms:"Bercakap dengan Stephanie", zh:"与Stephanie交谈", ta:"Stephanie உடன் பேசுங்கள்" },
 
     gcHeroTitle: { en:"CIDB Green Card Training (SICW)", ms:"Latihan Kad Hijau CIDB (SICW)", zh:"CIDB绿卡培训（SICW）", ta:"CIDB பச்சை அட்டை பயிற்சி (SICW)" },
     gcHeroSubtitle: { en:"Mandatory construction induction certification from CIDB Centre Code PLSICW20231022-068. Classroom and on-site delivery across Malaysia.", ms:"Pensijilan induksi pembinaan wajib dari Pusat CIDB Kod PLSICW20231022-068. Kelas dan penghantaran di tapak di seluruh Malaysia.", zh:"CIDB中心代码PLSICW20231022-068颁发的强制性建筑入门认证。马来西亚全国课堂及现场授课。", ta:"CIDB மையக் குறியீடு PLSICW20231022-068 இலிருந்து கட்டாய கட்டுமான அறிமுக சான்றிதழ். மலேசியா முழுவதும் வகுப்பறை மற்றும் தள விநியோகம்." },
@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Generic course CTA
     ctaReqSchedule: { en:"Request Training Schedule", ms:"Minta Jadual Latihan", zh:"请求培训时间表", ta:"பயிற்சி அட்டவணையை கோருங்கள்" },
-    ctaWhatsAppSujen: { en:"WhatsApp Sujen", ms:"WhatsApp Sujen", zh:"WhatsApp Sujen", ta:"வாட்ஸ்அப் சுஜென்" },
+    ctaWhatsAppSujen: { en:"WhatsApp Us", ms:"WhatsApp Us", zh:"WhatsApp Us", ta:"வாட்ஸ்அப் செய்யுங்கள்" },
 
     // Services page hero
     servicesHeroTitle: { en:"Safety Services & Training Programmes", ms:"Perkhidmatan Keselamatan & Program Latihan", zh:"安全服务与培训计划", ta:"பாதுகாப்பு சேவைகள் & பயிற்சி திட்டங்கள்" },
@@ -336,7 +336,7 @@ document.addEventListener('DOMContentLoaded', () => {
     coursesCtaTitle: { en:"Need a Custom Training Package?", ms:"Perlukan Pakej Latihan Khusus?", zh:"需要定制培训方案吗？", ta:"தனிப்பயனாக்கப்பட்ட பயிற்சி தொகுப்பு தேவையா?" },
     coursesCtaSubtitle: { en:"We can tailor any programme to your site, industry, and workforce. Contact us for a free proposal.", ms:"Kami boleh ubah suai mana-mana program mengikut tapak, industri, dan tenaga kerja anda. Hubungi kami untuk cadangan percuma.", zh:"我们可以根据您的工地、行业和员工定制任何课程。联系我们获取免费方案。", ta:"உங்கள் தளம், தொழில் மற்றும் பணியாளர்களுக்கு ஏற்ப எந்த திட்டத்தையும் தனிப்பயனாக்க முடியும். இலவச முன்மொழிவுக்கு எங்களை தொடர்பு கொள்ளுங்கள்." },
     btnReqProposal: { en:"Request a Proposal", ms:"Minta Cadangan", zh:"请求方案", ta:"முன்மொழிவை கோருங்கள்" },
-    btnWhatsAppSujen: { en:"WhatsApp Sujen", ms:"WhatsApp Sujen", zh:"WhatsApp Sujen", ta:"வாட்ஸ்அப் சுஜென்" },
+    btnWhatsAppSujen: { en:"WhatsApp Us", ms:"WhatsApp Us", zh:"WhatsApp Us", ta:"வாட்ஸ்அப் செய்யுங்கள்" },
     btnReqTraining: { en:"Request Training Schedule", ms:"Minta Jadual Latihan", zh:"请求培训时间表", ta:"பயிற்சி அட்டவணையை கோருங்கள்" },
 
     // Course landing CTAs
