@@ -1063,6 +1063,15 @@ footer {
 }
 .service-pillar h3 svg { width: 28px; height: 28px; color: var(--accent); }
 .service-pillar p { color: var(--text-secondary); margin-bottom: 1rem; }
+.service-pillar-img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 1.25rem;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
 .service-list { list-style: none; }
 .service-list li {
   padding: 1rem 0;
