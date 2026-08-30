@@ -1,0 +1,4 @@
+# Cloudflare Pages _headers
+# Block search crawlers on staging hostnames
+https://*.pages.dev/*
+  X-Robots-Tag: noindex, nofollow

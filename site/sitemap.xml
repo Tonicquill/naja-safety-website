@@ -2,27 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://safetyconsultants.com.my/</loc>
-    <priority>1.0</priority>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-08-30</lastmod>
   </url>
   <url>
-    <loc>https://safetyconsultants.com.my/services.html</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
+    <loc>https://safetyconsultants.com.my/services</loc>
+    <lastmod>2026-08-30</lastmod>
   </url>
   <url>
-    <loc>https://safetyconsultants.com.my/about.html</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
+    <loc>https://safetyconsultants.com.my/courses</loc>
+    <lastmod>2026-08-30</lastmod>
   </url>
   <url>
-    <loc>https://safetyconsultants.com.my/courses.html</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
+    <loc>https://safetyconsultants.com.my/about</loc>
+    <lastmod>2026-08-30</lastmod>
   </url>
   <url>
-    <loc>https://safetyconsultants.com.my/contact.html</loc>
-    <priority>0.9</priority>
-    <changefreq>monthly</changefreq>
+    <loc>https://safetyconsultants.com.my/contact</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://safetyconsultants.com.my/courses/osh-coordinator</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://safetyconsultants.com.my/courses/cidb-green-card</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://safetyconsultants.com.my/courses/scaffold-safety</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://safetyconsultants.com.my/courses/chemical-handling</loc>
+    <lastmod>2026-08-30</lastmod>
   </url>
 </urlset>
