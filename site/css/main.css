@@ -729,6 +729,12 @@ header {
 .video-card:hover .video-thumb svg {
   transform: scale(1.1);
 }
+.video-thumb video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .video-card p {
   padding: 1.1rem 1.25rem;
   font-weight: 600;
@@ -1091,6 +1097,46 @@ footer {
   transition: top var(--transition);
 }
 .skip-link:focus { top: 0; }
+
+/* ---------- Language Switcher ---------- */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  background: rgba(27,79,114,0.08);
+  padding: 0.25rem;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+.lang-btn {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.35rem 0.7rem;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--transition);
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+.lang-btn:hover { color: var(--primary); }
+.lang-btn.active {
+  background: var(--primary);
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .lang-switcher {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1rem;
+    justify-content: center;
+    width: 100%;
+  }
+}
 
 /* ============================================
    Animations & Perpetual Micro-interactions
