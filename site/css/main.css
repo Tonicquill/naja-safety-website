@@ -1278,45 +1278,6 @@ footer {
 }
 .skip-link:focus { top: 0; }
 
-/* ---------- Language Switcher ---------- */
-.lang-switcher {
-  display: flex;
-  align-items: center;
-  gap: 0.2rem;
-  background: rgba(27,79,114,0.08);
-  padding: 0.25rem;
-  border-radius: 50px;
-  margin-left: auto;
-  margin-right: 1rem;
-}
-.lang-btn {
-  font-family: var(--font-body);
-  font-size: 0.72rem;
-  font-weight: 600;
-  padding: 0.35rem 0.7rem;
-  border: none;
-  background: transparent;
-  color: var(--text-muted);
-  border-radius: 50px;
-  cursor: pointer;
-  transition: var(--transition);
-  line-height: 1;
-  letter-spacing: 0.02em;
-}
-.lang-btn:hover { color: var(--primary); }
-.lang-btn.active {
-  background: var(--primary);
-  color: #fff;
-}
-@media (max-width: 767px) {
-  .lang-switcher {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 1rem;
-    justify-content: center;
-    width: 100%;
-  }
-}
 
 /* ============================================
    Animations & Perpetual Micro-interactions
@@ -1564,4 +1525,45 @@ footer {
   }
   .nav-links.active { display: flex; }
   .mobile-menu-btn { display: flex; }
+}
+
+/* ============================================
+   Language Toggle (EN / BM / ZH / TA)
+   ============================================ */
+.language-toggle-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  background: rgba(27,79,114,0.08);
+  border-radius: 20px;
+  padding: 3px;
+  margin-left: 0.5rem;
+}
+.lang-btn {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  line-height: 1;
+  min-width: 32px;
+  text-align: center;
+}
+.lang-btn:hover { color: var(--primary); }
+.lang-btn.active {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(27,79,114,0.2);
+}
+@media (max-width: 767px) {
+  .language-toggle-container {
+    margin-left: auto;
+    margin-right: 0.75rem;
+  }
 }
