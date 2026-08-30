@@ -569,6 +569,103 @@ header {
   line-height: 1.6;
 }
 
+/* ---------- Benefits of Safety ---------- */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+.benefit-card {
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: var(--transition);
+}
+.benefit-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.benefit-card h4 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+.benefit-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* ---------- Accident Iceberg ---------- */
+.iceberg-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.iceberg-block {
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+}
+.iceberg-visible {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border: 1px solid #90caf9;
+}
+.iceberg-visible h4 {
+  color: #1565c0;
+  margin-bottom: 0.75rem;
+}
+.iceberg-visible p {
+  color: #0d47a1;
+  font-size: 0.92rem;
+  margin-bottom: 0;
+}
+.iceberg-hidden {
+  background: linear-gradient(135deg, #1B4F72 0%, #0d2d44 100%);
+  border: 1px solid #0d2d44;
+  color: #fff;
+}
+.iceberg-hidden h4 {
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+.iceberg-hidden p {
+  color: rgba(255,255,255,0.85);
+  font-size: 0.92rem;
+  margin-bottom: 1rem;
+}
+.iceberg-hidden ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.35rem 1rem;
+}
+.iceberg-hidden ul li {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.75);
+  position: relative;
+  padding-left: 1.1rem;
+}
+.iceberg-hidden ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.iceberg-note {
+  display: block;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.55);
+  margin-top: 1rem;
+  font-style: italic;
+}
+
 /* ---------- Hero Subtext ---------- */
 .hero-subtext {
   font-size: clamp(0.95rem, 1.3vw, 1.1rem);
@@ -1287,6 +1384,9 @@ footer {
   /* Video first large */
   .video-grid { grid-template-columns: repeat(3, 1fr); }
   .video-grid .video-card:nth-child(1) { grid-column: span 2; }
+
+  .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+  .iceberg-wrap { grid-template-columns: 1fr 2fr; }
 }
 
 @media (min-width: 900px) {

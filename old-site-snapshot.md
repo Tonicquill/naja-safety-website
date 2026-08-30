@@ -1,0 +1,67 @@
+- generic [ref=e2]:
+  - img "Naja Safety Main Banner" [ref=e3]
+  - table [ref=e4]:
+    - rowgroup [ref=e5]:
+      - row [ref=e6]:
+        - cell [ref=e7]
+        - cell [ref=e8]:
+          - link "Home" [ref=e13] [cursor=pointer]:
+            - /url: ./index.php
+        - cell [ref=e14]:
+          - link "About Us" [ref=e19] [cursor=pointer]:
+            - /url: ./abframe.html
+        - cell [ref=e20]:
+          - link "Our Vision & Mission" [ref=e25] [cursor=pointer]:
+            - /url: ./visionframe.html
+        - cell [ref=e26]:
+          - link "Our Services" [ref=e31] [cursor=pointer]:
+            - /url: ./servicesframe.html
+        - cell [ref=e32]:
+          - link "Benefits of Safety" [ref=e37] [cursor=pointer]:
+            - /url: ./safetyframe.html
+        - cell [ref=e38]:
+          - link "Our Clients" [ref=e43] [cursor=pointer]:
+            - /url: ./clientsframe.html
+        - cell [ref=e44]:
+          - link "Contact Us" [ref=e49] [cursor=pointer]:
+            - /url: ./contactframe.html
+        - cell [ref=e50]
+  - generic [ref=e51]:
+    - table [ref=e52]:
+      - rowgroup [ref=e53]:
+        - row [ref=e54]:
+          - cell [ref=e55]:
+            - iframe [ref=e56]: This site uses floating frames:
+              
+          - cell [ref=e57]:
+            - iframe [ref=e58]: This site uses floating frames:
+              - generic [ref=f2e4]:
+                - generic [ref=f2e5]:
+                  - paragraph [ref=f2e6]: Welcome to Naja Safety Sdn Bhd (Formely known as Naja Safety) Portal.
+                  - paragraph [ref=f2e7]: The Occupational Safety & Health Act 1994 (also known as OSHA) that is enforced by the Department of Occupational Safety & Health (also know as DOSH / JKKP) since 1994 has played a great role in reducing the accident rate and creating a safe & healthy working environment for all employers and employees in Malaysia. In order to expand and promote Occupational Safety & Health (OSH), we are dedicated to provide the best OSH services that suite the requirements of the law and industries.
+                - paragraph [ref=f2e8]: The key priority of our business is a commitment of continuous improvement to promote and encourage greater understanding, knowledge and awareness towards creating a safe and healthy working environment.
+                - paragraph
+                - generic [ref=f2e9]: WE ARE EXPERTS IN ELIMINATING ACCIDENTS & COST EFFECTIVE SOLUTION PROVIDER !
+                - generic [ref=f2e15]:
+                  - separator [ref=f2e16]
+                  - paragraph [ref=f2e17]:
+                    - generic [ref=f2e18]: OUR LINKS
+                  - paragraph [ref=f2e22]:
+                    - link "Department of Occupational Safety and Health Malaysia" [ref=f2e27] [cursor=pointer]:
+                      - /url: http://www.dosh.gov.my
+                  - paragraph [ref=f2e28]:
+                    - link "Construction Industry Development Board Malaysia" [ref=f2e33] [cursor=pointer]:
+                      - /url: http://www.cidb.gov.my
+          - cell [ref=e59]:
+            - iframe [ref=e60]: This site uses floating frames:
+              - generic [ref=f3e4]:
+                - img "Construction Safety" [ref=f3e6]
+                - paragraph [ref=f3e7]
+    - table [ref=e61]:
+      - rowgroup [ref=e62]:
+        - row [ref=e63]:
+          - cell [ref=e64]:
+            - generic [ref=e68]:
+              - text: (C) Copyright 2015 - Naja Safety Sdn Bhd.
+              - 'link "Page Designed & Maintained By : Fusion Mediavision Publishing" [ref=e69] [cursor=pointer]':
+                - /url: www.myfusiongroup.com
