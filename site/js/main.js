@@ -347,7 +347,36 @@ document.addEventListener('DOMContentLoaded', () => {
     ssCtaTitle: { en:"Reduce Scaffold Risk On Your Site", ms:"Kurangkan Risiko Perancah Di Tapak Anda", zh:"降低您工地的脚手架风险", ta:"உங்கள் தளத்தில் தூண் அபாயத்தை குறைக்கவும்" },
     ssCtaSubtitle: { en:"One day of practical scaffold safety training can prevent months of project delays and protect your workers from preventable falls. Book on-site delivery anywhere in Malaysia.", ms:"Satu hari latihan keselamatan perancah praktikal dapat mengelakkan berbulan-bulan kelewatan projek dan melindungi pekerja anda dari jatuh yang boleh dicegah. Tempah penghantaran di tapak di mana-mana di Malaysia.", zh:"一天的实用脚手架安全培训可防止数月的项目延误，并保护您的工人免于可预防的坠落。在马来西亚任何地方预约现场授课。", ta:"ஒருநாள் நடைமுறை தூண் பாதுகாப்பு பயிற்சி மாதக்கணக்கான திட்ட தாமதங்களை தடுக்க முடியும் மற்றும் தடுக்கக்கூடிய விழுவதிலிருந்து உங்கள் தொழிலாளர்களை பாதுகாக்க முடியும். மலேசியாவில் எங்கும் தள விநியோகத்தை முன்பதிவு செய்யுங்கள்." },
     chemCtaTitle: { en:"Protect Your Team From Chemical Hazards", ms:"Lindungi Pasukan Anda Dari Bahaya Bahan Kimia", zh:"保护您的团队免受化学危害", ta:"வேதிப்பொருள் அபாயங்களிலிருந்து உங்கள் குழுவை பாதுகாக்கவும்" },
-    chemCtaSubtitle: { en:"One day of chemical safety training reduces incident risk, ensures regulatory compliance, and builds workforce confidence when handling hazardous substances.", ms:"Satu hari latihan keselamatan bahan kimia mengurangkan risiko insiden, memastikan pematuhan peraturan, dan membina keyakinan tenaga kerja semasa mengendalikan bahan berbahaya.", zh:"一天的化学品安全培训可降低事故风险，确保法规合规，并在处理危险物质时增强员工信心。", ta:"ஒருநாள் வேதிப்பொருள் பாதுகாப்பு பயிற்சி சம்பவ அபாயத்தை குறைக்கிறது, கட்டுப்பாட்டு இணக்கத்தை உறுதி செய்கிறது, அபாயமான பொருட்களை கையாளும்போது பணியாளர்களின் நம்பிக்கையை உருவாக்குகிறது." }
+    chemCtaSubtitle: { en:"One day of chemical safety training reduces incident risk, ensures regulatory compliance, and builds workforce confidence when handling hazardous substances.", ms:"Satu hari latihan keselamatan bahan kimia mengurangkan risiko insiden, memastikan pematuhan peraturan, dan membina keyakinan tenaga kerja semasa mengendalikan bahan berbahaya.", zh:"一天的化学品安全培训可降低事故风险，确保法规合规，并在处理危险物质时增强员工信心。", ta:"ஒருநாள் வேதிப்பொருள் பாதுகாப்பு பயிற்சி சம்பவ அபாயத்தை குறைக்கிறது, கட்டுப்பாட்டு இணக்கத்தை உறுதி செய்கிறது, அபாயமான பொருட்களை கையாளும்போது பணியாளர்களின் நம்பிக்கையை உருவாக்குகிறது." },
+
+    // Form labels & placeholders (shared)
+    formLabelName: { en:"Name", ms:"Nama", zh:"姓名", ta:"பெயர்" },
+    formLabelCompany: { en:"Company", ms:"Syarikat", zh:"公司", ta:"நிறுவனம்" },
+    formLabelPhone: { en:"Phone or WhatsApp", ms:"Telefon atau WhatsApp", zh:"电话或WhatsApp", ta:"தொலைபேசி அல்லது வாட்ஸ்அப்" },
+    formLabelService: { en:"Service Interested In", ms:"Perkhidmatan Yang Diminati", zh:"感兴趣的服务", ta:"ஆர்வமுள்ள சேவை" },
+    formPlaceholderName: { en:"Your full name", ms:"Nama penuh anda", zh:"您的全名", ta:"உங்கள் முழு பெயர்" },
+    formPlaceholderCompany: { en:"Your company", ms:"Syarikat anda", zh:"您的公司", ta:"உங்கள் நிறுவனம்" },
+    formPlaceholderPhone: { en:"+60 12-345 6789", ms:"+60 12-345 6789", zh:"+60 12-345 6789", ta:"+60 12-345 6789" },
+    formOptionDefault: { en:"Select a service...", ms:"Pilih perkhidmatan...", zh:"选择服务...", ta:"சேவையைத் தேர்ந்தெடுக்கவும்..." },
+    formOptionOsh: { en:"OSH Training", ms:"Latihan OSH", zh:"OSH培训", ta:"OSH பயிற்சி" },
+    formOptionCidb: { en:"CIDB / Construction Safety", ms:"CIDB / Keselamatan Pembinaan", zh:"CIDB / 建筑安全", ta:"CIDB / கட்டுமான பாதுகாப்பு" },
+    formOptionConsult: { en:"Safety Consultancy", ms:"Perundingan Keselamatan", zh:"安全咨询", ta:"பாதுகாப்பு ஆலோசனை" },
+    formOptionHrd: { en:"HRD Corp Support", ms:"Sokongan HRD Corp", zh:"HRD Corp支持", ta:"HRD Corp ஆதரவு" },
+    formOptionOther: { en:"Other", ms:"Lain-lain", zh:"其他", ta:"மற்றவை" },
+    formBtnSubmit: { en:"Send Enquiry", ms:"Hantar Pertanyaan", zh:"发送咨询", ta:"விசாரணையை அனுப்பு" },
+
+    // Mobile sticky CTA
+    mobileStickyCta: { en:"Chat on WhatsApp", ms:"Berbual di WhatsApp", zh:"WhatsApp咨询", ta:"வாட்ஸ்அப்பில் அரட்டை" },
+
+    // HRD Corp flowchart SVG
+    flowStep1Label: { en:"Audit", ms:"Audit", zh:"审计", ta:"தணிக்கை" },
+    flowStep1Desc: { en:"Review levy balance & risk", ms:"Semak baki levi & risiko", zh:"审查征费余额与风险", ta:"லெவி இருப்பு & அபாயத்தை மதிப்பீடு" },
+    flowStep2Label: { en:"Design", ms:"Reka Bentuk", zh:"设计", ta:"வடிவமைப்பு" },
+    flowStep2Desc: { en:"Map programmes to gaps", ms:"Peta program ke jurang", zh:"规划课程填补缺口", ta:"குறைபாடுகளுக்கு திட்டங்களை வரைபடமாக்கு" },
+    flowStep3Label: { en:"Train", ms:"Latih", zh:"培训", ta:"பயிற்சி" },
+    flowStep3Desc: { en:"On-site by Trainer 62976", ms:"Di tapak oleh Pengajar 62976", zh:"由培训师62976现场授课", ta:"பயிற்சியாளர் 62976 மூலம் தளத்தில்" },
+    flowStep4Label: { en:"Claim", ms:"Tuntut", zh:"索回", ta:"கோரிக்கை" },
+    flowStep4Desc: { en:"e-TRiS documentation support", ms:"Sokongan dokumentasi e-TRiS", zh:"e-TRiS文件支持", ta:"e-TRiS ஆவண ஆதரவு" }
   };
 
   function applyLanguage(lang) {
@@ -356,6 +385,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const key = el.getAttribute('data-translate');
       if (fullSiteDictionary[key] && fullSiteDictionary[key][lang]) {
         el.innerText = fullSiteDictionary[key][lang];
+      }
+    });
+    document.querySelectorAll('[data-translate-placeholder]').forEach(el => {
+      const key = el.getAttribute('data-translate-placeholder');
+      if (fullSiteDictionary[key] && fullSiteDictionary[key][lang]) {
+        el.placeholder = fullSiteDictionary[key][lang];
       }
     });
     localStorage.setItem('najaLang', lang);

@@ -1358,61 +1358,8 @@ footer {
 }
 
 /* ============================================
-   Visual Aids: Process Flows, Tables, Timelines
+   Visual Aids: Tables, Timelines
    ============================================ */
-.process-flow {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  margin: 2rem auto 0;
-  max-width: 900px;
-  position: relative;
-}
-.process-flow::before {
-  content: "";
-  position: absolute;
-  top: 28px;
-  left: 12.5%;
-  right: 12.5%;
-  height: 3px;
-  background: linear-gradient(90deg, var(--accent) 0%, var(--primary) 100%);
-  border-radius: 3px;
-  z-index: 0;
-}
-.process-step {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-}
-.step-number {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background: var(--primary);
-  color: #fff;
-  font-family: var(--font-display);
-  font-size: 1.3rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 0.8rem;
-  box-shadow: 0 4px 12px rgba(27,79,114,0.25);
-}
-.step-label {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 0.92rem;
-  color: var(--primary);
-  margin-bottom: 0.3rem;
-}
-.step-desc {
-  font-size: 0.82rem;
-  color: var(--text-secondary);
-  line-height: 1.45;
-  padding: 0 0.25rem;
-}
-
 .comparison-table-wrap {
   overflow-x: auto;
   margin: 1.5rem 0;
@@ -1493,17 +1440,6 @@ footer {
   line-height: 1.55;
 }
 
-@media (max-width: 767px) {
-  .process-flow { grid-template-columns: repeat(2, 1fr); }
-  .process-flow::before { display: none; }
-  .process-step:nth-child(-n+2) { margin-bottom: 1.5rem; }
-}
-@media (max-width: 480px) {
-  .process-flow { grid-template-columns: 1fr; }
-  .process-step { margin-bottom: 1.2rem; }
-  .process-step:last-child { margin-bottom: 0; }
-}
-
 /* ============================================
    Mobile Menu (open state)
    ============================================ */
@@ -1565,5 +1501,53 @@ footer {
   .language-toggle-container {
     margin-left: auto;
     margin-right: 0.75rem;
+  }
+}
+
+/* ============================================
+   Mobile Sticky Action Bar
+   ============================================ */
+.mobile-sticky-action-bar {
+  display: none;
+}
+@media (max-width: 767px) {
+  .mobile-sticky-action-bar {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: #fff;
+    border-top: 1px solid var(--border-subtle);
+    padding: 0.65rem 1rem calc(0.65rem + env(safe-area-inset-bottom));
+    box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
+  }
+  .mobile-sticky-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: #25D366;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  .mobile-sticky-btn:hover {
+    background: #128C7E;
+    transform: translateY(-1px);
+  }
+  .mobile-sticky-btn svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  body {
+    padding-bottom: 4.5rem;
   }
 }

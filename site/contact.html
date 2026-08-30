@@ -160,41 +160,33 @@
             >
               <!-- TODO: Replace with actual form endpoint (Formspree, Netlify Forms, or custom backend) -->
               <div class="form-group">
-                <label for="name">Full Name *</label>
-                <input type="text" id="name" name="name" required placeholder="Your full name">
+                <label for="name" data-translate="formLabelName">Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Your full name" data-translate-placeholder="formPlaceholderName">
               </div>
               <div class="form-group">
-                <label for="company">Company Name</label>
-                <input type="text" id="company" name="company" placeholder="Your company">
+                <label for="company" data-translate="formLabelCompany">Company</label>
+                <input type="text" id="company" name="company" placeholder="Your company" data-translate-placeholder="formPlaceholderCompany">
               </div>
               <div class="form-group">
-                <label for="email">Email *</label>
-                <input type="email" id="email" name="email" required placeholder="you@company.com">
+                <label for="phone" data-translate="formLabelPhone">Phone or WhatsApp *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+60 12-345 6789" data-translate-placeholder="formPlaceholderPhone">
               </div>
               <div class="form-group">
-                <label for="phone">Phone / WhatsApp *</label>
-                <input type="tel" id="phone" name="phone" required placeholder="+60 12-345 6789">
-              </div>
-              <div class="form-group">
-                <label for="service">Service Interested In</label>
+                <label for="service" data-translate="formLabelService">Service Interested In</label>
                 <select id="service" name="service">
-                  <option value="">Select a service...</option>
-                  <option value="osh-training">OSH Training</option>
-                  <option value="cidb-construction">CIDB / Construction Safety</option>
-                  <option value="consultancy">Safety Consultancy</option>
-                  <option value="hrdcorp">HRD Corp Support</option>
-                  <option value="other">Other</option>
+                  <option value="" data-translate="formOptionDefault">Select a service...</option>
+                  <option value="osh-training" data-translate="formOptionOsh">OSH Training</option>
+                  <option value="cidb-construction" data-translate="formOptionCidb">CIDB / Construction Safety</option>
+                  <option value="consultancy" data-translate="formOptionConsult">Safety Consultancy</option>
+                  <option value="hrdcorp" data-translate="formOptionHrd">HRD Corp Support</option>
+                  <option value="other" data-translate="formOptionOther">Other</option>
                 </select>
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Tell us about your training or consultancy needs..."></textarea>
               </div>
               <div class="form-group" style="display:flex;align-items:flex-start;gap:.5rem;font-size:.85rem;color:var(--gray);">
                 <input type="checkbox" id="pdpa" name="pdpa" required style="margin-top:.15rem;">
-                <label for="pdpa" style="font-weight:400;cursor:pointer;">I consent to Naja Safety Sdn Bhd processing my personal data in accordance with the <a href="https://www.pdp.gov.my" target="_blank" rel="noopener">Malaysian Personal Data Protection Act 2010</a>. I understand my data will be used solely to respond to this enquiry.</label>
+                <label for="pdpa" style="font-weight:400;cursor:pointer;" data-translate="contactFormPDPA">I consent to Naja Safety Sdn Bhd processing my personal data in accordance with the <a href="https://www.pdp.gov.my" target="_blank" rel="noopener">Malaysian Personal Data Protection Act 2010</a>. I understand my data will be used solely to respond to this enquiry.</label>
               </div>
-              <button type="submit" class="btn btn-primary btn-block">Send Enquiry</button>
+              <button type="submit" class="btn btn-primary btn-block" data-translate="formBtnSubmit">Send Enquiry</button>
             </form>
           </div>
         </div>
@@ -234,6 +226,14 @@
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.521.074-.795.372-.271.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.054.149.173 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     <span class="sr-only">Chat on WhatsApp</span>
   </a>
+
+  <!-- Mobile Sticky Action Bar -->
+  <div class="mobile-sticky-action-bar" aria-label="Mobile contact bar">
+    <a href="/whatsapp-lander.html?utm_source=site&utm_medium=sticky_bar&utm_campaign=mobile_conversion" class="mobile-sticky-btn">
+      <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.521.074-.795.372-.271.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.054.149.173 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span data-translate="mobileStickyCta">Chat on WhatsApp</span>
+    </a>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
