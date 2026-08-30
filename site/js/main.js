@@ -133,4 +133,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('[data-target]').forEach(el => countObserver.observe(el));
 
+  // ---------- Certificate lightbox ----------
+  const certModal = document.getElementById('cert-modal');
+  const certModalImg = document.getElementById('cert-modal-img');
+  const certModalCaption = document.querySelector('.cert-modal-caption');
+  const certModalClose = document.querySelector('.cert-modal-close');
+
+  if (certModal) {
+    document.querySelectorAll('.cert-thumb').forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        const img = thumb.querySelector('img');
+        if (!img) return;
+        certModalImg.src = img.src;
+        certModalImg.alt = img.alt;
+        certModalCaption.textContent = img.alt;
+        certModal.classList.add('active');
+        certModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    const closeModal = () => {
+      certModal.classList.remove('active');
+      certModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      certModalImg.src = '';
+    };
+
+    if (certModalClose) certModalClose.addEventListener('click', closeModal);
+    certModal.addEventListener('click', (e) => {
+      if (e.target === certModal) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && certModal.classList.contains('active')) closeModal();
+    });
+  }
+
 });
