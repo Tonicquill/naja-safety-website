@@ -376,7 +376,68 @@ document.addEventListener('DOMContentLoaded', () => {
     flowStep3Label: { en:"Train", ms:"Latih", zh:"培训", ta:"பயிற்சி" },
     flowStep3Desc: { en:"On-site by Trainer 62976", ms:"Di tapak oleh Pengajar 62976", zh:"由培训师62976现场授课", ta:"பயிற்சியாளர் 62976 மூலம் தளத்தில்" },
     flowStep4Label: { en:"Claim", ms:"Tuntut", zh:"索回", ta:"கோரிக்கை" },
-    flowStep4Desc: { en:"e-TRiS documentation support", ms:"Sokongan dokumentasi e-TRiS", zh:"e-TRiS文件支持", ta:"e-TRiS ஆவண ஆதரவு" }
+    flowStep4Desc: { en:"e-TRiS documentation support", ms:"Sokongan dokumentasi e-TRiS", zh:"e-TRiS文件支持", ta:"e-TRiS ஆவண ஆதரவு" },
+
+    // Operational Comparison Grid
+    compareTitle: { en:"How We Deliver Training", ms:"Cara Kami Menghantar Latihan", zh:"我们如何提供培训", ta:"நாங்கள் பயிற்சியை எவ்வாறு வழங்குகிறோம்" },
+    compareSubtitle: { en:"In-house programmes tailored to your facility vs. public seminar slots.", ms:"Program dalaman yang disesuaikan dengan kemudahan anda berbanding slot seminar awam.", zh:"为您设施量身定制的内部课程与公共研讨会名额对比。", ta:"உங்கள் வசதிக்கு ஏற்ப வடிவமைக்கப்பட்ட உள்ளக திட்டங்கள் vs பொதுக் கருத்தரங்க இடங்கள்." },
+    compareFeaturedBadge: { en:"Recommended", ms:"Disyorkan", zh:"推荐", ta:"பரிந்துரைக்கப்பட்டது" },
+    compareInHouseTitle: { en:"In-House Delivery", ms:"Penghantaran Dalam Rumah", zh:"内部授课", ta:"உள்ளக விநியோகம்" },
+    compareInHouse1: { en:"Zero travel downtime — your team trains on-site without leaving the facility", ms:"Tiada masa henti perjalanan — pasukan anda dilatih di tapak tanpa meninggalkan kemudahan", zh:"零出行停工时间——您的团队在设施现场接受培训，无需离开", ta:"பயண இடைநிறுத்தம் இல்லை — உங்கள் குழு வசதியை விட்டு வெளியேறாமல் தளத்தில் பயிற்சி பெறுகிறது" },
+    compareInHouse2: { en:"Specialized facility hazard mapping mapped into every module", ms:"Pemetaan bahaya kemudahan khusus dipetakan ke dalam setiap modul", zh:"将专业设施危害映射融入每个模块", ta:"ஒவ்வொரு தொகுதியிலும் சிறப்பு வசதி அபாய வரைபடமாக்கம் செய்யப்பட்டுள்ளது" },
+    compareInHouse3: { en:"Class dates scheduled around your production calendar", ms:"Tarikh kelas dijadualkan mengikut kalendar pengeluaran anda", zh:"根据您的生产日历安排课程日期", ta:"உங்கள் உற்பத்தி நாள்காட்டியைச் சுற்றி வகுப்பு தேதிகள் திட்டமிடப்பட்டுள்ளன" },
+    compareInHouse4: { en:"Group rates and HRD Corp levy optimisation", ms:"Kadar kumpulan dan pengoptimuman levi HRD Corp", zh:"团体费率和HRD Corp征费优化", ta:"குழு விகிதங்கள் மற்றும் HRD Corp லெவி மேம்பாடு" },
+    compareInHouseCta: { en:"Request In-House Quote", ms:"Minta Sebut Harga Dalam Rumah", zh:"请求内部报价", ta:"உள்ளக மதிப்பீட்டை கோருங்கள்" },
+    comparePublicBadge: { en:"Alternative", ms:"Alternatif", zh:"替代方案", ta:"மாற்று" },
+    comparePublicTitle: { en:"Public Seminars", ms:"Seminar Awam", zh:"公共研讨会", ta:"பொதுக் கருத்தரங்குகள்" },
+    comparePublic1: { en:"Fixed schedules that may clash with shift rotations", ms:"Jadual tetap yang mungkin bertembung dengan rotasi syif", zh:"可能与轮班冲突的固定时间表", ta:"மாற்று பணி சுழற்சிகளுடன் மோதக்கூடிய நிலையான அட்டவணைகள்" },
+    comparePublic2: { en:"Generic curriculum — not mapped to your specific hazards", ms:"Kurikulum generik — tidak dipetakan kepada bahaya tertentu anda", zh:"通用课程——未针对您的特定危害进行映射", ta:"பொதுவான பாடத்திட்டம் — உங்கள் குறிப்பிட்ட அபாயங்களுக்கு வரைபடமாக்கப்படவில்லை" },
+    comparePublic3: { en:"Travel time and transport costs for every participant", ms:"Masa perjalanan dan kos pengangkutan untuk setiap peserta", zh:"每位参与者的出行时间和交通费用", ta:"ஒவ்வொரு பங்கேற்பாளருக்கும் பயண நேரம் மற்றும் போக்குவரத்து செலவுகள்" },
+    comparePublic4: { en:"Limited intake per batch; certification may be delayed", ms:"Pengambilan terhad setiap kelompok; pensijilan mungkin tertangguh", zh:"每批次名额有限；认证可能会延迟", ta:"ஒவ்வொரு தொகுப்புக்கும் வரம்புக்குட்பட்ட ப intake; சான்றிதழ் தாமதமாகலாம்" },
+    comparePublicCta: { en:"Join Public Schedule", ms:"Sertai Jadual Awam", zh:"加入公共日程", ta:"பொது அட்டவணையில் சேருங்கள்" },
+
+    // Social Proof Stream
+    streamTitle: { en:"See Naja Safety In Action", ms:"Lihat Naja Safety Beraksi", zh:"观看Naja Safety实战", ta:"Naja Safety செயலில் காணுங்கள்" },
+    streamSubtitle: { en:"Training snippets, facility tours, and real-site hazard assessments from across Malaysia.", ms:"Klips latihan, lawatan kemudahan, dan penilaian bahaya tapak sebenar dari seluruh Malaysia.", zh:"来自马来西亚各地的培训片段、设施导览和真实现场危害评估。", ta:"மலேசியா முழுவதும் பயிற்சி snippets, வசதி சுற்றுப்பயணங்கள், மற்றும் உண்மையான தள அபாய மதிப்பீடுகள்." },
+    streamTag1: { en:"On-Site Training", ms:"Latihan Di Tapak", zh:"现场培训", ta:"தள பயிற்சி" },
+    streamHeadline1: { en:"Live Training Floor", ms:"Lantai Latihan Langsung", zh:"实时培训现场", ta:"நேரடி பயிற்சி தளம்" },
+    streamCaption1: { en:"Real drills with certified instructors and your own equipment on your own premises.", ms:"Latihan sebenar dengan pengajar bertauliah dan peralatan anda di premis anda sendiri.", zh:"在您自己的场所使用您自己的设备与认证讲师进行实战演练。", ta:"உங்கள் சான்றளிக்கப்பட்ட பயிற்சியாளர்களுடன் மற்றும் உங்கள் சொந்த வசதிகளில் உங்கள் சொந்த உபகரணங்களுடன் உண்மையான பயிற்சிகள்." },
+    streamTag2: { en:"Hazard Mapping", ms:"Pemetaan Bahaya", zh:"危害映射", ta:"அபாய வரைபடமாக்கம்" },
+    streamHeadline2: { en:"Fire Safety Drill", ms:"Latihan Keselamatan Kebakaran", zh:"消防安全演练", ta:"தீ பாதுகாப்பு பயிற்சி" },
+    streamCaption2: { en:"Emergency response protocols tailored to your facility's layout and risk profile.", ms:"Protokol tindak balas kecemasan yang disesuaikan dengan susun atur dan profil risiko kemudahan anda.", zh:"根据您设施的布局和风险状况定制的应急响应协议。", ta:"உங்கள் வசதியின் அமைப்பு மற்றும் அபாய சுயவிவரத்திற்கு ஏற்ப அவசரகால பதில் நெறிமுறைகள்." },
+    streamTag3: { en:"Site Assessment", ms:"Penilaian Tapak", zh:"现场评估", ta:"தள மதிப்பீடு" },
+    streamHeadline3: { en:"Scaffold Inspection", ms:"Pemeriksaan Perancah", zh:"脚手架检查", ta:"தூண் பரிசோதனை" },
+    streamCaption3: { en:"Practical scaffold erection and inspection on active construction sites.", ms:"Pembinaan dan pemeriksaan perancah praktikal di tapak pembinaan yang aktif.", zh:"在活跃的建筑工地上进行实用的脚手架搭建和检查。", ta:"செயலில் உள்ள கட்டுமான தளங்களில் நடைமுறை தூண் அமைப்பு மற்றும் பரிசோதனை." },
+
+    // Updated contact CTAs
+    heroBtnWhatsApp: { en:"WhatsApp Stephanie", ms:"WhatsApp Stephanie", zh:"WhatsApp Stephanie", ta:"Stephanie-வுக்கு WhatsApp செய்யுங்கள்" },
+    navWhatsApp: { en:"WhatsApp Stephanie", ms:"WhatsApp Stephanie", zh:"WhatsApp Stephanie", ta:"Stephanie-வுக்கு WhatsApp செய்யுங்கள்" },
+    oschHeroBtnCall: { en:"WhatsApp Stephanie", ms:"WhatsApp Stephanie", zh:"WhatsApp Stephanie", ta:"Stephanie-வுக்கு WhatsApp செய்யுங்கள்" },
+    btnWhatsAppSujen: { en:"WhatsApp Stephanie", ms:"WhatsApp Stephanie", zh:"WhatsApp Stephanie", ta:"Stephanie-வுக்கு WhatsApp செய்யுங்கள்" },
+
+    // Authority Stat Callouts
+    statSince: { en:"Since 2005", ms:"Sejak 2005", zh:"自2005年起", ta:"2005 முதல்" },
+    statSinceLabel: { en:"Protecting Malaysian Workspaces", ms:"Melindungi Ruang Kerja Malaysia", zh:"保护马来西亚工作场所", ta:"மலேசிய பணியிடங்களை பாதுகாத்தல்" },
+    statPractitioners: { en:"32+", ms:"32+", zh:"32+", ta:"32+" },
+    statPractitionersLabel: { en:"Certified OSH Practitioners", ms:"Pengamal OSH Bertauliah", zh:"认证OSH从业人员", ta:"சான்றளிக்கப்பட்ட OSH பயிற்சியாளர்கள்" },
+    statAccidents: { en:"Zero", ms:"Sifar", zh:"零", ta:"பூஜ்யம்" },
+    statAccidentsLabel: { en:"Accident Track Record on Regional Projects", ms:"Rekod Kemalangan Sifar untuk Projek Serantau", zh:"区域项目零事故记录", ta:"பிராந்திய திட்டங்களில் விபத்து இல்லாத பதிவு" },
+    statStates: { en:"5", ms:"5", zh:"5", ta:"5" },
+    statStatesLabel: { en:"States Covered — JB to Penang", ms:"Negeri Diliputi — JB ke Pulau Pinang", zh:"覆盖州属——从柔佛到槟城", ta:"JB இலிருந்து பினாங் வரை உள்ள மாநிலங்கள்" },
+
+    // Coverage Areas
+    coverageTitle: { en:"Our Coverage Areas", ms:"Kawasan Liputan Kami", zh:"我们的覆盖区域", ta:"எங்கள் ப覆盖 பகுதிகள்" },
+    coverageSubtitle: { en:"From Johor Bahru to Penang — on-site safety training and consultancy delivered nationwide.", ms:"Dari Johor Bahru ke Pulau Pinang — latihan keselamatan di tapak dan perundingan dihantar di seluruh negara.", zh:"从新山到槟城——全国范围内提供现场安全培训和咨询服务。", ta:"ஜொகூர் பாருவிலிருந்து பினாங் வரை — தேசிய அளவில் தள பாதுகாப்பு பயிற்சி மற்றும் ஆலோசனை வழங்கப்படுகிறது." },
+    coverageJohor: { en:"Johor", ms:"Johor", zh:"柔佛", ta:"ஜொகூர்" },
+    coverageJohorDesc: { en:"HQ in Johor Bahru with full on-site deployment across the state.", ms:"Ibu pejabat di Johor Bahru dengan penempatan penuh di tapak di seluruh negeri.", zh:"总部设在新山，可在全州的现场部署。", ta:"ஜொகூர் பாருவில் தலைமையகம், மாநிலம் முழுவதும் முழு தள நிலையமாக்கம்." },
+    coverageMelaka: { en:"Melaka", ms:"Melaka", zh:"马六甲", ta:"மலாக்கா" },
+    coverageMelakaDesc: { en:"Regular training schedules for manufacturing and port operations.", ms:"Jadual latihan biasa untuk operasi pembuatan dan pelabuhan.", zh:"为制造业和港口运营提供定期培训时间表。", ta:"உற்பத்தி மற்றும் துறைமுக செயல்பாடுகளுக்கான வழக்கமான பயிற்சி அட்டவணைகள்." },
+    coverageKL: { en:"Kuala Lumpur", ms:"Kuala Lumpur", zh:"吉隆坡", ta:"கோலாலம்பூர்" },
+    coverageKLDesc: { en:"Corporate headquarters and federal compliance support.", ms:"Ibu pejabat korporat dan sokongan pematuhan persekutuan.", zh:"企业总部和联邦合规支持。", ta:"கார்ப்பரேட் தலைமையகம் மற்றும் கூட்டாட்சி இணக்க ஆதரவு." },
+    coveragePerak: { en:"Perak", ms:"Perak", zh:"霹雳", ta:"பேராக்" },
+    coveragePerakDesc: { en:"Industrial zone safety audits and plantation HSE programmes.", ms:"Audit keselamatan zon perindustrian dan program HSE ladang.", zh:"工业区安全审核和种植园HSE项目。", ta:"தொழிற்துறை மண்டல பாதுகாப்பு தணிக்கைகள் மற்றும் தோட்ட HSE திட்டங்கள்." },
+    coveragePenang: { en:"Penang", ms:"Pulau Pinang", zh:"槟城", ta:"பினாங்" },
+    coveragePenangDesc: { en:"Electronics manufacturing and semiconductor clean-room safety.", ms:"Pembuatan elektronik dan keselamatan bilik bersih semikonduktor.", zh:"电子制造和半导体洁净室安全。", ta:"மின்னணு உற்பத்தி மற்றும் அரைகடத்தான் சுத்தமான அறை பாதுகாப்பு." }
   };
 
   function applyLanguage(lang) {
