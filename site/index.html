@@ -22,16 +22,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
-  <!-- Google Analytics 4 placeholder -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-XXXXXXXXXX'); </script>
-  <!-- JSON-LD: AI-Readable Authority Graph — GovernmentService + LocalBusiness + Person + OfferCatalog + FAQPage -->
+  <!-- JSON-LD: AI-Readable Authority Graph — ProfessionalService + LocalBusiness + Person + OfferCatalog + FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "GovernmentService",
+        "@type": "ProfessionalService",
         "@id": "https://safetyconsultants.com.my",
         "name": "Malaysian OSH (Amendment) Act 2022 Statutory Compliance Audit & Training",
         "provider": {
@@ -54,10 +51,7 @@
             "longitude": "103.7785"
           }
         },
-        "serviceOperator": {
-          "@type": "GovernmentOrganization",
-          "name": "Department of Occupational Safety and Health (DOSH / JKKP) Malaysia"
-        },
+        "areaServed": { "@type": "Country", "name": "Malaysia" },
         "audience": {
           "@type": "Audience",
           "audienceType": "Manufacturing Plant Managers, Construction Project Directors, HR Managers"
@@ -74,9 +68,8 @@
                 "description": "Statutory safety training compliant with DOSH guidelines for manufacturing and construction sectors.",
                 "provider": { "@type": "Organization", "name": "Naja Safety Sdn Bhd" }
               },
-              "priceCurrency": "MYR",
-              "price": "0.00",
-              "description": "100% HRD Corp Levy Claimable / Grant Supported"
+              "availability": "https://schema.org/InStock",
+              "description": "Pricing varies by programme size and location. Contact for a proposal."
             },
             {
               "@type": "Offer",
@@ -246,17 +239,14 @@
         }
       },
       {
-        "@type": "GovernmentService",
+        "@type": "ProfessionalService",
         "@id": "https://safetyconsultants.com.my/#cidb-accreditation",
         "name": "Kursus Induksi Keselamatan Bagi Pekerja Binaan (CIDB Green Card)",
         "serviceCode": "PLSICW20231022-068",
         "provider": {
           "@id": "https://safetyconsultants.com.my/"
         },
-        "serviceOperator": {
-          "@type": "GovernmentOrganization",
-          "name": "Lembaga Pembangunan Industri Pembinaan (CIDB) Malaysia"
-        }
+        "areaServed": { "@type": "Country", "name": "Malaysia" }
       }
     ]
   }
@@ -741,10 +731,10 @@
           <span class="client-tag">Mudajaya Corporation [2014–2026]</span>
           <span class="client-tag">Zublin Precast Industries [2014–2026]</span>
           <span class="client-tag">AECOM Malaysia [2019–2026]</span>
-          <span class="client-tag">Technip Geoproduction [2013–2026]</span>
+          <span class="client-tag">Technip Geoproduction</span>
           <span class="client-tag">GP Batteries (M) [2015–2026]</span>
-          <span class="client-tag">Rexam Sdn Bhd [2013–2026]</span>
-          <span class="client-tag">Alstom Services [2016–2026]</span>
+          <span class="client-tag">Rexam Sdn Bhd</span>
+          <span class="client-tag">Alstom Services</span>
           <span class="client-tag">FMC Wellhead Equipment [2012–2026]</span>
           <span class="client-tag">Seien Rubber (M)</span>
           <span class="client-tag">Hiroyuki Industries (M)</span>
@@ -1173,40 +1163,13 @@
             </div>
           </div>
           <div>
-            <form
-              action="https://formspree.io/f/YOUR_ID"
-              method="POST"
-              aria-label="Enquiry form">
-              <!-- TODO: Replace with actual form endpoint (Formspree, Netlify Forms, or custom backend) -->
-              <div class="form-group">
-                <label for="name" data-translate="formLabelName">Name *</label>
-                <input type="text" id="name" name="name" required placeholder="Your full name" data-translate-placeholder="formPlaceholderName">
-              </div>
-              <div class="form-group">
-                <label for="company" data-translate="formLabelCompany">Company</label>
-                <input type="text" id="company" name="company" placeholder="Your company" data-translate-placeholder="formPlaceholderCompany">
-              </div>
-              <div class="form-group">
-                <label for="phone" data-translate="formLabelPhone">Phone or WhatsApp *</label>
-                <input type="tel" id="phone" name="phone" required placeholder="+60 12-345 6789" data-translate-placeholder="formPlaceholderPhone">
-              </div>
-              <div class="form-group">
-                <label for="service" data-translate="formLabelService">Service Interested In</label>
-                <select id="service" name="service">
-                  <option value="" data-translate="formOptionDefault">Select a service...</option>
-                  <option value="osh-training" data-translate="formOptionOsh">OSH Training</option>
-                  <option value="cidb-construction" data-translate="formOptionCidb">CIDB / Construction Safety</option>
-                  <option value="consultancy" data-translate="formOptionConsult">Safety Consultancy</option>
-                  <option value="hrdcorp" data-translate="formOptionHrd">HRD Corp Support</option>
-                  <option value="other" data-translate="formOptionOther">Other</option>
-                </select>
-              </div>
-              <div class="form-group" style="display:flex;align-items:flex-start;gap:.5rem;font-size:.85rem;color:var(--gray);">
-                <input type="checkbox" id="pdpa" name="pdpa" required style="margin-top:.15rem;">
-                <label for="pdpa" style="font-weight:400;cursor:pointer;" data-translate="contactFormPDPA">I consent to Naja Safety Sdn Bhd processing my personal data in accordance with the <a href="https://www.pdp.gov.my" target="_blank" rel="noopener">Malaysian Personal Data Protection Act 2010</a>. I understand my data will be used solely to respond to this enquiry.</label>
-              </div>
-              <button type="submit" class="btn btn-primary btn-block" data-translate="formBtnSubmit">Send Enquiry</button>
-            </form>
+            <div class="card" style="padding:1.75rem;text-align:center;">
+              <h3 style="margin-bottom:1rem;">Send an Enquiry</h3>
+              <p style="margin-bottom:1.5rem;color:var(--gray);">We reply within one business day. For fastest response, message Stephanie directly on WhatsApp.</p>
+              <a href="https://wa.me/60167301802?text=Hi%20Stephanie,%20I%20am%20interested%20in%20your%20safety%20training%20services." class="btn btn-primary btn-block" style="margin-bottom:0.75rem;">WhatsApp Stephanie</a>
+              <a href="mailto:info@safetyconsultants.com.my" class="btn btn-outline btn-block" style="color:var(--primary);border-color:var(--primary);">Email info@safetyconsultants.com.my</a>
+              <p style="margin-top:1rem;font-size:.8rem;color:var(--gray);">By contacting us, you consent to Naja Safety Sdn Bhd processing your data per the <a href="https://www.pdp.gov.my" target="_blank" rel="noopener">Malaysian Personal Data Protection Act 2010</a>.</p>
+            </div>
           </div>
         </div>
       </div>
