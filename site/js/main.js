@@ -276,9 +276,8 @@ document.addEventListener('DOMContentLoaded', () => {
     footerCol2Title: { en:"Quick Links", ms:"Pautan Pantas", zh:"快速链接", ta:"விரைவு இணைப்புகள்" },
     footerCol3Title: { en:"Services", ms:"Perkhidmatan", zh:"服务", ta:"சேவைகள்" },
     footerCol4Title: { en:"Contact", ms:"Hubungi", zh:"联系", ta:"தொடர்பு" },
-    footerPhone: { en:"Phone: 016-730-1802", ms:"Telefon: 016-730-1802", zh:"电话：016-730-1802", ta:"தொலைபேசி: 016-730-1802" },
-    footerJames: { en:"Stephanie: 016-730-1802", ms:"Stephanie: 016-730-1802", zh:"Stephanie：016-730-1802", ta:"Stephanie: 016-730-1802" },
-    footerWhatsApp: { en:"WhatsApp: 016-730-1802", ms:"WhatsApp: 016-730-1802", zh:"WhatsApp：016-730-1802", ta:"வாட்ஸ்அப்: 016-730-1802" },
+    footerHotline: { en:"Hotline: 016-730-1802", ms:"Hotline: 016-730-1802", zh:"热线：016-730-1802", ta:"ஹாட்லைன்: 016-730-1802" },
+    footerWhatsApp: { en:"WhatsApp Us", ms:"WhatsApp Kami", zh:"WhatsApp我们", ta:"வாட்ஸ்அப் செய்யுங்கள்" },
     footerEmail: { en:"info@safetyconsultants.com.my", ms:"info@safetyconsultants.com.my", zh:"info@safetyconsultants.com.my", ta:"info@safetyconsultants.com.my" },
     footerAddr: { en:"No 09-03, Block C, Kompleks Austin Perdana, Taman Austin Perdana, 81100 Johor Bahru", ms:"No 09-03, Block C, Kompleks Austin Perdana, Taman Austin Perdana, 81100 Johor Bahru", zh:"No 09-03, Block C, Kompleks Austin Perdana, Taman Austin Perdana, 81100 Johor Bahru", ta:"No 09-03, Block C, Kompleks Austin Perdana, Taman Austin Perdana, 81100 Johor Bahru" },
     footerRights: { en:"All rights reserved.", ms:"Hak cipta terpelihara.", zh:"版权所有。", ta:"அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை." },
@@ -287,7 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
     oshcHeroTitle: { en:"OSH Coordinator (OSH-C) Training & Appointment", ms:"Latihan & Pelantikan Penyelaras OSH (OSH-C)", zh:"OSH协调员（OSH-C）培训与任命", ta:"OSH ஒருங்கிணைப்பாளர் (OSH-C) பயிற்சி & நியமனம்" },
     oshcHeroSubtitle: { en:"Statutory compliance under Section 29A of the OSH (Amendment) Act 2022. Protect your organisation, directors, and board from criminal liability.", ms:"Pematuhan undang-undang di bawah Seksyen 29A Akta OSHA (Pindaan) 2022. Lindungi organisasi, pengarah, dan lembaga anda dari liabiliti jenayah.", zh:"根据2022年《职业安全卫生法（修正）法》第29A条的法定合规。保护您的组织、董事及董事会免于刑事责任。", ta:"2022 OSH சட்டத்தின் பிரிவு 29A இன் கீழ் சட்டபூர்வ இணக்கம். உங்கள் நிறுவனத்தை, இயக்குநர்களை மற்றும் வாரியத்தை குற்றவியல் பொறுப்பிலிருந்து பாதுகாக்கவும்." },
     oshcHeroBtnBook: { en:"Book OSH-C Training", ms:"Tempah Latihan OSH-C", zh:"预约OSH-C培训", ta:"OSH-C பயிற்சியை முன்பதிவு செய்யுங்கள்" },
-    oshcHeroBtnCall: { en:"Speak to Stephanie", ms:"Bercakap dengan Stephanie", zh:"与Stephanie交谈", ta:"Stephanie உடன் பேசுங்கள்" },
+    oshcHeroBtnCall: { en:"Contact Naja Safety", ms:"Hubungi Naja Safety", zh:"联系Naja Safety", ta:"Naja Safety-ஐ தொடர்பு கொள்ளுங்கள்" },
 
     gcHeroTitle: { en:"CIDB Green Card Training (SICW)", ms:"Latihan Kad Hijau CIDB (SICW)", zh:"CIDB绿卡培训（SICW）", ta:"CIDB பச்சை அட்டை பயிற்சி (SICW)" },
     gcHeroSubtitle: { en:"Mandatory construction induction certification from CIDB Centre Code PLSICW20231022-068. Classroom and on-site delivery across Malaysia.", ms:"Pensijilan induksi pembinaan wajib dari Pusat CIDB Kod PLSICW20231022-068. Kelas dan penghantaran di tapak di seluruh Malaysia.", zh:"CIDB中心代码PLSICW20231022-068颁发的强制性建筑入门认证。马来西亚全国课堂及现场授课。", ta:"CIDB மையக் குறியீடு PLSICW20231022-068 இலிருந்து கட்டாய கட்டுமான அறிமுக சான்றிதழ். மலேசியா முழுவதும் வகுப்பறை மற்றும் தள விநியோகம்." },
@@ -410,10 +409,10 @@ document.addEventListener('DOMContentLoaded', () => {
     streamCaption3: { en:"Practical scaffold erection and inspection on active construction sites.", ms:"Pembinaan dan pemeriksaan perancah praktikal di tapak pembinaan yang aktif.", zh:"在活跃的建筑工地上进行实用的脚手架搭建和检查。", ta:"செயலில் உள்ள கட்டுமான தளங்களில் நடைமுறை தூண் அமைப்பு மற்றும் பரிசோதனை." },
 
     // Updated contact CTAs
-    heroBtnWhatsApp: { en:"WhatsApp Stephanie", ms:"WhatsApp Stephanie", zh:"WhatsApp Stephanie", ta:"Stephanie-வுக்கு WhatsApp செய்யுங்கள்" },
-    navWhatsApp: { en:"WhatsApp Stephanie", ms:"WhatsApp Stephanie", zh:"WhatsApp Stephanie", ta:"Stephanie-வுக்கு WhatsApp செய்யுங்கள்" },
-    oschHeroBtnCall: { en:"WhatsApp Stephanie", ms:"WhatsApp Stephanie", zh:"WhatsApp Stephanie", ta:"Stephanie-வுக்கு WhatsApp செய்யுங்கள்" },
-    btnWhatsAppSujen: { en:"WhatsApp Stephanie", ms:"WhatsApp Stephanie", zh:"WhatsApp Stephanie", ta:"Stephanie-வுக்கு WhatsApp செய்யுங்கள்" },
+    heroBtnWhatsApp: { en:"WhatsApp Us", ms:"WhatsApp Kami", zh:"WhatsApp我们", ta:"வாட்ஸ்அப் செய்யுங்கள்" },
+    navWhatsApp: { en:"WhatsApp Us", ms:"WhatsApp Kami", zh:"WhatsApp我们", ta:"வாட்ஸ்அப் செய்யுங்கள்" },
+    oschHeroBtnCall: { en:"WhatsApp Us", ms:"WhatsApp Kami", zh:"WhatsApp我们", ta:"வாட்ஸ்அப் செய்யுங்கள்" },
+    btnWhatsAppSujen: { en:"WhatsApp Us", ms:"WhatsApp Kami", zh:"WhatsApp我们", ta:"வாட்ஸ்அப் செய்யுங்கள்" },
 
     // Authority Stat Callouts
     statSince: { en:"Since 2005", ms:"Sejak 2005", zh:"自2005年起", ta:"2005 முதல்" },
