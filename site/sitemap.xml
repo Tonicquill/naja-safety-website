@@ -1,39 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://safetyconsultants.com.my/</loc>
+    <loc>https://naja-safety.my/</loc>
     <lastmod>2026-08-30</lastmod>
   </url>
   <url>
-    <loc>https://safetyconsultants.com.my/services</loc>
+    <loc>https://naja-safety.my/services</loc>
     <lastmod>2026-08-30</lastmod>
   </url>
   <url>
-    <loc>https://safetyconsultants.com.my/courses</loc>
+    <loc>https://naja-safety.my/courses</loc>
     <lastmod>2026-08-30</lastmod>
   </url>
   <url>
-    <loc>https://safetyconsultants.com.my/about</loc>
+    <loc>https://naja-safety.my/about</loc>
     <lastmod>2026-08-30</lastmod>
   </url>
   <url>
-    <loc>https://safetyconsultants.com.my/contact</loc>
+    <loc>https://naja-safety.my/contact</loc>
     <lastmod>2026-08-30</lastmod>
   </url>
   <url>
-    <loc>https://safetyconsultants.com.my/courses/osh-coordinator</loc>
+    <loc>https://naja-safety.my/guide</loc>
     <lastmod>2026-08-30</lastmod>
   </url>
   <url>
-    <loc>https://safetyconsultants.com.my/courses/cidb-green-card</loc>
+    <loc>https://naja-safety.my/services/osh-coordinator-section-29a</loc>
     <lastmod>2026-08-30</lastmod>
   </url>
   <url>
-    <loc>https://safetyconsultants.com.my/courses/scaffold-safety</loc>
+    <loc>https://naja-safety.my/services/cidb-green-card-sicw</loc>
     <lastmod>2026-08-30</lastmod>
   </url>
   <url>
-    <loc>https://safetyconsultants.com.my/courses/chemical-handling</loc>
+    <loc>https://naja-safety.my/services/chemical-health-risk-assessment-chra</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://naja-safety.my/services/working-at-height-wah</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://naja-safety.my/services/hirarc-risk-management</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://naja-safety.my/services/safety-audit-inspection</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://naja-safety.my/courses/osh-coordinator</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://naja-safety.my/courses/cidb-green-card</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://naja-safety.my/courses/scaffold-safety</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://naja-safety.my/courses/chemical-handling</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://naja-safety.my/privacy</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://naja-safety.my/terms</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://naja-safety.my/cookies</loc>
     <lastmod>2026-08-30</lastmod>
   </url>
 </urlset>

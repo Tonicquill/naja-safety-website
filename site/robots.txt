@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://safetyconsultants.com.my/sitemap.xml
+Sitemap: https://naja-safety.my/sitemap.xml
