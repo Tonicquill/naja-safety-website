@@ -40,6 +40,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 img { max-width: 100%; height: auto; display: block; }
+img.real-photo {
+  filter: contrast(1.06) saturate(0.94);
+  image-rendering: auto;
+}
+.course-card > img {
+  width: calc(100% + 3rem);
+  height: 150px;
+  object-fit: cover;
+  margin: -1.5rem -1.5rem 1rem -1.5rem;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
 ul, ol { list-style: none; }
 a { color: inherit; text-decoration: none; }
 
@@ -2349,5 +2360,173 @@ footer {
   }
   .related-programmes {
     padding: 2.5rem 0;
+  }
+}
+
+/* ============================================
+   Regulatory Compliance Hub
+   ============================================ */
+.regulatory-hub {
+  background: linear-gradient(180deg, var(--surface) 0%, #fff 100%);
+  padding: 4rem 0;
+}
+.regulatory-hub .section-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.regulatory-hub .section-title h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.regulatory-hub .section-title p {
+  color: var(--text-secondary);
+  max-width: 60ch;
+  margin: 0 auto;
+}
+
+.regulatory-matrix {
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+.regulatory-matrix table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.regulatory-matrix th,
+.regulatory-matrix td {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.regulatory-matrix th {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.regulatory-matrix tr:last-child td {
+  border-bottom: none;
+}
+.regulatory-matrix td {
+  color: var(--text-secondary);
+  vertical-align: top;
+}
+.regulatory-matrix td:first-child {
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+}
+.regulatory-matrix a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.regulatory-matrix a:hover {
+  color: var(--accent-dark);
+}
+
+.statutory-quote {
+  background: #fff;
+  border-left: 4px solid var(--accent);
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  box-shadow: var(--shadow);
+}
+.statutory-quote p {
+  font-style: italic;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+.statutory-quote cite {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-style: normal;
+}
+
+.regulatory-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+.regulatory-tag.dosh {
+  background: rgba(27, 79, 114, 0.1);
+  color: var(--primary);
+}
+.regulatory-tag.cidb {
+  background: rgba(243, 156, 18, 0.12);
+  color: var(--accent-dark);
+}
+.regulatory-tag.osha {
+  background: rgba(220, 53, 69, 0.08);
+  color: #b02a37;
+}
+
+.regulatory-accordion {
+  margin-top: 2rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.regulatory-accordion .faq-item {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+.regulatory-accordion .faq-item:hover {
+  box-shadow: var(--shadow-md);
+}
+.regulatory-accordion .faq-question {
+  padding: 1.1rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.regulatory-accordion .faq-answer-inner {
+  padding: 0 1.25rem 1.25rem;
+}
+.regulatory-accordion .faq-answer-inner p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+.regulatory-accordion .faq-answer-inner p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .regulatory-hub {
+    padding: 2.5rem 0;
+  }
+  .regulatory-hub .section-title h2 {
+    font-size: 1.4rem;
+  }
+  .regulatory-matrix th,
+  .regulatory-matrix td {
+    padding: 0.85rem 1rem;
+    font-size: 0.85rem;
   }
 }
