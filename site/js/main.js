@@ -220,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ta: "உங்கள் உள்ளக நியமிக்கப்பட்ட OSH ஒருங்கிணைப்பாளரை (OSH-C) மலேசியா கட்டுப்பாட்டு தரங்களை சீராக கடக்க தயார்படுத்துகிறோம். 2022 OSH சட்டத்தின் பிரிவு 29A-ன் கீழ், 5 அல்லது அதற்கு மேற்பட்ட ஊழியர்களைக் கொண்ட நிறுவனம் OSH ஒருங்கிணைப்பாளரை நியமிக்க வேண்டும். நாங்கள் உங்கள் நியமிக்கப்பட்ட ஊழியரை இந்த கட்டளைக்கு தயார் செய்கிறோம்."
     },
     heroLead: {
-      en: "Your trusted safety partner for training, consultancy & compliance. HRD Corp claimable courses. CIDB-certified instruction. Nationwide deployment from Johor Bahru.",
+      en: "Your trusted safety partner for training, consultancy & compliance. HRD Corp claimable courses. CIDB-certified instruction. Nationwide on-site training from Johor Bahru.",
       ms: "Rakan keselamatan dipercayai anda untuk latihan, perundingan & pematuhan. Kursus tuntut HRD Corp. Pengajaran bertauliah CIDB. Penempatan ke seluruh negara dari Johor Bahru.",
       zh: "您在培训、咨询与合规方面的可靠安全合作伙伴。HRD Corp可索回课程。CIDB认证教学。从柔佛新山全国部署。",
       ta: "பயிற்சி, ஆலோசனை மற்றும் இணக்கத்திற்கான உங்கள் நம்பகமான பாதுகாப்பு கூட்டாளி. HRD Corp திரும்பப் பெறக்கூடிய படிப்புகள். CIDB சான்றளிக்கப்பட்ட வழிநடத்தல். ஜொகூர் பாருவிலிருந்து நாடு முழுவதும்."
@@ -270,7 +270,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     clientStatCompanies: { en:"Client Companies", ms:"Syarikat Pelanggan", zh:"客户企业", ta:"வாடிக்கையாளர் நிறுவனங்கள்" },
     clientStatYears:     { en:"Years in Operation", ms:"Tahun Beroperasi", zh:"运营年数", ta:"செயல்பாட்டில் உள்ள ஆண்டுகள்" },
-    clientStatReach:     { en:"Deployment Reach", ms:"Jangkauan Penempatan", zh:"部署范围", ta:"விநியோக எல்லை" },
+    clientStatReach:     { en:"Nationwide Reach", ms:"Jangkauan Seluruh Negara", zh:"全国覆盖范围", ta:"நாடு முழுவதும் விநியோகம்" },
     clientFootnote: {
       en: "Naja Safety's practitioners have proudly trained personnel and managed project hazard parameters past and present for components of the organisations listed above.",
       ms: "Pengamal Naja Safety dengan bangga telah melatih kakitangan dan mengurus parameter bahaya projek pada masa lalu dan kini untuk komponen organisasi yang disenaraikan di atas.",
@@ -453,7 +453,7 @@ document.addEventListener('DOMContentLoaded', () => {
     coverageTitle: { en:"Our Coverage Areas", ms:"Kawasan Liputan Kami", zh:"我们的覆盖区域", ta:"எங்கள் ப覆盖 பகுதிகள்" },
     coverageSubtitle: { en:"From Johor Bahru to Penang — on-site safety training and consultancy delivered nationwide.", ms:"Dari Johor Bahru ke Pulau Pinang — latihan keselamatan di tapak dan perundingan dihantar di seluruh negara.", zh:"从新山到槟城——全国范围内提供现场安全培训和咨询服务。", ta:"ஜொகூர் பாருவிலிருந்து பினாங் வரை — தேசிய அளவில் தள பாதுகாப்பு பயிற்சி மற்றும் ஆலோசனை வழங்கப்படுகிறது." },
     coverageJohor: { en:"Johor", ms:"Johor", zh:"柔佛", ta:"ஜொகூர்" },
-    coverageJohorDesc: { en:"HQ in Johor Bahru with full on-site deployment across the state.", ms:"Ibu pejabat di Johor Bahru dengan penempatan penuh di tapak di seluruh negeri.", zh:"总部设在新山，可在全州的现场部署。", ta:"ஜொகூர் பாருவில் தலைமையகம், மாநிலம் முழுவதும் முழு தள நிலையமாக்கம்." },
+    coverageJohorDesc: { en:"HQ in Johor Bahru with full on-site training across the state.", ms:"Ibu pejabat di Johor Bahru dengan latihan penuh di tapak di seluruh negeri.", zh:"总部设在新山，可在全州提供现场培训。", ta:"ஜொகூர் பாருவில் தலைமையகம், மாநிலம் முழுவதும் முழு தள பயிற்சி." },
     coverageMelaka: { en:"Melaka", ms:"Melaka", zh:"马六甲", ta:"மலாக்கா" },
     coverageMelakaDesc: { en:"Regular training schedules for manufacturing and port operations.", ms:"Jadual latihan biasa untuk operasi pembuatan dan pelabuhan.", zh:"为制造业和港口运营提供定期培训时间表。", ta:"உற்பத்தி மற்றும் துறைமுக செயல்பாடுகளுக்கான வழக்கமான பயிற்சி அட்டவணைகள்." },
     coverageKL: { en:"Kuala Lumpur", ms:"Kuala Lumpur", zh:"吉隆坡", ta:"கோலாலம்பூர்" },
@@ -582,7 +582,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cidbProcess2Desc: { en:"Official SICW curriculum delivered by CIDB-certified instructors. One-day intensive covering site hazards, PPE, emergency response, and legal obligations.", ms:"Kurikulum SICW rasmi disampaikan oleh pengajar bertauliah CIDB. Kursus intensif satu hari merangkumi bahaya tapak, PPE, tindak balas kecemasan, dan obligasi undang-undang.", zh:"由CIDB认证讲师讲授官方SICW课程。为期一天强化培训，涵盖工地危害、PPE、应急响应和法律义务。", ta:"CIDB-சான்றளிக்கப்பட்ட பயிற்றுவிப்பாளர்களால் வழங்கப்படும் அதிகாரப்பூர்வ SICW பாடத்திட்டம். தள அபாயங்கள், PPE, அவசர பதில், மற்றும் சட்ட பொறுப்புகளை உள்ளடக்கிய ஒரு நாள் தீவிர பயிற்சி." },
     cidbProcess3Label: { en:"Assessment &amp; Certification", ms:"Penilaian &amp; Pensijilan", zh:"评估与认证", ta:"மதிப்பீடு மற்றும் சான்றிதல்" },
     cidbProcess3Desc: { en:"Workers sit the CIDB assessment. Successful candidates receive their Green Card with QR-verifiable serial number.", ms:"Pekerja menduduki penilaian CIDB. Calon yang berjaya menerima Kad Hijau mereka dengan nombor siri yang boleh disahkan QR.", zh:"工人参加CIDB评估。通过者将获得带有QR可验证序列号的绿卡。", ta:"தொழிலாளர்கள் CIDB மதிப்பீட்டை எழுதுகிறார்கள். வெற்றி பெற்றவர்கள் QR-சரிபார்க்கக்கூடிய வரிசை எண்ணுடன் தங்கள் பச்சை அட்டையைப் பெறுகிறார்கள்." },
-    cidbProcess4Label: { en:"Site Deployment Verification", ms:"Pengesahan Penempatan Tapak", zh:"工地部署验证", ta:"தள பயன்பாடு சரிபார்ப்பு" },
+    cidbProcess4Label: { en:"On-Site Compliance Check", ms:"Pemeriksaan Pematuhan Di Tapak", zh:"现场合规检查", ta:"தள இணக்க சரிபார்ப்பு" },
     cidbProcess4Desc: { en:"We verify card validity with your site safety officer and provide a compliance attendance register for CIDB inspection.", ms:"Kami mengesahkan kesahihan kad dengan pegawai keselamatan tapak anda dan menyediakan daftar kehadiran pematuhan untuk pemeriksaan CIDB.", zh:"我们与您的工地安全官验证卡的有效性，并提供合规出勤登记表供CIDB检查。", ta:"உங்கள் தள பாதுகாப்பு அதிகாரியுடன் அட்டை செல்லுபடியை சரிபார்க்கிறோம் மற்றும் CIDB ஆய்வுக்கு இணக்க வருகை பதிவேட்டை வழங்குகிறோம்." },
     cidbProcess5Label: { en:"Renewal Tracking", ms:"Penjejakan Pembaharuan", zh:"续期跟踪", ta:"புதுப்பிப்பு கண்காணிப்பு" },
     cidbProcess5Desc: { en:"Green Cards expire. We maintain a renewal calendar and notify you 60 days before expiry to prevent lapses.", ms:"Kad Hijau luput. Kami mengekalkan kalendar pembaharuan dan memberitahu anda 60 hari sebelum luput untuk mengelakkan kelewatan.", zh:"绿卡会过期。我们维护续期日历，并在到期前60天通知您，防止失效。", ta:"பச்சை அட்டைகள் காலாவதியாகின்றன. நாங்கள் புதுப்பிப்பு காலண்டரை பேணுகிறோம் மற்றும் காலாவதிக்கு 60 நாட்களுக்கு முன் உங்களுக்கு அறிவிப்பு செய்கிறோம்." },
