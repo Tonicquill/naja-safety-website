@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     for (const entry of refMap) {
       if (path.startsWith(entry.prefix)) { code = entry.code; break; }
     }
-    document.querySelectorAll('a[href^="https://wa.me/601120776678"]').forEach(a => {
+    document.querySelectorAll('a[href^="https://wa.me/60167301802"]').forEach(a => {
       let href = a.getAttribute('href');
       if (href.includes('[WEB-')) return; // already tagged
       if (href.includes('?text=')) {
