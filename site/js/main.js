@@ -1,5 +1,5 @@
 /* ============================================
-   Naja Safety Sdn Bhd — Main JavaScript
+   Naja Safety — Main JavaScript
    Taste-Skill Edition: scroll reveals, liquid nav,
    clean accordion, zero emoji policy.
    ============================================ */
@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
     footerHotline: { en:"Hotline: 016-730-1802", ms:"Hotline: 016-730-1802", zh:"热线：016-730-1802", ta:"ஹாட்லைன்: 016-730-1802" },
     footerWhatsApp: { en:"WhatsApp Us", ms:"WhatsApp Kami", zh:"WhatsApp我们", ta:"வாட்ஸ்அப் செய்யுங்கள்" },
     footerEmail: { en:"info@safetyconsultants.com.my", ms:"info@safetyconsultants.com.my", zh:"info@safetyconsultants.com.my", ta:"info@safetyconsultants.com.my" },
-    footerAddr: { en:"No 09-03, Block C, Kompleks Austin Perdana, Taman Austin Perdana, 81100 Johor Bahru", ms:"No 09-03, Block C, Kompleks Austin Perdana, Taman Austin Perdana, 81100 Johor Bahru", zh:"No 09-03, Block C, Kompleks Austin Perdana, Taman Austin Perdana, 81100 Johor Bahru", ta:"No 09-03, Block C, Kompleks Austin Perdana, Taman Austin Perdana, 81100 Johor Bahru" },
+    footerAddr: { en:"09-03, Blok C, Kompleks Austin Perdana, Taman Mount Austin, 81100 Johor Bahru", ms:"09-03, Blok C, Kompleks Austin Perdana, Taman Mount Austin, 81100 Johor Bahru", zh:"09-03, Blok C, Kompleks Austin Perdana, Taman Mount Austin, 81100 Johor Bahru", ta:"09-03, Blok C, Kompleks Austin Perdana, Taman Mount Austin, 81100 Johor Bahru" },
     footerRights: { en:"All rights reserved.", ms:"Hak cipta terpelihara.", zh:"版权所有。", ta:"அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை." },
 
     // Course Landing Page Heroes
@@ -320,7 +320,7 @@ document.addEventListener('DOMContentLoaded', () => {
     contactFormPhone: { en:"Phone", ms:"Telefon", zh:"电话", ta:"தொலைபேசி" },
     contactFormService: { en:"Select a service...", ms:"Pilih perkhidmatan...", zh:"选择服务...", ta:"சேவையைத் தேர்ந்தெடுக்கவும்..." },
     contactFormMessage: { en:"Message", ms:"Mesej", zh:"留言", ta:"செய்தி" },
-    contactFormPDPA: { en:"I consent to Naja Safety Sdn Bhd processing my personal data in accordance with the Malaysian Personal Data Protection Act 2010. I understand my data will be used solely to respond to this enquiry.", ms:"Saya bersetuju Naja Safety Sdn Bhd memproses data peribadi saya mengikut Akta Perlindungan Data Peribadi Malaysia 2010. Saya faham data saya akan digunakan semata-mata untuk menjawab pertanyaan ini.", zh:"本人同意Naja Safety Sdn Bhd根据2010年马来西亚个人数据保护法处理本人的个人数据。本人明白本人的数据将仅用于回复此咨询。", ta:"2010 மலேசியா தனிநபர் தரவு பாதுகாப்பு சட்டத்தின்படி Naja Safety Sdn Bhd எனது தனிப்பட்ட தரவை செயலாக்க நான் சம்மதிக்கிறேன். இந்த விசாரணைக்கு பதிலளிக்க மட்டுமே எனது தரவு பயன்படுத்தப்படும் என்பதை நான் புரிந்துகொள்கிறேன்." },
+    contactFormPDPA: { en:"I consent to Naja Safety processing my personal data in accordance with the Malaysian Personal Data Protection Act 2010. I understand my data will be used solely to respond to this enquiry.", ms:"Saya bersetuju Naja Safety memproses data peribadi saya mengikut Akta Perlindungan Data Peribadi Malaysia 2010. Saya faham data saya akan digunakan semata-mata untuk menjawab pertanyaan ini.", zh:"本人同意Naja Safety根据2010年马来西亚个人数据保护法处理本人的个人数据。本人明白本人的数据将仅用于回复此咨询。", ta:"2010 மலேசியா தனிநபர் தரவு பாதுகாப்பு சட்டத்தின்படி Naja Safety எனது தனிப்பட்ட தரவை செயலாக்க நான் சம்மதிக்கிறேன். இந்த விசாரணைக்கு பதிலளிக்க மட்டுமே எனது தரவு பயன்படுத்தப்படும் என்பதை நான் புரிந்துகொள்கிறேன்." },
     contactBtnSend: { en:"Send Enquiry", ms:"Hantar Pertanyaan", zh:"发送咨询", ta:"விசாரணையை அனுப்பு" },
 
     // FAQ generic
@@ -418,10 +418,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Authority Stat Callouts
     statSince: { en:"Since 2005", ms:"Sejak 2005", zh:"自2005年起", ta:"2005 முதல்" },
     statSinceLabel: { en:"Protecting Malaysian Workspaces", ms:"Melindungi Ruang Kerja Malaysia", zh:"保护马来西亚工作场所", ta:"மலேசிய பணியிடங்களை பாதுகாத்தல்" },
-    statPractitioners: { en:"32+", ms:"32+", zh:"32+", ta:"32+" },
-    statPractitionersLabel: { en:"Certified OSH Practitioners", ms:"Pengamal OSH Bertauliah", zh:"认证OSH从业人员", ta:"சான்றளிக்கப்பட்ட OSH பயிற்சியாளர்கள்" },
-    statAccidents: { en:"Zero", ms:"Sifar", zh:"零", ta:"பூஜ்யம்" },
-    statAccidentsLabel: { en:"Accident Track Record on Regional Projects", ms:"Rekod Kemalangan Sifar untuk Projek Serantau", zh:"区域项目零事故记录", ta:"பிராந்திய திட்டங்களில் விபத்து இல்லாத பதிவு" },
+    statPractitioners: { en:"Nationwide", ms:"Seluruh Negara", zh:"全国", ta:"நாடு முழுவதும்" },
+    statPractitionersLabel: { en:"Freelance Trainer Network, incl. Sabah & Sarawak", ms:"Rangkaian Jurulatih Freelance, termasuk Sabah & Sarawak", zh:"自由培训师网络（含沙巴与砂拉越）", ta:"சுயவேலை பயிற்சியாளர் வலையமைப்பு, சபா & சரவாக் உட்பட" },
     statStates: { en:"5", ms:"5", zh:"5", ta:"5" },
     statStatesLabel: { en:"States Covered — JB to Penang", ms:"Negeri Diliputi — JB ke Pulau Pinang", zh:"覆盖州属——从柔佛到槟城", ta:"JB இலிருந்து பினாங் வரை உள்ள மாநிலங்கள்" },
 
