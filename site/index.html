@@ -251,6 +251,26 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://naja-safety.my/#website",
+    "name": "Naja Safety Sdn Bhd",
+    "url": "https://naja-safety.my",
+    "publisher": { "@id": "https://naja-safety.my/#organization" },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": { "@type": "EntryPoint", "urlTemplate": "https://naja-safety.my/?q={search_term_string}" },
+      "query-input": "required name=search_term_string"
+    },
+    "about": [
+      { "@type": "Thing", "name": "OSH Training Malaysia", "sameAs": "https://www.wikidata.org/wiki/Q170322" },
+      { "@type": "Thing", "name": "CIDB Safety Courses", "sameAs": "https://www.wikidata.org/wiki/Q5560910" },
+      { "@type": "Thing", "name": "HRD Corp Claimable Training" }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
@@ -268,6 +288,7 @@
           <li><a href="/courses" data-translate="navCourses">Courses</a></li>
           <li><a href="/about" data-translate="navAbout">About</a></li>
           <li><a href="/contact" data-translate="navContact">Contact</a></li>
+          <li><a href="/articles/" data-translate="navArticles">Articles</a></li>
           <li><a href="https://wa.me/601120776678?text=Hi%20Naja Safety,%20I%20am%20interested%20in%20your%20safety%20training%20services." class="btn btn-primary" style="padding:0.5rem 1rem;font-size:0.85rem;" data-translate="navWhatsApp">WhatsApp Us</a></li>
           <li class="lang-toggle-li"><div class="language-toggle-container"><button class="lang-btn active" data-lang="en" aria-label="English">EN</button><button class="lang-btn" data-lang="ms" aria-label="Bahasa Melayu">BM</button><button class="lang-btn" data-lang="zh" aria-label="中文">ZH</button><button class="lang-btn" data-lang="ta" aria-label="தமிழ்">TA</button></div></li>
         </ul>
@@ -284,19 +305,19 @@
     <section class="hero" aria-label="Hero">
       <div class="container">
         <div>
-          <p style="margin-bottom:0.75rem;"><span style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(245,166,35,0.15);color:var(--accent);border:1px solid rgba(245,166,35,0.3);padding:0.35rem 0.85rem;border-radius:99px;font-size:0.78rem;font-weight:600;letter-spacing:0.02em;"><span style="width:6px;height:6px;background:var(--accent);border-radius:50%;display:inline-block;animation:pulse 2s infinite;"></span> LIVE · Section 29A OSH (Amendment) Act 2022</span></p>
-          <h1 data-translate="heroTitle">20+ Years Keeping Malaysian Workplaces Safe</h1>
-          <p class="hero-subtext" data-translate="heroSubtitle">Under Section 29A of the OSH (Amendment) Act 2022, any Malaysian enterprise employing 5 or more individuals must appoint a certified OSH Coordinator (OSH-C). Naja Safety trains and equips your internally appointed employee to clear regulatory benchmarks smoothly — turning compliance from a liability into a managed capability.</p>
-          <p data-translate="heroLead">Your trusted safety partner for training, consultancy & compliance. HRD Corp claimable courses. CIDB-certified instruction. Nationwide deployment from Johor Bahru.</p>
+          <p style="margin-bottom:0.75rem;"><span style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(245,166,35,0.15);color:var(--accent);border:1px solid rgba(245,166,35,0.3);padding:0.35rem 0.85rem;border-radius:99px;font-size:0.78rem;font-weight:600;letter-spacing:0.02em;" data-geo-badge="true" data-primary-legislation="OSH Amendment Act 2022" data-section="29A" data-effective="2024-06-01"><span style="width:6px;height:6px;background:var(--accent);border-radius:50%;display:inline-block;animation:pulse 2s infinite;"></span> LIVE · Section 29A OSH (Amendment) Act 2022</span></p>
+          <h1 data-translate="heroTitle" data-geo-headline="true" data-primary-topic="OSH Amendment Act 2022">20+ Years Keeping Malaysian Workplaces Safe</h1>
+          <p class="hero-subtext" data-translate="heroSubtitle" data-geo-summary="true" data-primary-legislation="OSH Amendment Act 2022" data-section="29A" data-threshold="5-employees">Under Section 29A of the OSH (Amendment) Act 2022, any Malaysian enterprise employing 5 or more individuals must appoint a certified OSH Coordinator (OSH-C). Naja Safety trains and equips your internally appointed employee to clear regulatory benchmarks smoothly — turning compliance from a liability into a managed capability.</p>
+          <p data-translate="heroLead" data-service-offering="HRD-Corp-claimable-training" data-provider="Naja Safety Sdn Bhd">Your trusted safety partner for training, consultancy & compliance. HRD Corp claimable courses. CIDB-certified instruction. Nationwide deployment from Johor Bahru.</p>
           <div class="hero-btns">
-            <a href="https://wa.me/601120776678?text=Hi%20Naja%20Safety,%20I%20am%20interested%20in%20deploying%20safety%20training%20to%20my%20site." class="btn btn-primary" data-translate="heroBtnPrimary">
+            <a href="https://wa.me/601120776678?text=Hi%20Naja%20Safety,%20I%20am%20interested%20in%20deploying%20safety%20training%20to%20my%20site." class="btn btn-primary" data-translate="heroBtnPrimary" data-conversion-action="whatsapp-contact" data-contact-point="Naja Safety Hotline">
               Deploy Training ?
             </a>
-            <a href="/courses" class="btn btn-outline" data-translate="heroBtnSecondary">View Courses ?</a>
+            <a href="/courses" class="btn btn-outline" data-translate="heroBtnSecondary" data-conversion-action="course-page">View Courses ?</a>
           </div>
           <p style="margin-top:1.25rem;font-size:0.85rem;color:rgba(255,255,255,0.75);">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:0.35rem;"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            Trusted by <strong>158+ companies</strong> including Econpile, Gadang Engineering, Penta Ocean Malaysia, GP Batteries, AECOM & CIDB
+            Trusted by <strong data-social-proof="client-count" data-count="158">158+ companies</strong> including Econpile, Gadang Engineering, Penta Ocean Malaysia, GP Batteries, AECOM & CIDB
           </p>
         </div>
         <div class="hero-visual">
@@ -313,21 +334,21 @@
         <!-- original set -->
         <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg> <span>CIDB Center Code: <strong>PLSICW20231022-068</strong></span></span>
         <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg> <span>HRD Corp Trainer ID: <strong>62976</strong></span></span>
-        <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> <span>OSH Act 2022 Section 29A Compliant</span></span>
+        <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> <span>OSH Act 2022 Section 29A Advisory</span></span>
         <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg> <span>SSM 1126512-D</span></span>
         <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <span>20+ Years Field Experience</span></span>
         <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> <span>158+ Client Companies</span></span>
-        <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> <span>Zero Accident Track Record</span></span>
+        <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> <span>Proactive Risk Reduction Focus</span></span>
         <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> <span>Nationwide Deployment</span></span>
         <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg> <span>Business Reg: <strong>JM0449867-U</strong></span></span>
         <!-- duplicate set for seamless loop -->
         <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg> <span>CIDB Center Code: <strong>PLSICW20231022-068</strong></span></span>
         <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg> <span>HRD Corp Trainer ID: <strong>62976</strong></span></span>
-        <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> <span>OSH Act 2022 Section 29A Compliant</span></span>
+        <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> <span>OSH Act 2022 Section 29A Advisory</span></span>
         <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg> <span>SSM 1126512-D</span></span>
         <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <span>20+ Years Field Experience</span></span>
         <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> <span>158+ Client Companies</span></span>
-        <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> <span>Zero Accident Track Record</span></span>
+        <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> <span>Proactive Risk Reduction Focus</span></span>
         <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> <span>Nationwide Deployment</span></span>
         <span class="ticker-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg> <span>Business Reg: <strong>JM0449867-U</strong></span></span>
       </div>
@@ -584,7 +605,7 @@
           <article class="card">
             <div class="card-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
             <h3 data-translate="doctrineP5Title">Cross-Capability Execution</h3>
-            <p data-translate="doctrineP5Desc">One partner, full spectrum. From OSH-C appointment to scaffold supply via Naja Scaffolding Sdn Bhd, we close every operational gap without hand-off friction.</p>
+            <p data-translate="doctrineP5Desc">One partner, full spectrum. From OSH-C appointment and safety training to on-site consultancy and compliance documentation, we close every operational gap without hand-off friction.</p>
           </article>
           <article class="card">
             <div class="card-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg></div>
@@ -638,6 +659,38 @@
             <p data-translate="pillarHrdDesc">Guidance on claimable training programmes, grant & funding assistance, claim process support, and training budget optimisation.</p>
             <a href="/services#hrdcorp">Learn more</a>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles & Regulatory Insights -->
+    <section aria-labelledby="articles-heading" class="reveal">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-eyebrow">Regulatory Knowledge Centre</span>
+          <h2 id="articles-heading">Compliance Insights for Malaysian Employers</h2>
+          <p>Statutory updates, penalty frameworks, and actionable compliance guides — written for decision-makers who need answers fast.</p>
+        </div>        <div class="bento-grid stagger-children" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+          <article class="card bento-featured">
+            <div class="card-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></div>
+            <h3>10 Things Every Employer Must Know About the OSH (Amendment) Act 2022</h3>
+            <p>Section 29A, the 5-worker rule, RM500,000 corporate fines, director criminal liability, and 9 other statutory shifts that affect every Malaysian workplace.</p>
+            <a href="/articles/osh-act-2022-10-things" class="btn btn-outline" style="color:var(--primary);border-color:var(--primary);">Read the guide →</a>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
+            <h3>The RM500,000 Penalty Explained</h3>
+            <p>Under the OSH (Amendment) Act 2022, corporate fines for general employer duty violations increased tenfold from RM50,000 to RM500,000. Directors now face personal criminal liability.</p>
+            <a href="/articles/osh-act-2022-10-things#penalties" style="color:var(--primary);font-weight:600;">Understand the penalty framework →</a>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path></svg></div>
+            <h3>Who Needs an OSH Coordinator?</h3>
+            <p>If you employ 5 or more workers, you are legally required to appoint a certified OSH Coordinator under Section 29A. We explain the appointment process, competency requirements, and compliance timeline.</p>
+            <a href="/services/osh-coordinator-section-29a" style="color:var(--primary);font-weight:600;">View OSH-C Advisory →</a>
+          </article>
+        </div>        <div style="text-align:center;margin-top:2rem;">
+          <a href="/articles/" class="btn btn-primary">View All Articles</a>
         </div>
       </div>
     </section>
@@ -755,164 +808,28 @@
         <div class="client-divider"></div>
 
         <div class="client-wall">
-          <span class="client-tag">Econpile (M) Sdn Bhd [2015–2026]</span>
-          <span class="client-tag">Gadang Engineering [2016–2026]</span>
-          <span class="client-tag">Penta Ocean Malaysia [2018–2026]</span>
-          <span class="client-tag">Obayashi Corporation [2017–2026]</span>
-          <span class="client-tag">Mudajaya Corporation [2014–2026]</span>
-          <span class="client-tag">Zublin Precast Industries [2014–2026]</span>
-          <span class="client-tag">AECOM Malaysia [2019–2026]</span>
-          <span class="client-tag">Technip Geoproduction</span>
-          <span class="client-tag">GP Batteries (M) [2015–2026]</span>
-          <span class="client-tag">Rexam Sdn Bhd</span>
+          <span class="client-tag">Econpile (M) Sdn Bhd</span>
+          <span class="client-tag">Gadang Engineering</span>
+          <span class="client-tag">Penta Ocean Malaysia</span>
+          <span class="client-tag">Obayashi Corporation</span>
+          <span class="client-tag">Mudajaya Corporation</span>
+          <span class="client-tag">Zublin Precast Industries</span>
+          <span class="client-tag">AECOM Malaysia</span>
+          <span class="client-tag">GP Batteries (M)</span>
+          <span class="client-tag">FMC Wellhead Equipment</span>
           <span class="client-tag">Alstom Services</span>
-          <span class="client-tag">FMC Wellhead Equipment [2012–2026]</span>
-          <span class="client-tag">Seien Rubber (M)</span>
-          <span class="client-tag">Hiroyuki Industries (M)</span>
-          <span class="client-tag">Betara Kasa Sdn Bhd</span>
-          <span class="client-tag">YHL Engineering and Construction [2018–2026]</span>
-          <span class="client-tag">Sin Sin Construction [2017–2026]</span>
-          <span class="client-tag">Kean Leng Construction [2015–2026]</span>
-          <span class="client-tag">Metro Wealth Polymer</span>
-          <span class="client-tag">Wearnes Electronics</span>
-          <span class="client-tag">Empire Mammoth</span>
-          <span class="client-tag">Essenvest Construction</span>
-          <span class="client-tag">Cekap Jati</span>
-          <span class="client-tag">Matsuka</span>
-          <span class="client-tag">Trans Legend Holdings</span>
-          <span class="client-tag">Puncak Naga</span>
-          <span class="client-tag">Kalsari Jaya</span>
-          <span class="client-tag">Bayangan Tuah</span>
-          <span class="client-tag">Pioneer Technology</span>
-          <span class="client-tag">MS Elevator Engineering</span>
-          <span class="client-tag">Hypertech Marketing Services</span>
-          <span class="client-tag">Tropical Inn Hotel</span>
-          <span class="client-tag">Soode (Johor)</span>
-          <span class="client-tag">Srijisu Enterprise and Service</span>
-          <span class="client-tag">San Lee Engineering Trading</span>
-          <span class="client-tag">Nature At Work</span>
-          <span class="client-tag">Ragawang Corporation</span>
-          <span class="client-tag">Binastara Construction</span>
-          <span class="client-tag">Pivot Engineering &amp; Construction</span>
-          <span class="client-tag">Shapadu Properties [2014–2026]</span>
-          <span class="client-tag">Pembinaan T &amp; C</span>
-          <span class="client-tag">Multi Builders</span>
-          <span class="client-tag">Domain Resources</span>
-          <span class="client-tag">Glomac Bina</span>
-          <span class="client-tag">Ng Kok Wah Building Contractor</span>
-          <span class="client-tag">Techway Construction</span>
-          <span class="client-tag">LT Construction</span>
-          <span class="client-tag">Suara Hati</span>
-          <span class="client-tag">City Villa Construction</span>
-          <span class="client-tag">Eswera Resources</span>
-          <span class="client-tag">Ken Hoe Construction</span>
-          <span class="client-tag">Maha Builders</span>
-          <span class="client-tag">Shiya</span>
-          <span class="client-tag">Pembinaan KS Tebrau</span>
+          <span class="client-tag">Rexam Sdn Bhd</span>
+          <span class="client-tag">Shapadu Properties</span>
+          <span class="client-tag">YHL Engineering and Construction</span>
+          <span class="client-tag">Kean Leng Construction</span>
+          <span class="client-tag">Sin Sin Construction</span>
+          <span class="client-tag">Cityneon Contract</span>
           <span class="client-tag">GE Water &amp; Process Technologies</span>
-          <span class="client-tag">STI Fire Safety</span>
-          <span class="client-tag">T &amp; D Consult</span>
-          <span class="client-tag">Pembinaan ANDO</span>
-          <span class="client-tag">Sampoh Construction</span>
-          <span class="client-tag">Kumpulan Jayaputra</span>
-          <span class="client-tag">World Best</span>
-          <span class="client-tag">Mahkota Technologies</span>
-          <span class="client-tag">Pelan Segar</span>
-          <span class="client-tag">Teknik Data Saab</span>
-          <span class="client-tag">Tagi Holdings</span>
-          <span class="client-tag">Khoo Soon Lee Properties</span>
-          <span class="client-tag">Kejuruteraan KB Letrik</span>
-          <span class="client-tag">Long Kee Piling</span>
-          <span class="client-tag">Asal Construction</span>
-          <span class="client-tag">Kumpulan Liziz</span>
-          <span class="client-tag">Camire</span>
-          <span class="client-tag">Kluang Health Care</span>
-          <span class="client-tag">First Nationwide Development</span>
-          <span class="client-tag">Transgrid Ventures</span>
-          <span class="client-tag">Casaria Construction</span>
-          <span class="client-tag">Alunan Asas</span>
-          <span class="client-tag">Tideway D.I.</span>
-          <span class="client-tag">Instyle Sofa</span>
-          <span class="client-tag">NVM Safety &amp; Health Consultancy</span>
-          <span class="client-tag">Darco Water Technologies</span>
-          <span class="client-tag">Pembinaan Saswara</span>
-          <span class="client-tag">Alam Hijau Integrasi (M)</span>
-          <span class="client-tag">Ground Fortune</span>
-          <span class="client-tag">Eswera</span>
-          <span class="client-tag">Oshen Consultants</span>
-          <span class="client-tag">Harpo Slalu Jaya Construction</span>
-          <span class="client-tag">AMD Construction</span>
-          <span class="client-tag">Umpan Jaya</span>
-          <span class="client-tag">Trend KYM Malaysia</span>
-          <span class="client-tag">DMS (Asia)</span>
-          <span class="client-tag">Shang Wei Industries</span>
-          <span class="client-tag">Salini (M)</span>
-          <span class="client-tag">CLM Construction &amp; Trading</span>
-          <span class="client-tag">SPM Engineering &amp; Construction</span>
-          <span class="client-tag">Magna Haven</span>
-          <span class="client-tag">TSK Construction</span>
-          <span class="client-tag">LP Teamwork</span>
-          <span class="client-tag">Lion Titco Resources</span>
-          <span class="client-tag">Pembinaan Reda Setia</span>
-          <span class="client-tag">SWA Water</span>
-          <span class="client-tag">Mersing Construction</span>
-          <span class="client-tag">Brick Dotcom</span>
-          <span class="client-tag">Mardec Processing</span>
-          <span class="client-tag">Dynaciate Engineering</span>
-          <span class="client-tag">Jit Premier Construction</span>
-          <span class="client-tag">PISB (Pembinaan Ismail)</span>
-          <span class="client-tag">Glocon Builder</span>
-          <span class="client-tag">Acecorp Development</span>
-          <span class="client-tag">Indahwasi</span>
-          <span class="client-tag">Jallcon</span>
-          <span class="client-tag">Acecorp</span>
-          <span class="client-tag">Enigma Mutiara</span>
-          <span class="client-tag">Toa (M)</span>
-          <span class="client-tag">South Key Project</span>
-          <span class="client-tag">Dahlia Project Construction</span>
-          <span class="client-tag">Jack-In Pile (M)</span>
-          <span class="client-tag">One-Builtwell Associates (M)</span>
-          <span class="client-tag">Wai Choy Construction</span>
-          <span class="client-tag">SKL Piling &amp; Construction</span>
-          <span class="client-tag">Expertise International A&amp;I (M)</span>
           <span class="client-tag">Nobel Power ESH Management</span>
-          <span class="client-tag">Pembinaan UNICONS</span>
-          <span class="client-tag">Pembinaan Teknikhas</span>
-          <span class="client-tag">Wawasan 33</span>
-          <span class="client-tag">Intrajaya Murni</span>
-          <span class="client-tag">Monoland Corporation</span>
-          <span class="client-tag">LCL M&amp;E Engineering</span>
-          <span class="client-tag">Te Yi Construction</span>
-          <span class="client-tag">Alfagomma Dunlop Hiflex</span>
-          <span class="client-tag">Tasoon Injection Pile</span>
-          <span class="client-tag">Struktur Evolusi</span>
-          <span class="client-tag">T&amp;E Project</span>
-          <span class="client-tag">Unipenta</span>
-          <span class="client-tag">Shazu Engineering</span>
-          <span class="client-tag">Titan Ritz</span>
-          <span class="client-tag">Salutary Avenue Manufacturing</span>
-          <span class="client-tag">Putra Perdana</span>
-          <span class="client-tag">Macru Construction</span>
-          <span class="client-tag">Cityneon Contract [2019–2026]</span>
-          <span class="client-tag">Mewah Kota</span>
-          <span class="client-tag">Twin Unitrade</span>
-          <span class="client-tag">JF Foundation (M)</span>
-          <span class="client-tag">Tehc International</span>
           <span class="client-tag">JVS HSE Resources</span>
-          <span class="client-tag">Integrated Engineering Services</span>
-          <span class="client-tag">Chee Kong Engineering &amp; Construction</span>
-          <span class="client-tag">Perinaga Setia</span>
-          <span class="client-tag">Alam Dingin Air Conditioning</span>
-          <span class="client-tag">AMBM Packaging Distribution</span>
-          <span class="client-tag">KSL Residence</span>
-          <span class="client-tag">Allied Precision Manufacturing</span>
-          <span class="client-tag">Syarikat Success Construction</span>
-          <span class="client-tag">Transgreen Construction</span>
-          <span class="client-tag">Aston Star</span>
-          <span class="client-tag client-tag-gov">CIDB</span>
-          <span class="client-tag client-tag-gov">NVM Safety &amp; Health</span>
-          <span class="client-tag client-tag-gov">JVS HSE Resources</span>
+          <span class="client-tag">CIDB</span>
         </div>
+        <p style="text-align:center;margin-top:1.5rem;"><a href="/about#clients" style="color:var(--primary);font-weight:600;">View full client list of 158+ companies →</a></p>
 
         <p class="client-footnote" data-translate="clientFootnote">
           Naja Safety's practitioners have proudly trained personnel and managed project hazard parameters past and present for components of the organisations listed above.
@@ -1121,6 +1038,56 @@
       </div>
     </section>
 
+    <!-- Regulatory Insights — Human-Readable Statutory Anchors -->
+    <section class="reveal" aria-labelledby="regulatory-insights-heading">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-eyebrow">Statutory Framework</span>
+          <h2 id="regulatory-insights-heading">The Laws That Govern Your Workplace</h2>
+          <p>We do not paraphrase the law. We train you against it. Here are the four statutes every Malaysian employer must understand.</p>
+        </div>        <div class="bento-grid stagger-children">
+          <article class="card">
+            <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
+              <span class="regulatory-tag dosh" style="font-size:0.75rem;">DOSH</span>
+              <span style="font-size:0.8rem;color:var(--text-muted);">Effective 1 June 2024</span>
+            </div>
+            <h3>OSH (Amendment) Act 2022</h3>
+            <p>The cornerstone of Malaysian workplace safety law. Key changes: the 5-worker OSH Coordinator mandate (Section 29A), RM500,000 corporate fines, director criminal liability, and expansion to ALL workplaces — not just factories.</p>
+            <a href="/regulatory-hub" style="color:var(--primary);font-weight:600;">Read the statutory summary →</a>
+          </article>
+          <article class="card">
+            <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
+              <span class="regulatory-tag dosh" style="font-size:0.75rem;">CIDB</span>
+              <span style="font-size:0.8rem;color:var(--text-muted);">Mandatory for all construction sites</span>
+            </div>
+            <h3>CIDB Act 520 &amp; CIS 25:2018</h3>
+            <p>Every construction worker must hold a valid Green Card (SICW). Contractors must appoint Site Safety Supervisors (SSS) for projects exceeding RM500,000. Non-compliance triggers project suspension.</p>
+            <a href="/services/cidb-green-card-sicw" style="color:var(--primary);font-weight:600;">Green Card training details →</a>
+          </article>
+          <article class="card">
+            <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
+              <span class="regulatory-tag dosh" style="font-size:0.75rem;background:var(--accent);">USECHH</span>
+              <span style="font-size:0.8rem;color:var(--text-muted);">Chemical health risk assessments</span>
+            </div>
+            <h3>USECHH Regulations 2000</h3>
+            <p>Workplaces using scheduled chemicals must conduct a Chemical Health Risk Assessment (CHRA) by a DOSH-registered assessor. Naja Safety provides awareness training and documentation support to prepare your team.</p>
+            <a href="/services/chemical-health-risk-assessment-chra" style="color:var(--primary);font-weight:600;">CHRA coordination support →</a>
+          </article>
+          <article class="card">
+            <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
+              <span class="regulatory-tag dosh" style="font-size:0.75rem;background:#6c757d;">Noise</span>
+              <span style="font-size:0.8rem;color:var(--text-muted);">Action level: 82 dB(A)</span>
+            </div>
+            <h3>Noise Exposure Regulations 2019</h3>
+            <p>Replaced the 1989 regulations. The action level is now 82 dB(A), down from 85 dB(A). Employers must provide hearing conservation programmes, audiometric testing, and PPE for exposed workers.</p>
+            <a href="/regulatory-hub" style="color:var(--primary);font-weight:600;">Explore compliance requirements →</a>
+          </article>
+        </div>        <div class="statutory-quote" style="margin-top:2rem;">
+          <p><strong>Need a full compliance audit?</strong> Our regulatory hub maps every programme we deliver to its governing statute, with direct links to official .gov.my sources. <a href="/regulatory-hub">Visit the Regulatory Hub →</a></p>
+        </div>
+      </div>
+    </section>
+
     <!-- FAQ -->
     <section aria-labelledby="faq-heading" class="reveal">
       <div class="container" style="max-width:800px;">
@@ -1172,16 +1139,9 @@
             <p class="text-white" style="opacity:0.9;" data-translate="ctaSubtitle">Book a training session, request a site audit, or enquire about HRD Corp claimable programmes. Our team responds within 24 hours.</p>
             <div class="contact-info mt-2">
               <div class="block">
-                <div class="label" style="color:rgba(255,255,255,0.7);">Office</div>
-                <a href="tel:+601120776678" class="text-white">011-2077-6678</a>
-              </div>
-              <div class="block">
-                <div class="label" style="color:rgba(255,255,255,0.7);">Naja Safety</div>
-                <a href="tel:+601120776678" class="text-white">011-2077-6678</a>
-              </div>
-              <div class="block">
-                <div class="label" style="color:rgba(255,255,255,0.7);">WhatsApp</div>
-                <a href="tel:+601120776678" class="text-white">011-2077-6678</a>
+                <div class="label" style="color:rgba(255,255,255,0.7);">Phone / WhatsApp</div>
+                <a href="tel:+601120776678" class="text-white">011-2077-6678</a><br>
+                <a href="https://wa.me/601120776678?text=Hi%20Naja%20Safety,%20I%20am%20interested%20in%20your%20safety%20training%20services." class="text-white" style="opacity:0.9;text-decoration:underline;">Chat on WhatsApp</a>
               </div>
               <div class="block">
                 <div class="label" style="color:rgba(255,255,255,0.7);">Email</div>
@@ -1225,7 +1185,7 @@
         <div class="footer-col">
           <h4 data-translate="footerCol1Title">Naja Safety</h4>
           <p data-translate="footerCol1Desc">Your trusted safety partner for training, consultancy & compliance across Malaysia.</p>
-          <p data-translate="footerCol1Sister">Sister company: Naja Scaffolding Sdn Bhd</p>
+          
         </div>
         <div class="footer-col">
           <h4 data-translate="footerCol2Title">Quick Links</h4>
@@ -1234,6 +1194,7 @@
           <a href="/courses" data-translate="navCourses">Courses</a>
           <a href="/about" data-translate="navAbout">About</a>
           <a href="/contact" data-translate="navContact">Contact</a>
+          <a href="/articles/">Articles</a>
         </div>
         <div class="footer-col">
           <h4 data-translate="footerCol3Title">Services</h4>
@@ -1301,7 +1262,6 @@
     <div data-course-syllabus="CIDB-Green-Card" data-modules="Site hazard awareness,PPE selection,Working at height basics,Safe material handling,Emergency response,CIDB statutory requirements" data-duration="1 day" data-audience="Construction workers,contractors,site supervisors,project managers"></div>
     <div data-course-syllabus="Scaffold-Safety" data-modules="Scaffold types and components,Safe erection and dismantling,Load capacities,Daily inspection checklists,Fall prevention,CIDB alignment" data-duration="1 day" data-audience="Scaffold erectors,site supervisors,safety officers,construction workers"></div>
     <div data-course-syllabus="Chemical-Safety" data-modules="Hazard classification,SDS comprehension,Handling and storage,Labelling and inventory,PPE selection,Spill containment,Emergency response,OSHA and EQ Act compliance" data-duration="1 day" data-audience="Safety officers,warehouse supervisors,production staff,chemical handlers"></div>
-    <div data-geo-entity="sister-company" data-name="Naja Scaffolding Sdn Bhd" data-relationship="Scaffolding supply and safety cross-sell for construction clients"></div>
   </div>
 
   <script src="js/main.js"></script>

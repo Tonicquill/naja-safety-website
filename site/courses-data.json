@@ -54,7 +54,7 @@
   {"cat":"G","catName":"OSH Monitoring & Assessments","id":"monitoring","courses":[
     {"title":"Chemical Exposure Monitoring","desc":"Air sampling under USECHH 2000 with DOSH PEL benchmarks.","dur":"1 Day","loc":"On-Site","hrdc":true,"target":"Manufacturing plants, chemical facilities"},
     {"title":"Local Exhaust Ventilation (LEV) Inspection","desc":"Hoods, ducts, filters, fans — capture velocity and airflow verification.","dur":"2 Days","loc":"Johor Bahru","hrdc":true,"target":"Metalworking, spray booths, welding stations"},
-    {"title":"Noise Mapping & Monitoring","desc":"Calibrated dosimetry and octave-band analysis under Noise Regulations 1989.","dur":"3 Days","loc":"Kuala Lumpur","hrdc":true,"target":"Foundries, textile plants, construction yards"},
+    {"title":"Noise Mapping & Monitoring","desc":"Calibrated dosimetry and octave-band analysis under the Occupational Safety and Health (Noise Exposure) Regulations 2019.","dur":"3 Days","loc":"Nationwide","hrdc":true,"target":"Foundries, textile plants, construction yards"},
     {"title":"Chemical Health Risk Assessment (CHRA)","desc":"Systematic evaluation and control recommendations under USECHH 2000.","dur":"On-Site Custom","loc":"Nationwide","hrdc":true,"target":"Labs, chemical manufacturers, warehouses"},
     {"title":"HIRARC Workshops","desc":"Structured HIRARC methodology and documentation support.","dur":"1 Day","loc":"On-Site","hrdc":true,"target":"Workplaces with 5+ workers preparing statutory assessments"}
   ]}

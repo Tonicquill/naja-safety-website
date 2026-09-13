@@ -1,0 +1,133 @@
+{});
+            });
+        } catch (e) {
+            window.parent.postMessage({ type: "SANDBOX_WS_ATTACH_FAILED", error: String(e) }, "*");
+        }
+Naja Safety â Tectonic Vigilance for Malaysian Workplaces
+Sentinel System / Est. 2005 / Johor Bahru
+System Online â Tectonic Vigilance
+OSH 2022 Â· CIDB Â· HRD
+OSH (AMENDMENT) ACT 2022 â SEC 29A: 5+ EMPLOYEES = MANDATORY OSH-C
+OSH (AMENDMENT) ACT 2022 â SEC 29A: 5+ EMPLOYEES = MANDATORY OSH-C
+HRD CORP CIRCULAR 7/2019 â 24-MONTH LEVY FORFEITURE WINDOW ACTIVE
+TRAINER REGISTRATION PROFILE SERIAL: 62976 â VERIFIED
+CIDB GREEN CARD (SICW) â NATIONWIDE DELIVERY
+BUSINESS REG. 200603041203 (JM0449867-U) â VALID TO 14 JUL 2031
+OSH (AMENDMENT) ACT 2022 â SEC 29A: 5+ EMPLOYEES = MANDATORY OSH-C
+HRD CORP CIRCULAR 7/2019 â 24-MONTH LEVY FORFEITURE WINDOW ACTIVE
+TRAINER REGISTRATION PROFILE SERIAL: 62976 â VERIFIED
+CIDB GREEN CARD (SICW) â NATIONWIDE DELIVERY
+BUSINESS REG. 200603041203 (JM0449867-U) â VALID TO 14 JUL 2031
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+Years Keeping Malaysian Workplaces Safe
+Certified OSH Practitioners
+Accident Track Record on Regional Projects
+States Covered â JB to Penang
+How We Deliver Training
+In-house programmes tailored to your facility versus public seminar slots. The difference is structural.
+Zero travel downtime â your team trains on-site without leaving the facility
+Specialized facility hazard mapping mapped into every module
+Class dates scheduled around your production calendar
+Group rates and HRD Corp levy optimisation
+Request In-House Quote â
+Fixed schedules that may clash with shift rotations
+Generic curriculum â not mapped to your specific hazards
+Travel time and transport costs for every participant
+Limited intake per batch; certification may be delayed
+Join Public Schedule â
+RM0 Net Out-Of-Pocket Regulatory Training
+Review levy balance &amp; risk
+Map programmes to gaps
+On-site by Trainer 62976
+e-TRiS documentation support
+Official certifications backing every programme we deliver.
+CIDB Certified Instructor
+Accredited to deliver CIDB Green Card inductions and construction safety programmes nationwide.
+HRD Corp Accredited Trainer
+Trainer Registration Profile Serial: 62976. Verified to deliver levy-funded safety training via the e-TRiS platform.
+Business Registration (Borang D)
+Registered under the Business Registration Act 1956. Reg. No. 200603041203 (JM0449867-U). Valid until 14 July 2031.
+Why Choose Naja Safety?
+We do not operate as a training-only provider. We work as a trusted safety partner.
+Trusted Safety Partner
+Long-term partnerships, not one-off training. Continuous post-training support keeps your operations compliant.
+Real-world safety solutions â not classroom theory. Built from decades of on-site manufacturing and construction experience.
+Site-Focused Delivery
+Trainers come to your site nationwide â Johor Bahru to Pasir Gudang, Sedenak, and beyond.
+Training + consultancy + compliance + documentation + manpower supply. Everything under one roof.
+HRD Corp Claim Expertise
+We navigate HRD Corp funding. Your mandatory safety training can be zero net cost with proper claims support.
+Scaffolding Cross-Sell
+Via sister company Naja Scaffolding Sdn Bhd, we support construction clients with scaffolding supply and safety.
+From mandated OSH training to CIDB construction certifications and on-site consultancy â we handle compliance so you can focus on operations.
+Certified programmes for Incident Investigation, Safety Committees, Forklift Safety, HIRARC, First Aid &amp; CPR â claimable under HRD Corp.
+Incident &amp; Accident Investigation
+Chemical &amp; Electrical Safety Handling
+Forklift &amp; Machinery Competency Training
+OSH Coordinator (OSH-C) Development
+CIDB &amp; Construction Safety
+Green Card (SICW), Working at Height, Scaffold Safety, Site Safety Management â all CIDB-aligned with on-site delivery.
+CIDB Green Card Induction (SICW)
+Working at Height (WAH) Safety Certification
+Scaffold Safety Awareness Program
+HIRARC, Safety Audits, PPE supply, Safety Documentation â full-spectrum advisory to keep your sites audit-ready.
+Workplace Safety Assessments
+Compliance &amp; Risk Advisory (OSH Act 2022)
+PPE Supply matched to site risk profile
+Safety Documentation &amp; Registers
+James Issachar (Trainer ID: 62976) guides you through e-TRiS grant applications so your training investment is recoverable.
+Levy balance audit &amp; forfeiture defence
+Grant-permissible programme design
+e-TRiS application documentation
+100% claimable training structuring
+Meet Your Lead Trainer
+Real practitioner. Real credentials. Real impact.
+Subject / James Issachar A/L Daniel
+James Issachar A/L Daniel
+Director &amp; Lead Trainer, Naja Safety Sdn Bhd
+HRD Corp Certified Trainer â ID: 62976
+CIDB Certified Instructor
+OSH Consultant since May 2006; Director since Jan 2015
+20+ years in manufacturing, construction &amp; safety consultancy
+Chairman, Shechinah Association Johor Bahru (charity, founded 2018)
+Real footage from our on-site safety programmes across Malaysia.
+Fire Fighting Briefing
+A wireframe schematic of fall-arrest hardware morphs into a high-fidelity macro photograph as you scroll. Proof lives in the engineering.
+â Wireframe / Schematic
+â High-Fidelity / Render
+A Track Record Across Two Decades
+Real companies. Real sites. Real compliance outcomes â 158+ client companies, nationwide deployment.
+Client Roster / Past &amp; Present
+Zublin Precast Industries
+Technip Geoproduction
+FMC Wellhead Equipment
+Hiroyuki Industries (M)
+Kean Leng Construction
+Essenvest Construction
+Trans Legend Holdings
+MS Elevator Engineering
+Binastara Construction
+Ng Kok Wah Building Contractor
+City Villa Construction
+GE Water &amp; Process Technologies
+Khoo Soon Lee Properties
+Kejuruteraan KB Letrik
+First Nationwide Development
+NVM Safety &amp; Health
+Darco Water Technologies
+Alam Hijau Integrasi (M)
+CLM Construction &amp; Trading
+Dynaciate Engineering
+Jit Premier Construction
+Dahlia Project Construction
+One-Builtwell Associates (M)
+â Initiate Engagement
+Naja Safety Sdn Bhd Â· Reg. No. 200603041203 (JM0449867-U). Trusted safety partner for training, consultancy &amp; compliance across Malaysia.
+OSH (Amendment) Act 2022
+CIDB Certified Instruction
+HRD Corp Accredited Â· ID 62976
+Johor Bahru Â· Nationwide
+Â© 2026 Naja Safety Sdn Bhd â Tectonic Vigilance
+Sentinel System / Online
+console.error("[visual-edit-agent] Failed to load:", e));
+}

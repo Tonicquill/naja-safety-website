@@ -63,54 +63,120 @@
     "@graph": [
       {
         "@type": "GovernmentService",
+        "@id": "https://naja-safety.my/services#government-service",
         "name": "Malaysian OSH & CIDB Statutory Compliance Training",
         "serviceType": "Safety Training & Regulatory Compliance",
-        "provider": {
-          "@type": "LocalBusiness",
-          "name": "Naja Safety Sdn Bhd",
-          "telephone": "+601120776678",
-          "email": "najasafety@gmail.com",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "No 09-03, Block C, Kompleks Austin Perdana, Taman Austin Perdana",
-            "addressLocality": "Johor Bahru",
-            "addressRegion": "Johor",
-            "postalCode": "81100",
-            "addressCountry": "MY"
-          }
-        },
-        "areaServed": { "@type": "Country", "name": "Malaysia" },
+        "provider": { "@id": "https://naja-safety.my/#organization" },
+        "areaServed": [
+          { "@type": "Place", "name": "Johor Bahru", "geo": { "@type": "GeoCoordinates", "latitude": "1.5432", "longitude": "103.7785" } },
+          { "@type": "Place", "name": "Kuala Lumpur" },
+          { "@type": "Place", "name": "Selangor" },
+          { "@type": "Place", "name": "Penang" },
+          { "@type": "Place", "name": "Melaka" },
+          { "@type": "Place", "name": "Perak" },
+          { "@type": "Country", "name": "Malaysia" }
+        ],
         "audience": {
-          "@type": "Audience",
-          "audienceType": "Manufacturing Plant Managers, Construction Project Directors, HR Managers, Safety Officers"
+          "@type": "BusinessAudience",
+          "audienceType": "Manufacturing Plant Managers, Construction Project Directors, HR Managers, Safety Officers",
+          "geographicArea": { "@type": "Country", "name": "Malaysia" }
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Naja Safety Training & Consultancy Catalogue",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Course", "name": "OSH Coordinator (OSH-C) Section 29A", "url": "https://naja-safety.my/services/osh-coordinator-section-29a" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Course", "name": "CIDB Green Card (SICW)", "url": "https://naja-safety.my/services/cidb-green-card-sicw" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Course", "name": "Working at Height (WAH) Safety", "url": "https://naja-safety.my/services/working-at-height-wah" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Course", "name": "HIRARC & Risk Management", "url": "https://naja-safety.my/services/hirarc-risk-management" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Course", "name": "Safety Audit & Inspection", "url": "https://naja-safety.my/services/safety-audit-inspection" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Course", "name": "Chemical Health Risk Assessment (CHRA)", "url": "https://naja-safety.my/services/chemical-health-risk-assessment-chra" } }
+          ]
         },
         "termsOfService": "https://naja-safety.my/terms",
         "availableChannel": {
           "@type": "ServiceChannel",
           "serviceType": "On-site training and consultancy",
-          "availableLanguage": ["English", "Malay"]
+          "servicePhone": { "@type": "ContactPoint", "telephone": "+601120776678", "contactType": "customer service", "contactOption": "WhatsApp", "areaServed": "MY", "availableLanguage": ["English", "Malay"] },
+          "availableLanguage": ["English", "Malay", "Chinese", "Tamil"]
         }
       },
       {
+        "@type": "LocalBusiness",
+        "@id": "https://naja-safety.my/#organization",
+        "name": "Naja Safety Sdn Bhd",
+        "url": "https://naja-safety.my",
+        "logo": "https://naja-safety.my/images/logo-placeholder.svg",
+        "telephone": "+601120776678",
+        "email": "najasafety@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "No 09-03, Block C, Kompleks Austin Perdana, Taman Austin Perdana",
+          "addressLocality": "Johor Bahru",
+          "addressRegion": "Johor",
+          "postalCode": "81100",
+          "addressCountry": "MY"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": "1.5432", "longitude": "103.7785" },
+        "sameAs": ["https://www.linkedin.com/company/naja-safety-sdn-bhd"]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://naja-safety.my/#james-issachar",
+        "name": "James Issachar A/L Daniel",
+        "jobTitle": "Director & Lead Trainer",
+        "worksFor": { "@id": "https://naja-safety.my/#organization" },
+        "alumniOf": "NIOSH",
+        "award": "HRD Corp Certified Trainer (ID: 62976), CIDB Certified Instructor",
+        "sameAs": ["https://www.linkedin.com/in/james-issachar-daniel"]
+      },
+      {
         "@type": "Legislation",
+        "@id": "https://naja-safety.my/#legislation-osh-act-2022",
         "name": "Occupational Safety and Health (Amendment) Act 2022 (Act 514)",
         "legislationIdentifier": "Act 514",
         "inForceOn": "2024-06-01",
         "jurisdiction": { "@type": "Country", "name": "Malaysia" },
-        "legislationPassedBy": { "@type": "Organization", "name": "Parliament of Malaysia" }
+        "legislationPassedBy": { "@type": "Organization", "name": "Parliament of Malaysia" },
+        "legislationChanges": { "@type": "Legislation", "name": "Factories and Machinery Act 1967", "legislationChanges": "Repealed" },
+        "sameAs": "https://penang.uitm.edu.my/images/JKKPN/Penerbitan/Panduan/Versi_Penuh_AKKP_Pindaan_English.pdf"
       },
       {
         "@type": "Legislation",
+        "@id": "https://naja-safety.my/#legislation-dosh-guidelines",
         "name": "Guidelines for Public Safety and Health at Construction Sites",
         "jurisdiction": { "@type": "Country", "name": "Malaysia" },
-        "legislationPassedBy": { "@type": "Organization", "name": "Department of Occupational Safety and Health (DOSH) Malaysia" }
+        "legislationPassedBy": { "@type": "GovernmentOrganization", "name": "Department of Occupational Safety and Health (DOSH) Malaysia" },
+        "sameAs": "https://jpmihara.my/assets/files/gl_construction_site_bi.pdf"
       },
       {
         "@type": "Legislation",
+        "@id": "https://naja-safety.my/#legislation-cidb-cis-25",
         "name": "CIDB CIS 25:2018 Construction Activities Risk Assessment (CARA)",
         "legislationIdentifier": "CIS 25:2018",
         "jurisdiction": { "@type": "Country", "name": "Malaysia" },
-        "legislationPassedBy": { "@type": "Organization", "name": "Construction Industry Development Board (CIDB) Malaysia" }
+        "legislationPassedBy": { "@type": "GovernmentOrganization", "name": "Construction Industry Development Board (CIDB) Malaysia" },
+        "sameAs": "https://www.cidb.gov.my/eng/construction-industry-standard-cis/"
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://naja-safety.my/#website",
+        "url": "https://naja-safety.my/",
+        "name": "Naja Safety Sdn Bhd",
+        "publisher": { "@id": "https://naja-safety.my/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": { "@type": "EntryPoint", "urlTemplate": "https://naja-safety.my/?q={search_term_string}" },
+          "query-input": "required name=search_term_string"
+        }
       }
     ]
   }
@@ -131,6 +197,7 @@
           <li><a href="/courses" data-translate="navCourses">Courses</a></li>
           <li><a href="/about" data-translate="navAbout">About</a></li>
           <li><a href="/contact" data-translate="navContact">Contact</a></li>
+          <li><a href="/articles/" data-translate="navArticles">Articles</a></li>
           <li><a href="https://wa.me/601120776678?text=Hi%20Naja Safety,%20I%20am%20interested%20in%20your%20safety%20training%20services." class="btn btn-primary" style="padding:0.5rem 1rem;font-size:0.85rem;" data-translate="navWhatsApp">WhatsApp Us</a></li>
           <li class="lang-toggle-li"><div class="language-toggle-container"><button class="lang-btn active" data-lang="en" aria-label="English">EN</button><button class="lang-btn" data-lang="ms" aria-label="Bahasa Melayu">BM</button><button class="lang-btn" data-lang="zh" aria-label="中文">ZH</button><button class="lang-btn" data-lang="ta" aria-label="தமிழ்">TA</button></div></li>
         </ul>
@@ -220,9 +287,9 @@
             <li><div class="course-block"><span class="course-heading">Compliance & Risk Advisory</span><span class="course-subcaption">Clear guidance navigating the latest mandates of the OSH (Amendment) Act 2022, helping organizations avoid costly legal non-compliance penalties.</span><span class="course-target"><strong>Target Application:</strong> Small-to-medium enterprise (SME) directors transitioning their business practices to meet newly enforced safety thresholds.</span></div></li>
             <li><div class="course-block"><span class="course-heading">Safety Documentation Support</span><span class="course-subcaption">Professional preparation and maintenance of mandatory statutory records, including official machinery registers (PMA/PMT), SOP books, and safety policies.</span><span class="course-target"><strong>Target Application:</strong> Administrative managers and operations coordinators facing administrative backlogs ahead of compliance updates.</span></div></li>
             <li><div class="course-block"><span class="course-heading">Supply of Competent Safety Supervisor & Environmental Officer</span><span class="course-subcaption">Direct field deployment of certified, registered safety practitioners (including Site Safety Supervisors and Environmental Officers) to manage day-to-day compliance.</span><span class="course-target"><strong>Target Application:</strong> Fast-moving civil projects, infrastructure developments, and manufacturing hubs requiring immediate, expert on-site supervision.</span></div></li>
-            <li><div class="course-block"><span class="course-heading">Industrial Waste Management & Environmental Advisory</span><span class="course-subcaption">Expert guidance on disposal and recycling options, on-site waste clean-up, waste storage recommendations, waste & chemical labelling, wastewater treatment, air pollution control, and environmental monitoring aligned with DOE statutory requirements.</span><span class="course-target"><strong>Target Application:</strong> Manufacturing plants, chemical facilities, and industrial operations facing environmental compliance audits or expanding production capacity.</span></div></li>
+            <li><div class="course-block"><span class="course-heading">Environmental Compliance Coordination & Training</span><span class="course-subcaption">Awareness training and coordination support for DOE environmental requirements, including waste handling protocols, labelling standards, and liaison with licensed environmental consultants.</span><span class="course-target"><strong>Target Application:</strong> Manufacturing plants, chemical facilities, and industrial operations facing environmental compliance audits or expanding production capacity.</span></div></li>
             <li><div class="course-block"><span class="course-heading">Supply of Personal Protective Equipment (PPE)</span><span class="course-subcaption">Direct sourcing and supply of certified head protection, face shields, eye protection, ear protection, respirators, fall arresters, safety shoes, and full-body harnesses matched to your site risk profile.</span><span class="course-target"><strong>Target Application:</strong> Site managers and procurement officers needing reliable, compliant PPE procurement for new projects or workforce expansion.</span></div></li>
-            <li><div class="course-block"><span class="course-heading">Safety Signages & First Aid Equipment</span><span class="course-subcaption">Supply of mandatory workplace safety signages, hazard warning labels, emergency exit markers, and stocked first aid boxes compliant with statutory OSH and Factory and Machinery Act requirements.</span><span class="course-target"><strong>Target Application:</strong> Facilities managers setting up new plants, renovating existing layouts, or replenishing expired first aid and fire safety consumables.</span></div></li>
+            <li><div class="course-block"><span class="course-heading">Safety Signages & First Aid Equipment</span><span class="course-subcaption">Supply of mandatory workplace safety signages, hazard warning labels, emergency exit markers, and stocked first aid boxes compliant with the OSH (Amendment) Act 2022 and subsidiary regulations.</span><span class="course-target"><strong>Target Application:</strong> Facilities managers setting up new plants, renovating existing layouts, or replenishing expired first aid and fire safety consumables.</span></div></li>
           </ul>
           <a href="/contact" class="btn btn-primary mt-1">Enquire about Consultancy</a>
         </div>
@@ -262,18 +329,21 @@
         <div class="service-pillar" id="waste-env">
           <h3>
             <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
-            E. Industrial Waste &amp; Environmental Management
+            E. Industrial Waste &amp; Environmental Awareness
           </h3>
-          <p>Deep-framework environmental compliance for manufacturing plants, chemical facilities, and industrial operations facing DOE statutory audits or expanding production capacity.</p>
+          <p>Environmental compliance awareness and training for manufacturing plants, chemical facilities, and industrial operations facing DOE statutory audits or expanding production capacity.</p>
+          <div class="statutory-quote" style="margin-bottom:1.5rem;">
+            <p><strong>Important:</strong> Wastewater treatment, air pollution control, and scheduled-waste disposal require DOE-licensed consultants and certified treatment operators. Naja Safety provides <strong>awareness training, documentation support, and compliance coordination</strong>. We do not perform statutory environmental assessments or operate treatment systems directly.</p>
+          </div>
           <ul class="service-list">
-            <li><div class="course-block"><span class="course-heading">Disposal &amp; Recycling Options</span><span class="course-subcaption">Structured waste-stream analysis and disposal-pathway recommendations aligned with DOE and local authority requirements.</span><span class="course-target"><strong>Target Application:</strong> Plant managers and EHS officers responsible for hazardous waste manifests and scheduled waste consignment notes.</span></div></li>
-            <li><div class="course-block"><span class="course-heading">On-Site Waste Clean-Up</span><span class="course-subcaption">Practical clean-up protocols conducted at client facilities, including containment, segregation, and incident decontamination procedures.</span><span class="course-target"><strong>Target Application:</strong> Operations teams responding to chemical spills, leakages, or contamination events within plant boundaries.</span></div></li>
-            <li><div class="course-block"><span class="course-heading">Waste Storage Recommendations</span><span class="course-subcaption">Regulatory-compliant storage layout, secondary containment guidance, and segregation protocols for incompatible waste categories.</span><span class="course-target"><strong>Target Application:</strong> Facilities managers setting up new storage yards or retrofitting existing waste compounds to meet DOE inspection standards.</span></div></li>
+            <li><div class="course-block"><span class="course-heading">Disposal &amp; Recycling Awareness</span><span class="course-subcaption">Training on waste-stream classification, scheduled-waste handling, and coordination with licensed disposal contractors aligned with DOE requirements.</span><span class="course-target"><strong>Target Application:</strong> Plant managers and EHS officers responsible for hazardous waste manifests and scheduled waste consignment notes.</span></div></li>
+            <li><div class="course-block"><span class="course-heading">Spill Response &amp; Containment Training</span><span class="course-subcaption">Practical emergency-response training for chemical spills, including containment, segregation, and initial decontamination protocols for on-site response teams.</span><span class="course-target"><strong>Target Application:</strong> Operations teams and emergency response teams preparing for chemical spill events within plant boundaries.</span></div></li>
+            <li><div class="course-block"><span class="course-heading">Waste Storage Compliance Training</span><span class="course-subcaption">Training on regulatory-compliant storage layout, secondary containment, and segregation protocols for incompatible waste categories under DOE guidelines.</span><span class="course-target"><strong>Target Application:</strong> Facilities managers setting up new storage yards or retrofitting existing waste compounds to meet DOE inspection standards.</span></div></li>
             <li><div class="course-block"><span class="course-heading">Waste &amp; Chemical Labeling</span><span class="course-subcaption">Hazard-communication labeling aligned with DOSH, EPA, and GHS standards — ensuring every container carries compliant identification.</span><span class="course-target"><strong>Target Application:</strong> Warehouse supervisors and chemical handlers managing inventory turnover and drum re-labeling programmes.</span></div></li>
-            <li><div class="course-block"><span class="course-heading">Waste Water Treatment</span><span class="course-subcaption">Effluent management planning, treatment-system oversight, and discharge-compliance monitoring under the Environmental Quality Act 1974.</span><span class="course-target"><strong>Target Application:</strong> Process engineers and utilities managers overseeing effluent treatment plants (ETP) or planning capacity upgrades.</span></div></li>
-            <li><div class="course-block"><span class="course-heading">Air Pollution Control</span><span class="course-subcaption">Emission monitoring, stack-testing coordination, and control-plan drafting to meet DOE air-quality licensing conditions.</span><span class="course-target"><strong>Target Application:</strong> Environmental compliance officers and plant directors operating boilers, furnaces, or spray-booth installations.</span></div></li>
+            <li><div class="course-block"><span class="course-heading">Wastewater Management Awareness</span><span class="course-subcaption">Training on effluent management basics, discharge parameters, and coordination with licensed treatment operators under the Environmental Quality Act 1974.</span><span class="course-target"><strong>Target Application:</strong> Process engineers and utilities managers overseeing effluent treatment plants (ETP) or planning capacity upgrades.</span></div></li>
+            <li><div class="course-block"><span class="course-heading">Air Pollution Control Awareness</span><span class="course-subcaption">Training on emission parameters, stack-testing coordination, and liaison with licensed environmental consultants for DOE air-quality licensing compliance.</span><span class="course-target"><strong>Target Application:</strong> Environmental compliance officers and plant directors operating boilers, furnaces, or spray-booth installations.</span></div></li>
           </ul>
-          <a href="/contact" class="btn btn-primary mt-1">Enquire about Environmental Services</a>
+          <a href="/contact" class="btn btn-primary mt-1">Enquire about Environmental Awareness</a>
         </div>
 
         <div class="service-pillar" id="construction-safety">
@@ -297,12 +367,15 @@
             <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v6"></path><path d="M4 15a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v7H4z"></path><path d="M18 15a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v7h-5z"></path><path d="M6 10V7a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v3"></path><path d="M12 22V12"></path></svg>
             G. OSH Monitoring &amp; Assessments
           </h3>
-          <p>Specialised industrial hygiene monitoring and risk assessment services to keep your workplace compliant with DOSH statutory requirements and protect your workforce from hidden occupational hazards.</p>
+          <p>Training and coordination programmes to prepare your team for DOSH-mandated assessments and build internal competency in industrial hygiene awareness.</p>
+          <div class="statutory-quote" style="margin-bottom:1.5rem;">
+            <p><strong>Important:</strong> Chemical Health Risk Assessments (CHRA), noise risk assessments, and LEV inspections require DOSH-registered assessors. Naja Safety provides <strong>training, documentation support, and coordination</strong> to prepare your workplace and interface with registered third-party assessors. We do not conduct statutory assessments directly.</p>
+          </div>
           <ul class="service-list">
-            <li><div class="course-block"><span class="course-heading">Chemical Exposure Monitoring</span><span class="course-subcaption">Quantitative air sampling and exposure assessment for hazardous chemicals, vapours, and dusts — aligned with USECHH Regulations 2000 and DOSH permissible exposure limits (PEL).</span><span class="course-target"><strong>Target Application:</strong> Manufacturing plants, chemical processing facilities, and workshops handling scheduled toxic substances or volatile organic compounds.</span></div></li>
-            <li><div class="course-block"><span class="course-heading">Local Exhaust Ventilation (LEV) Inspection</span><span class="course-subcaption">Thorough examination of LEV systems — hoods, ducts, filters, and fans — to verify capture velocity, airflow rates, and system integrity under DOSH inspection criteria.</span><span class="course-target"><strong>Target Application:</strong> Metalworking shops, spray booths, welding stations, and any facility relying on extraction systems to control airborne contaminants.</span></div></li>
-            <li><div class="course-block"><span class="course-heading">Noise Mapping &amp; Monitoring</span><span class="course-subcaption">Comprehensive noise surveys using calibrated dosimetry and octave-band analysis to identify hearing conservation zones and verify compliance with the Occupational Safety and Health (Noise Exposure) Regulations 2019.</span><span class="course-target"><strong>Target Application:</strong> Heavy manufacturing, foundries, textile plants, and construction yards where sustained noise levels exceed 82 dB(A).</span></div></li>
-            <li><div class="course-block"><a href="/services/chemical-health-risk-assessment-chra" class="course-heading">Chemical Health Risk Assessment (CHRA)</a><span class="course-subcaption">Systematic evaluation of chemical hazards in the workplace — identification, exposure characterisation, risk ranking, and control recommendations under the Industry Code of Practice for Chemical Health Risk Assessment.</span><span class="course-target"><strong>Target Application:</strong> Mandatory for all workplaces using scheduled chemicals under the USECHH Regulations 2000; critical for chemical manufacturers, laboratories, and warehouse operations.</span></div></li>
+            <li><div class="course-block"><span class="course-heading">Chemical Exposure Awareness &amp; Monitoring Coordination</span><span class="course-subcaption">Training on exposure awareness, PEL interpretation, and coordination with registered occupational hygienists for quantitative air sampling under USECHH Regulations 2000.</span><span class="course-target"><strong>Target Application:</strong> Manufacturing plants, chemical processing facilities, and workshops handling scheduled toxic substances or volatile organic compounds.</span></div></li>
+            <li><div class="course-block"><span class="course-heading">Local Exhaust Ventilation (LEV) Awareness &amp; Inspection Coordination</span><span class="course-subcaption">Training on LEV system fundamentals, visual inspection protocols, and coordination with registered assessors for thorough examination of hoods, ducts, filters, and fans.</span><span class="course-target"><strong>Target Application:</strong> Metalworking shops, spray booths, welding stations, and any facility relying on extraction systems to control airborne contaminants.</span></div></li>
+            <li><div class="course-block"><span class="course-heading">Noise Exposure Awareness &amp; Assessment Coordination</span><span class="course-subcaption">Training on hearing conservation zones, dosimetry basics, and coordination with registered Noise Risk Assessors for compliance under the Occupational Safety and Health (Noise Exposure) Regulations 2019.</span><span class="course-target"><strong>Target Application:</strong> Heavy manufacturing, foundries, textile plants, and construction yards where sustained noise levels exceed 82 dB(A).</span></div></li>
+            <li><div class="course-block"><a href="/services/chemical-health-risk-assessment-chra" class="course-heading">Chemical Health Risk Assessment (CHRA) Awareness &amp; Preparation</a><span class="course-subcaption">Training and documentation support to prepare your workplace for CHRA compliance under USECHH Regulations 2000. We coordinate with registered Chemical Health Risk Assessors for statutory evaluation.</span><span class="course-target"><strong>Target Application:</strong> Mandatory for all workplaces using scheduled chemicals under the USECHH Regulations 2000; critical for chemical manufacturers, laboratories, and warehouse operations.</span></div></li>
             <li><div class="course-block"><a href="/services/hirarc-risk-management" class="course-heading">Hazard Identification, Risk Assessment &amp; Control (HIRARC)</a><span class="course-subcaption">Structured HIRARC methodology workshops and documentation support to map workplace hazards, quantify risk levels, and implement practical control measures that satisfy DOSH inspection requirements.</span><span class="course-target"><strong>Target Application:</strong> All Malaysian workplaces employing 5 or more workers; especially relevant for SMEs preparing their first statutory risk assessment or updating an outdated HIRARC register.</span></div></li>
           </ul>
           <a href="/contact" class="btn btn-primary mt-1">Enquire about Monitoring &amp; Assessments</a>
@@ -328,7 +401,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr data-regulatory-citation="OSH Amendment Act 2022" data-act="514" data-enforcement="DOSH Malaysia (JKKP)">
                 <td>
                   <span class="regulatory-tag dosh">DOSH</span>
                   OSH (Amendment) Act 2022
@@ -336,7 +409,7 @@
                 <td>DOSH Malaysia (JKKP)</td>
                 <td><a href="https://penang.uitm.edu.my/images/JKKPN/Penerbitan/Panduan/Versi_Penuh_AKKP_Pindaan_English.pdf" target="_blank" rel="noopener">Download Official Act 514 PDF ↗</a></td>
               </tr>
-              <tr>
+              <tr data-regulatory-citation="DOSH Site Public Safety and Health Guidelines" data-enforcement="Ministry of Human Resources">
                 <td>
                   <span class="regulatory-tag dosh">DOSH</span>
                   Site Public Safety &amp; Health Guidelines
@@ -344,7 +417,7 @@
                 <td>Ministry of Human Resources</td>
                 <td><a href="https://jpmihara.my/assets/files/gl_construction_site_bi.pdf" target="_blank" rel="noopener">Download DOSH Site Guidelines PDF ↗</a></td>
               </tr>
-              <tr>
+              <tr data-regulatory-citation="CIDB CIS 25:2018" data-name="Construction Activities Risk Assessment (CARA)" data-enforcement="CIDB Malaysia">
                 <td>
                   <span class="regulatory-tag cidb">CIDB</span>
                   CIS 25:2018 (CARA)
@@ -352,7 +425,7 @@
                 <td>CIDB Malaysia</td>
                 <td><a href="https://www.cidb.gov.my/eng/construction-industry-standard-cis/" target="_blank" rel="noopener">View Verified CIDB Industry Frameworks ↗</a></td>
               </tr>
-              <tr>
+              <tr data-regulatory-citation="US OSHA 29 CFR 1926" data-name="Safety and Health Regulations for Construction" data-enforcement="US Federal OSHA">
                 <td>
                   <span class="regulatory-tag osha">OSHA</span>
                   29 CFR 1926 Construction Playbook
@@ -365,7 +438,7 @@
         </div>
 
         <div class="regulatory-accordion">
-          <div class="faq-item">
+          <div class="faq-item" data-regulatory-citation="OSH Amendment Act 2022" data-section="29A" data-effective="2024-06-01" data-key-stat="RM500,000">
             <button class="faq-question" aria-expanded="false">OSH (Amendment) Act 2022 — Why it matters for your business</button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
@@ -379,7 +452,7 @@
             </div>
           </div>
 
-          <div class="faq-item">
+          <div class="faq-item" data-regulatory-citation="DOSH Site Public Safety and Health Guidelines" data-enforcement="Ministry of Human Resources">
             <button class="faq-question" aria-expanded="false">DOSH Site Public Safety &amp; Health Guidelines — Construction-specific</button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
@@ -389,7 +462,7 @@
             </div>
           </div>
 
-          <div class="faq-item">
+          <div class="faq-item" data-regulatory-citation="CIDB CIS 25:2018" data-name="Construction Activities Risk Assessment (CARA)" data-requirement="HIRARC-mandatory">
             <button class="faq-question" aria-expanded="false">CIDB CIS 25:2018 — Construction Activities Risk Assessment (CARA)</button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
@@ -399,7 +472,7 @@
             </div>
           </div>
 
-          <div class="faq-item">
+          <div class="faq-item" data-regulatory-citation="US OSHA 29 CFR 1926" data-name="Safety and Health Regulations for Construction" data-scope="MNC-oil-gas-dual-compliance">
             <button class="faq-question" aria-expanded="false">US OSHA 29 CFR 1926 — For MNC &amp; Oil &amp; Gas Alignment</button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
@@ -506,12 +579,23 @@
         </div>
       </div>
     </section>
+
+    <section class="container" style="padding: 2rem 1.5rem 0;">
+      <div style="padding: 1.5rem; border-left: 4px solid var(--primary); background: #f8fafc; border-radius: var(--radius-md);" data-geo-related="true" data-cluster-type="regulatory-compliance">
+        <h4 style="margin-bottom: 0.75rem; font-size: 1.05rem;">Related Regulatory Resources</h4>
+        <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-secondary); line-height: 1.8;">
+          <li><a href="/articles/osh-act-2022-10-things">OSH Act 2022: 10 Things Every Malaysian Employer Must Know</a></li>
+          <li><a href="/regulatory-hub">Malaysian Safety Law Reference Hub</a></li>
+          <li><a href="/courses">HRD Corp Claimable Safety Courses</a></li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <footer>
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-col"><h4 data-translate="footerCol1Title">Naja Safety</h4><p data-translate="footerCol1Desc">Your trusted safety partner for training, consultancy & compliance across Malaysia.</p><p data-translate="footerCol1Sister">Sister company: Naja Scaffolding Sdn Bhd</p></div>
+        <div class="footer-col"><h4 data-translate="footerCol1Title">Naja Safety</h4><p data-translate="footerCol1Desc">Your trusted safety partner for training, consultancy & compliance across Malaysia.</p></div>
         <div class="footer-col"><h4 data-translate="footerCol2Title">Quick Links</h4><a href="/" data-translate="navHome">Home</a><a href="/services" data-translate="navServices">Services</a><a href="/courses" data-translate="navCourses">Courses</a><a href="/about" data-translate="navAbout">About</a><a href="/contact" data-translate="navContact">Contact</a></div>
         <div class="footer-col"><h4 data-translate="footerCol3Title">Services</h4><a href="/services#osh-training" data-translate="pillarOshTitle">OSH Training</a><a href="/services#cidb-training" data-translate="pillarCidbTitle">CIDB Safety</a><a href="/services#consultancy" data-translate="pillarConsultTitle">Consultancy</a><a href="/services#hrdcorp" data-translate="pillarHrdTitle">HRD Corp Support</a><a href="/services#osh-monitoring" data-translate="pillarMonitoringTitle">OSH Monitoring &amp; Assessments</a><a href="/guide">Training Guide</a></div>
         <div class="footer-col"><h4 data-translate="footerCol4Title">Contact</h4><a href="tel:+601120776678" data-translate="footerHotline">Hotline: 011-2077-6678</a><a href="https://wa.me/601120776678" data-translate="footerWhatsApp">WhatsApp Us</a><a href="mailto:najasafety@gmail.com" data-translate="footerEmail">najasafety@gmail.com</a><p data-translate="footerAddr">No 09-03, Block C, Kompleks Austin Perdana, Taman Austin Perdana, 81100 Johor Bahru</p></div>
