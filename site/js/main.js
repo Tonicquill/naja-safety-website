@@ -975,7 +975,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function initLanguage() {
-    const saved = localStorage.getItem('najaLang') || 'en';
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlLang = urlParams.get('lang');
+    const saved = urlLang || localStorage.getItem('najaLang') || 'en';
     const toggles = document.querySelectorAll('.lang-btn');
     if (!toggles.length) return;
     applyLanguage(saved);
@@ -986,6 +988,7 @@ document.addEventListener('DOMContentLoaded', () => {
         toggles.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         applyLanguage(lang);
+        localStorage.setItem('najaLang', lang);
       });
     });
   }
