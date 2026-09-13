@@ -1051,6 +1051,19 @@ header {
 }
 .form-group textarea { min-height: 120px; resize: vertical; }
 
+/* ---------- Review Flags ---------- */
+.review-flag {
+  display: block;
+  background: #fff3cd;
+  color: #856404;
+  border: 2px dashed #856404;
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
 /* ---------- Footer ---------- */
 footer {
   background: var(--primary);

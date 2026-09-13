@@ -6,6 +6,32 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ---------- WhatsApp reference codes ----------
+  (function() {
+    const refMap = [
+      { prefix: '/services/cidb-green-card', code: 'WEB-GC' },
+      { prefix: '/services/osh-coordinator-section-29a', code: 'WEB-OSHC' },
+      { prefix: '/services/hrdcorp', code: 'WEB-HRD' },
+      { prefix: '/courses/first-aid', code: 'WEB-FA' },
+      { prefix: '/courses/first-aid-cpr', code: 'WEB-FA' },
+    ];
+    const path = window.location.pathname;
+    let code = 'WEB-GEN';
+    for (const entry of refMap) {
+      if (path.startsWith(entry.prefix)) { code = entry.code; break; }
+    }
+    document.querySelectorAll('a[href^="https://wa.me/601120776678"]').forEach(a => {
+      let href = a.getAttribute('href');
+      if (href.includes('[WEB-')) return; // already tagged
+      if (href.includes('?text=')) {
+        href = href.replace(/(%20|+)$/, '') + '%20%5B' + code + '%5D';
+      } else {
+        href += '?text=Hi%20Naja%20Safety%2C%20I%27m%20enquiring%20from%20your%20website.%20%5B' + code + '%5D';
+      }
+      a.setAttribute('href', href);
+    });
+  })();
+
   // ---------- Mobile menu toggle ----------
   const menuBtn = document.querySelector('.mobile-menu-btn');
   const navLinks = document.querySelector('.nav-links');
