@@ -201,8 +201,9 @@ document.addEventListener('DOMContentLoaded', () => {
     navHome:     { en:"Home",        ms:"Laman Utama",   zh:"首页",     ta:"முகப்பு" },
     navServices: { en:"Services",    ms:"Perkhidmatan",  zh:"服务",     ta:"சேவைகள்" },
     navCourses:  { en:"Courses",     ms:"Kursus",        zh:"课程",     ta:"படிப்புகள்" },
-    navAbout:    { en:"About",       ms:"Tentang Kami",  zh:"关于",     ta:"எங்களைப் பற்றி" },
-    navContact:  { en:"Contact",     ms:"Hubungi",       zh:"联系",     ta:"தொடர்பு" },
+    navAbout:     { en:"About",       ms:"Tentang Kami",  zh:"关于",     ta:"எங்களைப் பற்றி" },
+    navLocations:{ en:"Locations",   ms:"Lokasi",        zh:"地点",     ta:"இடங்கள்" },
+    navContact:   { en:"Contact",     ms:"Hubungi",       zh:"联系",     ta:"தொடர்பு" },
     navWhatsApp: { en:"WhatsApp Us", ms:"WhatsApp Kami", zh:"WhatsApp", ta:"வாட்ஸ்அப்" },
     navArticles: { en:"Articles", ms:"Artikel", zh:"文章", ta:"கட்டுரைகள்" },
 
