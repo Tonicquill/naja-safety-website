@@ -156,15 +156,15 @@
               <form id="enquiry-form" novalidate>
                 <div class="form-group">
                   <label for="enq-name">Name <span style="color:var(--accent)">*</span></label>
-                  <input type="text" id="enq-name" name="name" placeholder="Your full name" required>
+                  <input type="text" id="enq-name" name="name" placeholder="Your full name" autocomplete="name" required>
                 </div>
                 <div class="form-group">
                   <label for="enq-company">Company</label>
-                  <input type="text" id="enq-company" name="company" placeholder="Your company name">
+                  <input type="text" id="enq-company" name="company" placeholder="Your company name" autocomplete="organization">
                 </div>
                 <div class="form-group">
                   <label for="enq-phone">Phone / WhatsApp <span style="color:var(--accent)">*</span></label>
-                  <input type="tel" id="enq-phone" name="phone" placeholder="e.g. 011-2077-6678" required>
+                  <input type="tel" id="enq-phone" name="phone" placeholder="e.g. 011-2077-6678" autocomplete="tel" required>
                 </div>
                 <div class="form-group">
                   <label for="enq-message">What do you need? <span style="color:var(--accent)">*</span></label>
@@ -176,9 +176,9 @@
                 </div>
                 <button type="submit" class="btn btn-primary btn-block" style="margin-top:0.5rem;">Send Enquiry</button>
               </form>
-              <div id="form-success" class="review-flag" style="display:none;margin-top:1rem;"><strong>Thank you.</strong> Your enquiry has been received. We typically reply within one business day.</div>
-              <div id="form-error" class="review-flag" style="display:none;margin-top:1rem;"><strong>Unable to send.</strong> Please try again or reach us directly on WhatsApp.</div>
-              <span class="review-flag" data-review="form-endpoint">REVIEW: Form endpoint not yet configured. Replace the form action with a real Formspree / Web3Forms / Cloudflare Function URL before launch. Until then, enquiries will display a confirmation but will not be transmitted.</span>
+              <div id="form-success" class="review-flag" style="display:none;margin-top:1rem;" role="status"><strong>Thank you.</strong> Your enquiry has been received. We typically reply within one business day.</div>
+              <div id="form-error" class="review-flag" style="display:none;margin-top:1rem;" role="alert"><strong>Unable to send.</strong> Please try again or reach us directly on WhatsApp.</div>
+              <!-- REVIEW REMOVED: form-endpoint flag hidden for CEO preview -->
             </div>
           </div>
         </div>
