@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let href = a.getAttribute('href');
       if (href.includes('[WEB-')) return; // already tagged
       if (href.includes('?text=')) {
-        href = href.replace(/(%20|+)$/, '') + '%20%5B' + code + '%5D';
+        href = href.replace(/(%20|\+)$/, '') + '%20%5B' + code + '%5D';
       } else {
         href += '?text=Hi%20Naja%20Safety%2C%20I%27m%20enquiring%20from%20your%20website.%20%5B' + code + '%5D';
       }
