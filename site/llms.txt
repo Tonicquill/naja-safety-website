@@ -69,7 +69,7 @@ Language can be set via URL query parameter `?lang=ms`, `?lang=zh`, or `?lang=ta
 
 ## Contact
 
-- **Phone / WhatsApp:** +60 11-2077-6678
+- **Phone / WhatsApp:** 016-730-1802
 - **Email:** najasafety@gmail.com
 - **Address:** 09-03, Blok C, Kompleks Austin Perdana, Taman Mount Austin, 81100 Johor Bahru, Johor, Malaysia
 - **Business Hours:** Monday–Friday, 08:30–17:30 (MYT)

@@ -9,11 +9,27 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---------- WhatsApp reference codes ----------
   (function() {
     const refMap = [
-      { prefix: '/services/cidb-green-card', code: 'WEB-GC' },
+      { prefix: '/services/chemical-health-risk-assessment-chra', code: 'WEB-CHRA' },
+      { prefix: '/services/cidb-green-card-sicw', code: 'WEB-SICW' },
+      { prefix: '/services/hirarc-risk-management', code: 'WEB-HIRARC' },
       { prefix: '/services/osh-coordinator-section-29a', code: 'WEB-OSHC' },
-      { prefix: '/services/hrdcorp', code: 'WEB-HRD' },
-      { prefix: '/courses/first-aid', code: 'WEB-FA' },
-      { prefix: '/courses/first-aid-cpr', code: 'WEB-FA' },
+      { prefix: '/services/safety-audit-inspection', code: 'WEB-AUDIT' },
+      { prefix: '/services/working-at-height', code: 'WEB-WAH' },
+      { prefix: '/services', code: 'WEB-SERV' },
+      { prefix: '/courses/chemical-handling', code: 'WEB-CHEM' },
+      { prefix: '/courses/cidb-green-card', code: 'WEB-CGC' },
+      { prefix: '/courses/osh-coordinator', code: 'WEB-COSH' },
+      { prefix: '/courses/scaffold-safety', code: 'WEB-SCAF' },
+      { prefix: '/courses', code: 'WEB-COURSE' },
+      { prefix: '/about', code: 'WEB-ABOUT' },
+      { prefix: '/contact', code: 'WEB-CONTACT' },
+      { prefix: '/articles/osh-act-2022-10-things', code: 'WEB-OSHACT' },
+      { prefix: '/articles', code: 'WEB-ART' },
+      { prefix: '/regulatory-hub', code: 'WEB-REG' },
+      { prefix: '/locations', code: 'WEB-LOC' },
+      { prefix: '/guide', code: 'WEB-GUIDE' },
+      { prefix: '/terms', code: 'WEB-TERMS' },
+      { prefix: '/privacy', code: 'WEB-PRIV' },
     ];
     const path = window.location.pathname;
     let code = 'WEB-GEN';

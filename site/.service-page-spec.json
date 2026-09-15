@@ -23,7 +23,7 @@
     "schema_org": "include Course, FAQPage, and BreadcrumbList JSON-LD",
     "llm_geo_layer": "include .llm-geo-layer with data-geo-entity, data-regulatory-citation, data-capability-matrix",
     "mobile_sticky_bar": "include .mobile-sticky-action-bar with WhatsApp link",
-    "whatsapp_number": "601120776678",
+    "whatsapp_number": "60167301802",
     "email": "najasafety@gmail.com"
   },
   "tone": "Professional, statutory-authoritative, field-first. No fluff. Every claim tied to a regulation, timeline, or credential."
