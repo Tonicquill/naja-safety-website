@@ -1,0 +1,40 @@
+RewriteEngine On
+RewriteBase /
+
+# Redirect .html extensions to clean URLs
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^services\.html$ /services [R=301,L]
+RewriteRule ^services/osh-coordinator-section-29a\.html$ /services/osh-coordinator-section-29a [R=301,L]
+RewriteRule ^services/cidb-green-card-sicw\.html$ /services/cidb-green-card-sicw [R=301,L]
+RewriteRule ^services/chemical-health-risk-assessment-chra\.html$ /services/chemical-health-risk-assessment-chra [R=301,L]
+RewriteRule ^services/working-at-height-wah\.html$ /services/working-at-height-wah [R=301,L]
+RewriteRule ^services/hirarc-risk-management\.html$ /services/hirarc-risk-management [R=301,L]
+RewriteRule ^services/safety-audit-inspection\.html$ /services/safety-audit-inspection [R=301,L]
+RewriteRule ^courses\.html$ /courses [R=301,L]
+RewriteRule ^courses/osh-coordinator$ /services/osh-coordinator-section-29a [R=301,L]
+RewriteRule ^courses/cidb-green-card$ /services/cidb-green-card-sicw [R=301,L]
+RewriteRule ^about\.html$ /about [R=301,L]
+RewriteRule ^contact\.html$ /contact [R=301,L]
+RewriteRule ^guide\.html$ /guide [R=301,L]
+
+# Security headers
+<IfModule mod_headers.c>
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Browser caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
