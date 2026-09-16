@@ -1,21 +1,23 @@
 RewriteEngine On
-RewriteBase /
 
-# Redirect .html extensions to clean URLs
-RewriteRule ^index\.html$ / [R=301,L]
-RewriteRule ^services\.html$ /services [R=301,L]
-RewriteRule ^services/osh-coordinator-section-29a\.html$ /services/osh-coordinator-section-29a [R=301,L]
-RewriteRule ^services/cidb-green-card-sicw\.html$ /services/cidb-green-card-sicw [R=301,L]
-RewriteRule ^services/chemical-health-risk-assessment-chra\.html$ /services/chemical-health-risk-assessment-chra [R=301,L]
-RewriteRule ^services/working-at-height-wah\.html$ /services/working-at-height-wah [R=301,L]
-RewriteRule ^services/hirarc-risk-management\.html$ /services/hirarc-risk-management [R=301,L]
-RewriteRule ^services/safety-audit-inspection\.html$ /services/safety-audit-inspection [R=301,L]
-RewriteRule ^courses\.html$ /courses [R=301,L]
-RewriteRule ^courses/osh-coordinator$ /services/osh-coordinator-section-29a [R=301,L]
-RewriteRule ^courses/cidb-green-card$ /services/cidb-green-card-sicw [R=301,L]
-RewriteRule ^about\.html$ /about [R=301,L]
-RewriteRule ^contact\.html$ /contact [R=301,L]
-RewriteRule ^guide\.html$ /guide [R=301,L]
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# www -> non-www (your canonical has no www)
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# Send /services.html to /services  (canonical form)
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Serve /services from services.html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+ErrorDocument 404 /404.html
 
 # Security headers
 <IfModule mod_headers.c>
