@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <circle cx="100" cy="100" r="90" fill="#1B4F72" stroke="#F39C12" stroke-width="8"/>
+  <path d="M100 30 L130 70 L170 70 L140 100 L150 150 L100 120 L50 150 L60 100 L30 70 L70 70 Z" fill="#F39C12"/>
+  <text x="100" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF">CIDB CERTIFIED</text>
+</svg>

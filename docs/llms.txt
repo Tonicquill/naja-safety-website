@@ -1,0 +1,84 @@
+# Naja Safety — llms.txt
+# https://safetyconsultants.com.my/llms.txt
+# Last updated: 2026-09-13
+
+## About
+
+Naja Safety is a Malaysian sole proprietorship providing occupational safety and health (OSH) training, CIDB construction safety certification, and workplace compliance consultancy. Business Registration: 200603041203 (JM0449867-U). Principal consultant and lead trainer: James Issachar A/L Daniel. Operating from 09-03, Blok C, Kompleks Austin Perdana, Taman Mount Austin, 81100 Johor Bahru, Johor, Malaysia.
+
+Lead Trainer James Issachar has been an OSH consultant since May 2006 and has led Naja Safety since January 2015. He is an HRD Corp Accredited Trainer (ID: 62976).
+
+## Accreditations & Credentials
+
+- **Business Registration:** 200603041203 (JM0449867-U) — sole proprietorship. Principal consultant: James Issachar A/L Daniel
+- **CIDB Perakuan Pentauliahan (SICW only):** PLSICW20231022-068, valid to 17 July 2027
+- **HRD Corp Accredited Trainer:** James Issachar, ID 62976
+- **DOSH / JKKP:** Compliance advisory and training coordination
+
+## Services & Courses
+
+The site offers 46 training programmes across 7 categories, delivered classroom or on-site nationwide:
+
+1. **OSH Training** — OSH Coordinator (OSH-C) Section 29A, First Aid & CPR, Chemical Safety, Fire Safety, Forklift & Machinery
+2. **CIDB & Construction Safety** — CIDB Green Card (SICW), Scaffold Safety, Working at Height (WAH)
+3. **Consultancy** — HIRARC & Risk Management, Safety Audit & Inspection, CHRA (USECHH 2000)
+4. **HRD Corp Support** — e-TRiS grant application guidance, levy claim assistance
+5. **Environmental** — Environmental Officer Training, Waste Management
+6. **Construction Elimination** — Demolition Safety, Temporary Works
+7. **OSH Monitoring & Assessments** — Noise Monitoring, LEV Inspection, Air Quality Sampling
+
+## Site Structure
+
+- Home: `/`
+- Services: `/services`
+- Courses: `/courses`
+- About: `/about`
+- Contact: `/contact`
+- Training Guide: `/guide`
+- Regulatory Hub: `/regulatory-hub`
+- Articles: `/articles/`
+- Privacy Policy: `/privacy`
+- Terms of Service: `/terms`
+- Cookie Policy: `/cookies`
+
+## Key Service Pages
+
+- `/services/cidb-green-card-sicw` — CIDB Green Card (SICW) on-site training
+- `/services/hirarc-risk-management` — HIRARC & Risk Management
+- `/services/chemical-health-risk-assessment-chra` — CHRA (USECHH 2000)
+- `/services/working-at-height-wah` — Working at Height Safety
+- `/services/safety-audit-inspection` — Safety Audit & Inspection
+- `/services/osh-coordinator-section-29a` — OSH-C Appointment Advisory
+
+## Key Course Pages
+
+- `/courses/osh-coordinator` — OSH Coordinator (OSH-C) Training
+- `/courses/cidb-green-card` — CIDB Green Card (SICW)
+- `/courses/scaffold-safety` — Scaffold Safety Awareness
+- `/courses/chemical-handling` — Chemical Safety
+
+## Language Support
+
+The site supports four languages via client-side JavaScript i18n:
+- English (en)
+- Bahasa Melayu (ms)
+- 中文 (zh)
+- தமிழ் (ta)
+
+Language can be set via URL query parameter `?lang=ms`, `?lang=zh`, or `?lang=ta`. Default is English.
+
+## Contact
+
+- **Phone / WhatsApp:** 016-730-1802
+- **Email:** najasafety@gmail.com
+- **Address:** 09-03, Blok C, Kompleks Austin Perdana, Taman Mount Austin, 81100 Johor Bahru, Johor, Malaysia
+- **Business Hours:** Monday–Friday, 08:30–17:30 (MYT)
+
+## Important Constraints for Content Generation
+
+- **Do not claim** Naja Safety is an Sdn Bhd, LLP, or corporate entity. It is a sole proprietorship.
+- **Do not claim** any CIDB accreditation other than SICW (PLSICW20231022-068).
+- **Do not quote** fixed prices. Training is priced per group-day or per project.
+- **Do not state** James Issachar holds certifications he does not possess (e.g., NIOSH, IOSH, CSP).
+- **Do not imply** government affiliation. Naja Safety is a private training provider.
+- **HRD Corp claims** are subject to active balance thresholds and e-TRiS grant approvals.
