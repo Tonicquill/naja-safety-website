@@ -1,0 +1,61 @@
+[
+  {"cat":"A","catName":"OSH Training","id":"osh-training","courses":[
+    {"title":"Incident & Accident Investigation","desc":"Root-cause analysis, evidence gathering, compliance reporting under NADOPOD Regulations 2004.","dur":"1 Day","loc":"On-Site","hrdc":true,"target":"HSE Committee Members, Operational Managers, HR Directors"},
+    {"title":"Safety & Health Committee Training","desc":"Establish and run an effective internal safety council under OSH (Safety and Health Committee) Regulations 1996.","dur":"2 Days","loc":"Johor Bahru","hrdc":true,"target":"Enterprises with 40+ workers or high-risk operations"},
+    {"title":"Chemical Safety","desc":"Handling procedures, PPE deployment, and emergency spillage controls under USECHH Regulations 2000.","dur":"3 Days","loc":"Kuala Lumpur","hrdc":true,"target":"Factory operators, lab technicians, warehouse teams"},
+    {"title":"Electrical Safety","desc":"High-voltage mitigation, lockout-tagout (LOTO) workflows, shock prevention.","dur":"On-Site Custom","loc":"Nationwide","hrdc":true,"target":"Plant maintenance techs, facilities engineers"},
+    {"title":"Emergency Response & Fire Safety","desc":"Crisis command, fire fighting equipment handling, coordinated evacuation drills.","dur":"1 Day","loc":"On-Site","hrdc":true,"target":"ERT captains, floor wardens, security ops"},
+    {"title":"First Aid & CPR","desc":"AED usage, choking management, wound stabilization certified life support.","dur":"2 Days","loc":"Johor Bahru","hrdc":true,"target":"Workplace first-aiders, factory supervisors"},
+    {"title":"Forklift & Machinery Safety","desc":"Pre-shift checks, payload center-of-gravity, safe rack maneuvering.","dur":"3 Days","loc":"Kuala Lumpur","hrdc":true,"target":"Material handlers, warehouse operators"},
+    {"title":"Warehouse Logistics & High-Racking Auditing","desc":"Load distribution, pallet racking integrity, aisle safety under Factory & Machinery Act 1967.","dur":"On-Site Custom","loc":"Nationwide","hrdc":true,"target":"Warehouse ops directors, distribution supervisors"},
+    {"title":"HIRARC & Risk Management","desc":"Hazard Identification, Risk Assessment, and Risk Control models meeting statutory criteria.","dur":"1 Day","loc":"On-Site","hrdc":true,"target":"Operations directors, safety executives, project planners"},
+    {"title":"Safety Audit & Inspection Techniques","desc":"Internal audits, compliance gap identification, corrective action reports.","dur":"2 Days","loc":"Johor Bahru","hrdc":true,"target":"Internal auditors, plant managers"},
+    {"title":"Ergonomics Risk Assessment (ERA)","desc":"Musculoskeletal disorder prevention, RSI mapping, anthropometric redesign.","dur":"3 Days","loc":"Kuala Lumpur","hrdc":true,"target":"Occupational health nurses, HR wellness coordinators"},
+    {"title":"Tailor-Made HSE Programmes","desc":"Customized modules from your company's incident data and industry risk matrices.","dur":"On-Site Custom","loc":"Nationwide","hrdc":true,"target":"Heavy industrial operations, multi-nationals"}
+  ]},
+  {"cat":"B","catName":"CIDB & Construction Safety","id":"cidb-training","courses":[
+    {"title":"Safety Induction & Awareness","desc":"Construction safety landscape, site risk identification, mandatory PPE guidelines.","dur":"1 Day","loc":"On-Site","hrdc":true,"target":"General laborers, project engineers, sub-contractors"},
+    {"title":"Working at Height (WAH) Safety","desc":"Fall arrest system configurations, full-body harness anchorage, safe MEWP operations.","dur":"2 Days","loc":"Johor Bahru","hrdc":true,"target":"Roofing, high-elevation painters, structural welders"},
+    {"title":"Fall Protection Engineering","desc":"Fall arrest design, permanent anchor point load testing, structural connection verification.","dur":"3 Days","loc":"Kuala Lumpur","hrdc":true,"target":"Structural engineers, rigging specialists"},
+    {"title":"Site Safety Management","desc":"Multi-tier subcontractor compliance and full CIDB structural compliance.","dur":"On-Site Custom","loc":"Nationwide","hrdc":true,"target":"Main contractor PMs, site safety directors"},
+    {"title":"Toolbox Talk & Safety Briefings","desc":"Frameworks for daily pre-shift safety briefings reinforcing hazard awareness.","dur":"1 Day","loc":"On-Site","hrdc":true,"target":"Site foremen, safety supervisors"},
+    {"title":"CIDB Green Card (SICW)","desc":"Official accredited safety induction required under the CIDB Act.","dur":"2 Days","loc":"Johor Bahru","hrdc":true,"target":"Every individual on active construction developments"},
+    {"title":"Scaffold Safety Awareness","desc":"Load limits, bracing setups, tie-back anchoring, and inspection routines.","dur":"3 Days","loc":"Kuala Lumpur","hrdc":true,"target":"Scaffold assemblers, on-site safety inspectors"}
+  ]},
+  {"cat":"C","catName":"Safety Consultancy","id":"consultancy","courses":[
+    {"title":"Workplace Safety Assessments","desc":"Facility safety evaluations locating latent risks ahead of official audits.","dur":"On-Site Custom","loc":"Nationwide","hrdc":true,"target":"Corporate boards, manufacturing execs"},
+    {"title":"Compliance & Risk Advisory","desc":"Navigating the OSH (Amendment) Act 2022 and avoiding costly non-compliance.","dur":"1 Day","loc":"On-Site","hrdc":true,"target":"SME directors adapting to new safety thresholds"},
+    {"title":"Safety Documentation Support","desc":"Statutory records preparation: PMA/PMT machinery registers, SOP books, policies.","dur":"2 Days","loc":"Johor Bahru","hrdc":true,"target":"Admin managers, ops coordinators"},
+    {"title":"Supply of Safety Supervisor / EO","desc":"Certified practitioners deployed to manage day-to-day compliance.","dur":"3 Days","loc":"Kuala Lumpur","hrdc":true,"target":"Civil projects, infrastructure, manufacturing hubs"},
+    {"title":"Industrial Waste & Environmental Advisory","desc":"Disposal, recycling, on-site clean-up, waste labeling, ETP, air pollution.","dur":"On-Site Custom","loc":"Nationwide","hrdc":true,"target":"Chemical facilities, manufacturing plants"},
+    {"title":"PPE Supply","desc":"Head protection, respirators, fall arresters, safety shoes, full-body harnesses.","dur":"1 Day","loc":"On-Site","hrdc":true,"target":"Site managers, procurement officers"},
+    {"title":"Signages & First Aid Equipment","desc":"Mandatory workplace safety signages, hazard labels, first aid boxes.","dur":"2 Days","loc":"Johor Bahru","hrdc":true,"target":"Facilities managers"}
+  ]},
+  {"cat":"D","catName":"HRD Corp Support","id":"hrdcorp","courses":[
+    {"title":"Claimable Programme Guidance","desc":"Course catalog mapped directly against your HRD Corp fund balance.","dur":"3 Days","loc":"Kuala Lumpur","hrdc":true,"target":"HR managers, training coordinators"},
+    {"title":"Grant & Funding Assistance","desc":"Step-by-step support navigating the e-TRiS online platform.","dur":"On-Site Custom","loc":"Nationwide","hrdc":true,"target":"Financial managers, training coordinators"},
+    {"title":"Claim Process Support","desc":"Post-training documentation, attendance tracking, invoice validation.","dur":"1 Day","loc":"On-Site","hrdc":true,"target":"Accounting execs, finance depts"},
+    {"title":"Training Budget Optimisation","desc":"Deploy funds before the rolling 24-month forfeiture threshold hits.","dur":"2 Days","loc":"Johor Bahru","hrdc":true,"target":"Finance directors, company owners"}
+  ]},
+  {"cat":"E","catName":"Industrial Waste & Environmental","id":"environmental","courses":[
+    {"title":"Disposal & Recycling Options","desc":"Waste-stream analysis and disposal-pathway recommendations aligned with DOE.","dur":"3 Days","loc":"Kuala Lumpur","hrdc":true,"target":"Plant managers, EHS officers"},
+    {"title":"On-Site Waste Clean-Up","desc":"Containment, segregation, and incident decontamination procedures.","dur":"On-Site Custom","loc":"Nationwide","hrdc":true,"target":"Response teams handling spills/leakages"},
+    {"title":"Waste Storage Recommendations","desc":"Compliant storage layout, secondary containment, segregation of incompatibles.","dur":"1 Day","loc":"On-Site","hrdc":true,"target":"Facilities managers retrofitting waste compounds"},
+    {"title":"Waste & Chemical Labeling","desc":"Hazard-communication labeling aligned with DOSH, EPA, and GHS standards.","dur":"2 Days","loc":"Johor Bahru","hrdc":true,"target":"Warehouse supervisors, chemical handlers"},
+    {"title":"Waste Water Treatment","desc":"ETP oversight and discharge compliance under Environmental Quality Act 1974.","dur":"3 Days","loc":"Kuala Lumpur","hrdc":true,"target":"Process engineers, utilities managers"},
+    {"title":"Air Pollution Control","desc":"Emission monitoring, stack-testing, control-plan drafting under DOE.","dur":"On-Site Custom","loc":"Nationwide","hrdc":true,"target":"Environmental compliance officers"}
+  ]},
+  {"cat":"F","catName":"Construction Safety & Accident Elimination","id":"construction","courses":[
+    {"title":"Pre-Construction Hazard Identification","desc":"Hazard identification and risk-ranking during design and planning.","dur":"1 Day","loc":"On-Site","hrdc":true,"target":"Project developers, architects, main contractors"},
+    {"title":"Accident-Elimination Frameworks","desc":"Upstream risk controls, barrier analysis, behavioural safety programmes.","dur":"2 Days","loc":"Johor Bahru","hrdc":true,"target":"Site safety directors, PMs owning LTIFR"},
+    {"title":"CIDB Statutory Compliance Integration","desc":"Full integration with CIDB Act requirements including SSS deployment.","dur":"3 Days","loc":"Kuala Lumpur","hrdc":true,"target":"Firms bidding on gov/private projects"},
+    {"title":"On-Site Real-Time Risk Mitigation","desc":"Embedded practitioners for daily hazard walks and immediate sign-offs.","dur":"On-Site Custom","loc":"Nationwide","hrdc":true,"target":"Fast-track civil projects, high-rise builds"}
+  ]},
+  {"cat":"G","catName":"OSH Monitoring & Assessments","id":"monitoring","courses":[
+    {"title":"Chemical Exposure Monitoring","desc":"Air sampling under USECHH 2000 with DOSH PEL benchmarks.","dur":"1 Day","loc":"On-Site","hrdc":true,"target":"Manufacturing plants, chemical facilities"},
+    {"title":"Local Exhaust Ventilation (LEV) Inspection","desc":"Hoods, ducts, filters, fans — capture velocity and airflow verification.","dur":"2 Days","loc":"Johor Bahru","hrdc":true,"target":"Metalworking, spray booths, welding stations"},
+    {"title":"Noise Mapping & Monitoring","desc":"Calibrated dosimetry and octave-band analysis under the Occupational Safety and Health (Noise Exposure) Regulations 2019.","dur":"3 Days","loc":"Nationwide","hrdc":true,"target":"Foundries, textile plants, construction yards"},
+    {"title":"Chemical Health Risk Assessment (CHRA)","desc":"Systematic evaluation and control recommendations under USECHH 2000.","dur":"On-Site Custom","loc":"Nationwide","hrdc":true,"target":"Labs, chemical manufacturers, warehouses"},
+    {"title":"HIRARC Workshops","desc":"Structured HIRARC methodology and documentation support.","dur":"1 Day","loc":"On-Site","hrdc":true,"target":"Workplaces with 5+ workers preparing statutory assessments"}
+  ]}
+]

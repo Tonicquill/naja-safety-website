@@ -1,0 +1,367 @@
+// ─── Service detail pages (6) — every section preserved verbatim ───
+
+export interface DetailPage {
+  slug: string
+  crumb: string
+  badge: string
+  title: string
+  intro: string
+  ctaPrimary: string
+  ctaSecondary: string
+  needTitle: string
+  needBody: string
+  stakes: { title: string; body: string }[]
+  hazards: { title: string; body: string }[]
+  warnings: string[]
+  process: { title: string; body: string }[]
+  failTitle: string
+  failBody: string
+  scheduling: { high: string; low: string }
+  properties: string[]
+  coverageNote: string
+  coverage: string[]
+  faqs: { q: string; a: string }[]
+  ctaTitle: string
+  ctaBody: string
+  notice?: string
+}
+
+export const DETAIL_PAGES: DetailPage[] = [
+  {
+    slug: 'osh-coordinator-section-29a',
+    crumb: 'Services / OSH Coordinator',
+    badge: 'Statutory Mandate',
+    title: 'OSH Coordinator (OSH-C) Appointment Advisory',
+    intro: 'Mandatory for every employer with 5 or more workers. Non-compliance exposes directors to criminal liability under Section 29A of the OSH (Amendment) Act 2022. We provide compliance advisory, documentation support, and training coordination — view the OSH-C training course.',
+    ctaPrimary: 'WhatsApp for Advisory',
+    ctaSecondary: 'Request Consultation',
+    needTitle: 'Do You Need an OSH Coordinator?',
+    needBody: 'Since 2022, Malaysian employers must appoint an OSH Coordinator if they employ 5 or more people. The coordinator must possess competency certificates recognised by DOSH. Many SMEs appoint an internal staff member without proper training, exposing the company and its directors to prosecution.',
+    stakes: [
+      { title: 'Criminal Liability', body: 'Failure to appoint an OSH Coordinator is a criminal offence. Directors and employers can face corporate fines up to RM500,000 and/or imprisonment under Section 29A of the OSH (Amendment) Act 2022.' },
+      { title: 'Enforcement Intensification', body: 'Enforcement inspections have intensified since 2024. DOSH officers now specifically verify OSH-C appointment letters and competency certificates during site visits.' },
+      { title: 'Contract Disqualification', body: 'Government and GLC contracts increasingly require proof of OSH-C appointment as a pre-qualification criterion. No appointment, no tender.' },
+    ],
+    hazards: [
+      { title: 'Untrained Internal Appointee', body: 'An employee designated as OSH Coordinator without DOSH-recognised competency certificates. Cannot legally fulfil the role.' },
+      { title: 'Expired Certificates', body: 'Competency certificates that have lapsed. DOSH inspections now verify certificate validity in real-time.' },
+      { title: 'No Safety Committee', body: 'Workplaces with 40+ workers must also establish a Safety and Health Committee under Regulations 1996 — separate from the OSH-C mandate.' },
+      { title: 'Missing HIRARC Register', body: 'Every workplace must maintain a current Hazard Identification, Risk Assessment and Risk Control register.' },
+    ],
+    warnings: [
+      'You employ 5 or more workers (full-time, part-time, or contract)',
+      'You have received a DOSH inspection notice or compliance letter',
+      'You are bidding for government or GLC contracts requiring safety documentation',
+      'Your insurance broker has flagged inadequate safety officer coverage',
+      'A near-miss or accident has triggered an internal review',
+      'You have never formally appointed an OSH Coordinator in writing',
+    ],
+    process: [
+      { title: 'Competency Gap Audit', body: 'We assess your current safety documentation, workforce size, and hazard profile against Section 29A requirements.' },
+      { title: 'OSH-C Training', body: 'Your designated employee completes the official OSH Coordinator competency programme — classroom or on-site, claimable under HRD Corp.' },
+      { title: 'Committee Formation', body: 'If you have 40+ workers, we establish and train your Safety and Health Committee under the 1996 Regulations.' },
+      { title: 'Documentation Package', body: 'We prepare the appointment letter, competency certificates, HIRARC register, and SOP books for DOSH presentation.' },
+      { title: 'Compliance Verification', body: '90-day post-appointment advisory to ensure your OSH Coordinator is functioning effectively and records are audit-ready.' },
+    ],
+    failTitle: 'Why Other Approaches Fail',
+    failBody: 'Generic public seminars teach theory in isolation. They do not prepare your internal appointee for the specific hazards of YOUR facility, the documentation DOSH expects, or the ongoing committee management required by law. One-off training without implementation support leaves you exposed.',
+    scheduling: {
+      high: 'Manufacturing plants, construction sites, chemical facilities — quarterly compliance reviews recommended.',
+      low: 'Small offices and retail with minimal hazard exposure — bi-annual review sufficient.',
+    },
+    properties: ['Manufacturing plants', 'Construction sites (CIDB-registered)', 'Warehouses and logistics hubs', 'Chemical processing facilities', 'Food and beverage production', 'Commercial offices with 5+ staff'],
+    coverageNote: 'On-site OSH Coordinator advisory and training across Johor and Peninsular Malaysia.',
+    coverage: ['Johor Bahru', 'Pasir Gudang', 'Senai', 'Pengerang', 'Iskandar Puteri', 'Skudai', 'Kulai', 'Ulu Tiram'],
+    faqs: [
+      { q: 'How long does OSH-C training take?', a: 'The standard OSH Coordinator competency programme is 2–3 days. On-site delivery is available for teams of 5 or more.' },
+      { q: 'Can any employee be appointed OSH Coordinator?', a: 'No. The appointee must hold DOSH-recognised competency certificates. We fast-track your designated employee through the required training and certification.' },
+      { q: 'What is the difference between OSH Coordinator and Safety Officer?', a: 'The OSH Coordinator is an internally appointed employee responsible for day-to-day safety coordination. A Safety Officer is a registered practitioner under DOSH with broader statutory powers. Some workplaces need both.' },
+      { q: 'Is OSH-C training HRD Corp claimable?', a: 'Yes. James Issachar (Trainer ID: 62976) is HRD Corp-certified. We guide you through e-TRiS grant application so your compliance investment is recoverable.' },
+      { q: 'What documents must we maintain?', a: 'Appointment letter, competency certificates, HIRARC register, safety inspection records, incident investigation reports, and training attendance logs. We supply templates for all.' },
+      { q: 'How quickly can we become compliant?', a: 'From first contact to compliant appointment: typically 7–14 days if your designated employee already holds partial competencies; 14–21 days if full training is required.' },
+    ],
+    ctaTitle: 'Secure Your OSH-C Appointment Before Enforcement Intensifies',
+    ctaBody: 'James Issachar and the Naja Safety team provide statutory advisory and compliance support to fast-track your OSH Coordinator appointment. Book the OSH-C training course separately.',
+  },
+  {
+    slug: 'cidb-green-card-sicw',
+    crumb: 'Services / CIDB Green Card',
+    badge: 'CIDB Mandatory',
+    title: 'CIDB Green Card Training (SICW) — Construction Site Access',
+    intro: 'CIDB-accredited SICW training on your construction site. Audit-ready attendance register included. Per-group-day pricing. Centre Code: PLSICW20231022-068.',
+    ctaPrimary: 'WhatsApp for Batch Registration',
+    ctaSecondary: 'Request Batch Schedule',
+    needTitle: 'Do You Need CIDB Green Cards?',
+    needBody: 'Under the CIDB Act 520, every person entering an active construction site must hold a valid CIDB Green Card (SICW). Site managers, main contractors, and developers face project delays and penalties if workers lack current certification. Many sites still rely on outdated or counterfeit cards.',
+    stakes: [
+      { title: 'Immediate Site Removal', body: 'CIDB enforcement officers conduct random site inspections. Workers without valid Green Cards can be removed immediately, halting your project.' },
+      { title: 'Project Suspension Risk', body: 'Main contractors risk project suspension, and repeated violations can affect CIDB contractor grades — impacting future tenders.' },
+      { title: 'Counterfeit Card Exposure', body: 'CIDB now scans QR codes for real-time verification. Cut-price counterfeit certificates from uncertified providers are instantly flagged.' },
+    ],
+    hazards: [
+      { title: 'Invalid or Expired Cards', body: 'Cards obtained through uncertified providers or past expiry date. CIDB now scans QR codes for real-time verification.' },
+      { title: 'Untrained Subcontractors', body: 'Subcontractor crews often arrive on site without SICW certification, halting work until compliant.' },
+      { title: 'Language Barriers', body: 'Foreign workers may not understand Malay or English safety briefings. We deliver training in multiple languages.' },
+      { title: 'High Workforce Turnover', body: 'Construction sites with high turnover require continuous batch training to maintain 100% compliance.' },
+    ],
+    warnings: [
+      'Your project has been flagged in a CIDB site inspection',
+      'Subcontractor crews arrive without valid Green Cards',
+      'You are preparing tender documents that require CIDB safety compliance proof',
+      'Your site insurance policy mandates 100% SICW coverage',
+      'Workers hold cards from unverified or overseas providers',
+      'You need to onboard 20+ workers before project commencement',
+    ],
+    process: [
+      { title: 'Batch Registration', body: 'We collect worker details, passport/IC copies, and register the batch with CIDB e-Systems.' },
+      { title: 'Classroom or On-Site Induction', body: 'Official SICW curriculum delivered by CIDB-certified instructors. One-day intensive covering site hazards, PPE, emergency response, and legal obligations.' },
+      { title: 'Assessment & Certification', body: 'Workers sit the CIDB assessment. Successful candidates receive their Green Card with QR-verifiable serial number.' },
+      { title: 'Site Deployment Verification', body: 'We verify card validity with your site safety officer and provide a compliance attendance register for CIDB inspection.' },
+      { title: 'Renewal Tracking', body: 'Green Cards expire. We maintain a renewal calendar and notify you 60 days before expiry to prevent lapses.' },
+    ],
+    failTitle: 'Why Other Approaches Fail',
+    failBody: 'Some providers offer cut-price "certificates" that CIDB does not recognise. Others conduct training in generic classrooms far from your site, causing worker downtime and transport costs. One-off training without renewal tracking leads to compliance gaps within months.',
+    scheduling: {
+      high: 'Large civil projects with 100+ workers — monthly batch training and renewal tracking required.',
+      low: 'Small residential builds with stable crews — annual renewal batch sufficient.',
+    },
+    properties: ['High-rise residential and commercial builds', 'Infrastructure and civil engineering projects', 'Factory and warehouse construction', 'Road and bridge works', 'Oil & gas facility upgrades', 'Renovation and retrofit projects'],
+    coverageNote: 'On-site CIDB Green Card batch training across Johor and Peninsular Malaysia.',
+    coverage: ['Johor Bahru', 'Pasir Gudang', 'Senai', 'Pengerang', 'Iskandar Puteri', 'Skudai', 'Kulai', 'Masai'],
+    faqs: [
+      { q: 'How long is the Green Card valid?', a: 'CIDB Green Cards are typically valid for 3 years. Renewal requires re-assessment. We track expiry dates and remind you 60 days in advance.' },
+      { q: 'Can foreign workers get a Green Card?', a: 'Yes. Foreign workers legally employed on Malaysian construction sites must hold a valid SICW. We process registration for both local and foreign workers.' },
+      { q: 'Do supervisors and engineers need Green Cards too?', a: 'Yes. Every individual physically present on an active construction site must hold a valid SICW, including project managers, engineers, and visitors on extended stays.' },
+      { q: 'What happens if CIDB inspects and finds uncertified workers?', a: 'Workers may be barred from site. Repeated violations can lead to project suspension and downgrade of your CIDB contractor registration. We provide same-day emergency batch training for inspection-triggered compliance gaps.' },
+      { q: 'Is SICW training HRD Corp claimable?', a: 'Yes, when delivered by our HRD Corp-certified trainers. We assist with e-TRiS documentation for batch training claims.' },
+      { q: 'Can you train on our construction site?', a: 'Absolutely. We deliver SICW training directly on your site, minimising worker downtime and transport costs. All equipment and materials provided.' },
+    ],
+    ctaTitle: 'Get Your Crew Compliant Before the Next CIDB Inspection',
+    ctaBody: 'Batch registration, on-site delivery, and renewal tracking for construction teams of any size across Johor and Malaysia.',
+  },
+  {
+    slug: 'chemical-health-risk-assessment-chra',
+    crumb: 'Services / CHRA',
+    badge: 'DOSH Mandatory',
+    title: 'CHRA Awareness & Preparation Training — USECHH 2000',
+    intro: 'Training and documentation support for workplaces using scheduled chemicals under USECHH Regulations 2000. We prepare your team and coordinate with registered DOSH Chemical Health Risk Assessors.',
+    ctaPrimary: 'WhatsApp for CHRA Training',
+    ctaSecondary: 'Request Training Proposal',
+    needTitle: 'Do You Need a CHRA?',
+    needBody: 'Malaysian workplaces handling scheduled chemicals — including solvents, acids, heavy metals, and toxic gases — must conduct a Chemical Health Risk Assessment (CHRA) under the USECHH Regulations 2000. Many facilities have never completed a proper CHRA, or their assessment is outdated and will not survive a DOSH inspection.',
+    notice: 'Important: A Chemical Health Risk Assessment (CHRA) must be conducted by a DOSH-registered Chemical Health Risk Assessor. Naja Safety provides awareness training, workplace preparation, documentation support, and coordination to help you engage registered assessors efficiently and comply with USECHH 2000 requirements. We do not perform statutory CHRA assessments directly.',
+    stakes: [
+      { title: 'USECHH Non-Compliance Penalties', body: 'Non-compliance with USECHH 2000 carries penalties under the OSH Act. DOSH inspectors now specifically request CHRA documentation during scheduled and surprise inspections.' },
+      { title: 'Criminal Liability for Exposure', body: 'Accidents involving uncontrolled chemical exposure can trigger criminal liability for employers. Directors can be held personally accountable for inadequate controls.' },
+      { title: 'Insurance and Tender Disqualification', body: 'Insurance underwriters increasingly require current CHRA reports for renewal. Tender submissions for government contracts often mandate USECHH compliance proof.' },
+    ],
+    hazards: [
+      { title: 'Scheduled Chemicals', body: 'Substances listed in the USECHH First Schedule including benzene, lead compounds, asbestos, silica dust, and isocyanates.' },
+      { title: 'Inadequate Ventilation', body: 'LEV systems that have never been tested for capture velocity. Many facilities rely on general room ventilation for local exhaust tasks.' },
+      { title: 'Missing Exposure Monitoring', body: 'No quantitative air sampling data to compare against DOSH Permissible Exposure Limits (PEL).' },
+      { title: 'Uncontrolled Storage', body: 'Incompatible chemicals stored together without secondary containment or proper segregation.' },
+    ],
+    warnings: [
+      'Your facility uses any chemical listed in the USECHH First Schedule',
+      'You have received a DOSH letter requesting CHRA documentation',
+      'Workers report headaches, dizziness, or respiratory irritation in chemical work areas',
+      'Your LEV system has never been tested for capture velocity',
+      'You are expanding production and need DOE/DOSH approval for environmental impact',
+      'Insurance auditors have flagged chemical safety gaps',
+    ],
+    process: [
+      { title: 'Chemical Inventory Training', body: 'We train your team to catalog chemicals on site, cross-reference against the USECHH First Schedule, and identify exposure pathways in preparation for assessor review.' },
+      { title: 'Assessor Coordination', body: 'We coordinate with registered DOSH assessors for calibrated air sampling and dosimetry. Results are benchmarked against DOSH PEL and ACGIH TLV.' },
+      { title: 'Documentation Support', body: 'We help you compile hazard severity evaluations, exposure frequency data, and existing controls into a format ready for registered assessor review and DOSH submission.' },
+      { title: 'Control Awareness Training', body: 'Training on engineering controls (LEV), administrative controls (shift rotation, SOPs), and PPE selection aligned to residual risk levels identified by the registered assessor.' },
+      { title: 'Implementation Support', body: '90-day follow-up support to verify control implementation, conduct worker training, and prepare documentation for DOSH inspection readiness.' },
+    ],
+    failTitle: 'Why Other Approaches Fail',
+    failBody: 'Generic consultants produce template CHRA reports that do not reflect your actual chemical exposure profiles. Without calibrated monitoring data, the report is worthless in a DOSH inspection. One-off assessments without implementation support leave hazards uncontrolled.',
+    scheduling: {
+      high: 'Chemical manufacturers, electroplating shops, paint booths — we recommend annual CHRA review and quarterly exposure monitoring through a registered assessor.',
+      low: 'Warehouses with minimal chemical handling — bi-ennial CHRA review is typically sufficient if exposure remains unchanged.',
+    },
+    properties: ['Chemical manufacturing and blending plants', 'Electroplating and metal finishing workshops', 'Paint and coating facilities', 'Pharmaceutical and laboratory operations', 'Oil & gas processing and maintenance', 'Textile dyeing and printing works'],
+    coverageNote: 'CHRA awareness training, workplace preparation, and assessor coordination support across Johor and Peninsular Malaysia.',
+    coverage: ['Johor Bahru', 'Pasir Gudang', 'Senai', 'Pengerang', 'Iskandar Puteri', 'Skudai', 'Kulai', 'Ulu Tiram'],
+    faqs: [
+      { q: 'How often must a CHRA be conducted?', a: 'DOSH recommends reviewing your CHRA whenever there is a significant change in chemical usage, process, or workplace layout. High-risk facilities should conduct annual reviews.' },
+      { q: 'What is the difference between CHRA and HIRARC?', a: 'HIRARC covers all workplace hazards broadly. CHRA is specific to chemical health risks under USECHH 2000 and requires exposure monitoring data. Most chemical facilities need both.' },
+      { q: 'Do we need to stop production during monitoring?', a: 'No. Registered DOSH assessors conduct exposure monitoring during normal operations to capture real-world exposure levels. Workers should not modify their behaviour during sampling.' },
+      { q: 'How long does the assessment take?', a: 'Registered assessors typically require 3–5 working days on site for monitoring, plus 7–10 working days for laboratory analysis and report preparation.' },
+      { q: 'Can you help us upgrade our LEV system?', a: 'Yes. We provide LEV awareness and inspection coordination training. We prepare your team to verify capture velocity, airflow rates, and system integrity, and coordinate with assessors for formal evaluation.' },
+      { q: 'Is CHRA required for small workshops?', a: 'If you use any scheduled chemical under USECHH 2000 — regardless of facility size — a CHRA is mandatory.' },
+    ],
+    ctaTitle: 'Prepare Your Team for CHRA Compliance',
+    ctaBody: 'CHRA awareness training, workplace preparation, documentation support, and registered assessor coordination for chemical facilities across Johor and Malaysia.',
+  },
+  {
+    slug: 'working-at-height-wah',
+    crumb: 'Services / Working at Height',
+    badge: 'CIDB + DOSH Critical',
+    title: 'Working at Height (WAH) Safety Training — Fall Prevention',
+    intro: 'Fall arrest, full-body harness competency, and MEWP safety. The leading cause of construction fatalities in Malaysia. On-site delivery with real equipment.',
+    ctaPrimary: 'WhatsApp for WAH Training',
+    ctaSecondary: 'Request Training Schedule',
+    needTitle: 'Do You Need WAH Training?',
+    needBody: 'Falls from height remain the leading cause of death and serious injury on Malaysian construction sites. The CIDB and DOSH require specific WAH competency for workers operating above 2 metres. Many sites rely on generic inductions that do not address the actual fall hazards of the specific structure being built.',
+    stakes: [
+      { title: 'Fatality & Prosecution Risk', body: 'A single fatal fall triggers immediate CIDB and DOSH investigations, potential project suspension, criminal charges under the Factories and Machinery Act, and massive insurance premium increases.' },
+      { title: 'Permanent Disability', body: 'Survivors of falls from height often face permanent disability. The human and financial cost to workers and their families is devastating and entirely preventable with proper training and equipment.' },
+      { title: 'Suspension Trauma', body: 'A worker caught by their harness can suffer suspension trauma within 15 minutes. Without a rescue plan, a survivable fall becomes a fatal event. Every WAH programme must include rescue planning.' },
+    ],
+    hazards: [
+      { title: 'Unprotected Edges', body: 'Open floor edges, roof perimeters, and shafts without guardrails or toe boards.' },
+      { title: 'Improper Harness Use', body: 'Workers wearing harnesses incorrectly — not attached to an anchor point, or using damaged/webbing-compromised equipment.' },
+      { title: 'Defective MEWP Operations', body: 'Mobile Elevated Work Platforms operated by untrained personnel, or used on unstable ground without outriggers.' },
+      { title: 'Inadequate Rescue Plans', body: 'Fall arrest systems deployed without a rescue plan. A suspended worker can suffer suspension trauma within 15 minutes.' },
+    ],
+    warnings: [
+      'Your project involves work above 2 metres — scaffolding, roofing, or facade installation',
+      'You have experienced a near-miss or actual fall incident on site',
+      'Your site safety officer has identified unprotected edges during daily hazard walks',
+      'Subcontractor crews arrive without WAH competency certificates',
+      'You are bidding for a project that requires WAH-specific safety documentation',
+      'Your insurance underwriter has requested proof of WAH training for renewal',
+    ],
+    process: [
+      { title: 'Site Hazard Walk', body: 'We identify all fall hazards specific to your structure — edges, openings, ladder access points, and scaffold tie-back requirements.' },
+      { title: 'Competency Training', body: 'Classroom theory covering fall physics, harness anatomy, anchor point selection, and MEWP safe operation — followed by hands-on practical assessment.' },
+      { title: 'Equipment Inspection', body: 'We inspect your existing fall arrest equipment for defects, expiry dates, and compliance with MS standards. Damaged equipment is tagged and removed.' },
+      { title: 'Rescue Plan Drafting', body: 'A written rescue plan specific to your site — who responds, what equipment is used, and how a suspended worker is recovered within 15 minutes.' },
+      { title: 'Competency Certification', body: 'Successful candidates receive WAH competency certificates recognised by CIDB and DOSH. We maintain a training register for inspection.' },
+    ],
+    failTitle: 'Why Other Approaches Fail',
+    failBody: 'Generic "Working at Height" videos shown in a hotel conference room do not prepare workers for the specific edges, anchors, and rescue challenges of YOUR site. Theory without hands-on practice with real harnesses and real anchor points creates false confidence — and real fatalities.',
+    scheduling: {
+      high: 'High-rise and structural steel projects — refresher training every 6 months; new worker induction before every phase.',
+      low: 'Low-rise residential with stable crews — annual refresher sufficient if no incidents or equipment changes.',
+    },
+    properties: ['High-rise building construction', 'Structural steel erection', 'Roofing and cladding works', 'Facade cleaning and maintenance', 'Bridge and infrastructure projects', 'Industrial tank and silo access'],
+    coverageNote: 'On-site WAH training and rescue planning across Johor and Peninsular Malaysia.',
+    coverage: ['Johor Bahru', 'Pasir Gudang', 'Senai', 'Pengerang', 'Iskandar Puteri', 'Skudai', 'Kulai', 'Ulu Tiram'],
+    faqs: [
+      { q: 'How long does WAH training take?', a: 'The standard programme is 2 days — Day 1 theory, Day 2 hands-on practical with harnesses, anchors, and MEWP operation. On-site delivery minimises downtime.' },
+      { q: 'Do workers need a medical check before WAH training?', a: 'While not mandatory for training, workers with heart conditions, epilepsy, or severe vertigo should not perform WAH duties. We recommend a basic fitness assessment.' },
+      { q: 'Can you train on our active construction site?', a: 'Yes. We prefer on-site delivery using your actual structures, anchors, and equipment. This makes the training immediately applicable and more memorable.' },
+      { q: 'What happens if a worker fails the practical assessment?', a: 'We provide additional supervised practice and re-assessment at no extra charge. Workers who cannot safely perform the required tasks will not be certified.' },
+      { q: 'Is WAH training HRD Corp claimable?', a: 'Yes. James Issachar (Trainer ID: 62976) is HRD Corp-certified. We assist with e-TRiS grant applications for batch training.' },
+      { q: 'What is suspension trauma?', a: 'When a worker falls and is caught by their harness, blood pools in the legs. Without rescue within 15 minutes, the worker can lose consciousness or suffer kidney damage. Every WAH programme includes rescue planning.' },
+    ],
+    ctaTitle: 'Prevent Falls Before They Happen',
+    ctaBody: 'Hands-on WAH competency training with real equipment, real anchors, and site-specific rescue plans across Johor and Malaysia.',
+  },
+  {
+    slug: 'hirarc-risk-management',
+    crumb: 'Services / HIRARC',
+    badge: 'Universal Mandate',
+    title: 'HIRARC & Risk Management — Statutory Workplace Assessment',
+    intro: 'Hazard Identification, Risk Assessment and Risk Control. Required for every Malaysian workplace with 5 or more workers under the OSH Act 1994.',
+    ctaPrimary: 'WhatsApp for HIRARC Assessment',
+    ctaSecondary: 'Request Assessment Proposal',
+    needTitle: 'Do You Need a HIRARC?',
+    needBody: 'Under the OSH Act 1994, every employer must conduct a systematic Hazard Identification, Risk Assessment and Risk Control (HIRARC) for their workplace. Yet many Malaysian SMEs have either never completed one, or their HIRARC is a generic template downloaded from the internet that does not reflect actual site hazards.',
+    stakes: [
+      { title: 'DOSH Audit Failure', body: 'DOSH inspectors specifically request the HIRARC register during compliance audits. An outdated or generic HIRARC is treated as non-compliance. Employers face fines and stop-work orders.' },
+      { title: 'Civil Litigation Evidence', body: 'In the event of an accident, an inadequate HIRARC can be used as evidence of negligence in civil litigation. A robust, site-specific register is your best defence.' },
+      { title: 'Insurance Premium Impact', body: 'Insurance underwriters increasingly review HIRARC documentation when setting premiums. A current, well-maintained register signals proactive risk management and can reduce rates.' },
+    ],
+    hazards: [
+      { title: 'Generic Template HIRARC', body: 'Downloaded templates with hazards that do not exist on your site and missing hazards that do. Useless in court or inspection.' },
+      { title: 'No Risk Quantification', body: 'HIRARC entries that describe hazards but do not calculate risk levels or assign control priorities.' },
+      { title: 'Missing Control Verification', body: 'Controls listed in the HIRARC that were never implemented or tested for effectiveness.' },
+      { title: 'Outdated Registers', body: 'HIRARC documents from 3+ years ago that do not reflect new machinery, processes, or chemicals introduced since.' },
+    ],
+    warnings: [
+      'You employ 5 or more workers and have never conducted a formal HIRARC',
+      'Your existing HIRARC is a generic template with hazards that do not match your site',
+      'You have introduced new machinery, chemicals, or processes since your last HIRARC review',
+      'DOSH has requested your HIRARC register during an inspection',
+      'You need HIRARC documentation for tender submission or insurance renewal',
+      'A recent near-miss revealed a hazard not listed in your current register',
+    ],
+    process: [
+      { title: 'Site Walkthrough & Hazard ID', body: 'We walk every zone of your facility with your operations team to identify physical, chemical, ergonomic, and biological hazards specific to your processes.' },
+      { title: 'Risk Quantification', body: 'Each hazard is scored using a standardised risk matrix (Likelihood x Severity). This produces a ranked priority list for control implementation.' },
+      { title: 'Control Selection', body: 'We apply the hierarchy of controls — elimination, substitution, engineering, administration, PPE — to each ranked hazard.' },
+      { title: 'Documentation & Register', body: 'A complete HIRARC register formatted for DOSH inspection, including hazard descriptions, risk scores, control measures, responsible persons, and review dates.' },
+      { title: 'Implementation Advisory', body: '90-day follow-up to verify controls are implemented, effective, and documented. We update the register as hazards change.' },
+    ],
+    failTitle: 'Why Other Approaches Fail',
+    failBody: 'Generic consultants hand over a PDF and disappear. Without implementation support, the controls in your HIRARC remain theoretical. Workers are not trained on new procedures. Engineering controls are never installed. Six months later, the register is already obsolete and your site is exposed again.',
+    scheduling: {
+      high: 'Manufacturing, construction, and chemical facilities — annual HIRARC review plus quarterly spot-checks recommended.',
+      low: 'Low-risk offices and retail — bi-ennial review sufficient if no operational changes.',
+    },
+    properties: ['Manufacturing and assembly plants', 'Construction and civil engineering sites', 'Warehouses and logistics hubs', 'Chemical processing and laboratories', 'Food and beverage production', 'Healthcare and pharmaceutical facilities'],
+    coverageNote: 'On-site HIRARC assessment and risk management advisory across Johor and Peninsular Malaysia.',
+    coverage: ['Johor Bahru', 'Pasir Gudang', 'Senai', 'Pengerang', 'Iskandar Puteri', 'Skudai', 'Kulai', 'Ulu Tiram'],
+    faqs: [
+      { q: 'What is the difference between HIRARC and CHRA?', a: 'HIRARC is a broad hazard assessment covering all workplace risks. CHRA is specific to chemical health risks under USECHH 2000. Most industrial workplaces need both.' },
+      { q: 'How often must HIRARC be updated?', a: 'DOSH recommends reviewing your HIRARC at least annually, and immediately after any significant change in processes, machinery, or chemicals. We schedule automatic annual reviews for our clients.' },
+      { q: 'Can we use software to manage HIRARC?', a: 'Yes. We provide digital HIRARC registers with automatic reminder triggers, photo evidence uploads, and real-time risk score updates. Compatible with most EHS management platforms.' },
+      { q: 'How long does a HIRARC assessment take?', a: 'A typical SME facility requires 1–2 days on site for walkthrough and data collection, plus 5–7 working days for report preparation. Large industrial complexes may require 3–5 days.' },
+      { q: 'Do you train our staff to maintain the HIRARC?', a: 'Yes. We conduct HIRARC methodology workshops for your safety committee so they can update the register as conditions change between our formal reviews.' },
+      { q: 'Is HIRARC required for small offices?', a: 'If you employ fewer than 5 workers, a full HIRARC is not legally required. However, we recommend a simplified hazard checklist for your own protection.' },
+    ],
+    ctaTitle: 'Get Your HIRARC Right Before DOSH Asks for It',
+    ctaBody: 'Site-specific hazard identification, quantified risk scoring, and implementation support that keeps your register current and your facility protected.',
+  },
+  {
+    slug: 'safety-audit-inspection',
+    crumb: 'Services / Safety Audit',
+    badge: 'Audit-Ready',
+    title: 'Safety Audit & Inspection — Pre-DOSH Compliance Verification',
+    intro: 'Internal audits, gap identification, and corrective action documentation. Be audit-ready before DOSH arrives.',
+    ctaPrimary: 'WhatsApp for Audit Booking',
+    ctaSecondary: 'Request Audit Proposal',
+    needTitle: 'Do You Need a Safety Audit?',
+    needBody: 'DOSH inspections can be announced or unannounced. When they arrive, employers have hours — not weeks — to produce machinery registers, HIRARC documents, training records, and incident investigation files. Facilities that scramble to prepare during the inspection rarely pass cleanly.',
+    stakes: [
+      { title: 'Stop-Work Orders', body: 'A failed DOSH audit results in fines, improvement notices, and potentially stop-work orders that halt production. Each day of stopped production costs thousands.' },
+      { title: 'Criminal Prosecution', body: 'Repeat failures can lead to prosecution under the OSH Act. Directors face personal liability when systematic safety failures are identified.' },
+      { title: 'Reputational Damage', body: 'Failed audits damage your reputation with insurers, clients, and regulators. Some contracts require clean audit history as a pre-qualification criterion.' },
+    ],
+    hazards: [
+      { title: 'Incomplete Machinery Registers', body: 'Missing PMA/PMT registrations, expired inspection certificates for boilers, lifts, or air receivers.' },
+      { title: 'Untrained First-Aiders', body: 'Designated first-aiders whose certificates have lapsed. DOSH checks expiry dates.' },
+      { title: 'Uncontrolled Chemical Storage', body: 'Scheduled chemicals without SDS sheets, improper labelling, or incompatible storage.' },
+      { title: 'Missing Incident Records', body: 'Accidents and near-misses that were never formally investigated or documented. DOSH treats this as a serious compliance gap.' },
+    ],
+    warnings: [
+      'You have received a DOSH inspection notification letter',
+      'Your last DOSH audit identified non-compliance items that remain unresolved',
+      'You are preparing for ISO 45001 certification and need a pre-certification gap check',
+      'Your insurance renewal requires a third-party safety audit report',
+      'A new client contract mandates supplier safety audit certification',
+      'You have never conducted a formal internal safety audit',
+    ],
+    process: [
+      { title: 'Pre-Audit Document Review', body: 'We review your existing HIRARC, machinery registers, training records, and incident files before setting foot on site.' },
+      { title: 'On-Site Physical Audit', body: 'Systematic inspection of every work zone against OSH Act, Factories and Machinery Act, and relevant regulations. Photographic evidence for every finding.' },
+      { title: 'Gap Analysis Report', body: 'A ranked list of compliance gaps — critical, major, minor — with specific regulatory citations and recommended corrective actions.' },
+      { title: 'Corrective Action Support', body: 'We help you implement fixes: training gaps closed, documentation prepared, engineering controls installed, SOPs written.' },
+      { title: 'Verification & Closure', body: 'Re-inspection to verify all critical and major gaps are closed. We issue a compliance readiness certificate for your records.' },
+    ],
+    failTitle: 'Why Other Approaches Fail',
+    failBody: 'Generic audit checklists miss industry-specific hazards. An auditor who has never visited a chemical plant will not spot the LEV deficiency that a DOSH inspector will. One-off audits without follow-through leave gaps unclosed — and your facility exposed.',
+    scheduling: {
+      high: 'High-risk manufacturing and chemical facilities — quarterly internal audits plus annual third-party verification.',
+      low: 'Low-risk commercial offices — annual internal audit sufficient.',
+    },
+    properties: ['Manufacturing and assembly plants', 'Chemical processing and blending facilities', 'Construction sites preparing for CIDB audit', 'Warehouses with heavy machinery', 'Food and beverage production', 'Healthcare and pharmaceutical operations'],
+    coverageNote: 'On-site safety audit and inspection services across Johor and Peninsular Malaysia.',
+    coverage: ['Johor Bahru', 'Pasir Gudang', 'Senai', 'Pengerang', 'Iskandar Puteri', 'Skudai', 'Kulai', 'Ulu Tiram'],
+    faqs: [
+      { q: 'How long does a safety audit take?', a: 'A typical SME facility requires 1 day on site. Large industrial complexes with multiple buildings may require 2–3 days. The report is delivered within 5–7 working days.' },
+      { q: 'What standards do you audit against?', a: 'We audit against the OSH Act 1994, Occupational Safety and Health (Noise Exposure) Regulations 2019, USECHH Regulations 2000, and relevant DOSH industry codes of practice.' },
+      { q: 'Will you share the audit report with DOSH?', a: 'No. The audit report is confidential to you. We prepare it in a format that YOU can present to DOSH if you choose, but we do not submit it on your behalf.' },
+      { q: 'Can you accompany us during a DOSH inspection?', a: 'Yes. We provide on-site advisory during DOSH inspections to help answer technical questions and present documentation in the format inspectors expect.' },
+      { q: 'What if we fail the audit?', a: 'There is no "pass" or "fail" in an internal audit — only gaps identified and prioritised. Our goal is to find and close gaps BEFORE DOSH does. We provide a remediation timeline for every finding.' },
+      { q: 'Is audit support HRD Corp claimable?', a: 'Safety audit and inspection training is HRD Corp claimable when structured as a formal competency programme. We can advise on claim eligibility for your specific audit scope.' },
+    ],
+    ctaTitle: 'Be Audit-Ready Before DOSH Arrives',
+    ctaBody: 'Systematic gap identification, ranked corrective actions, and verification closure — so you pass DOSH inspections with confidence.',
+  },
+]

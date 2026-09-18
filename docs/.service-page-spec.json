@@ -1,0 +1,30 @@
+{
+  "template": "XSpot service landing page architecture",
+  "page_structure": [
+    "hero_compact — eyebrow badge + h1 + subtitle + dual CTA (WhatsApp + Contact)",
+    "problem_overview — 'Do you need this?' compliance trigger + statutory citation",
+    "the_stakes — penalties, fines, criminal liability, stop-work orders with specific figures where known",
+    "hazard_profile — what you're actually up against (species, chemicals, equipment, scenarios)",
+    "detection_signs — 4-6 warning signs that this service is needed NOW",
+    "our_process — 5 numbered steps with descriptions and timelines",
+    "why_others_fail — why generic/one-off approaches don't work",
+    "risk_based_scheduling — high-risk vs low-moderate property intervals",
+    "property_types — residential, commercial, industrial, construction specific applications",
+    "coverage_areas — named Johor locations + nationwide deployment note",
+    "faq — 4-6 objections/questions with answers",
+    "final_cta — contact card + WhatsApp + response time promise"
+  ],
+  "design_rules": {
+    "css_file": "/css/main.css",
+    "nav": "same as existing site — inline SVG logo, nav-links with Services/Courses/About/Guide/Get Quote",
+    "footer": "same as existing — 4-column grid with Quick Links, Legal, Connect, Trainer Registration Profile Serial: 62976",
+    "language_switcher": "button.lang-btn with data-lang=en/ms/zh/ta",
+    "data_translate": "all new strings must use data-translate keys and match existing dictionary pattern in /js/main.js",
+    "schema_org": "include Course, FAQPage, and BreadcrumbList JSON-LD",
+    "llm_geo_layer": "include .llm-geo-layer with data-geo-entity, data-regulatory-citation, data-capability-matrix",
+    "mobile_sticky_bar": "include .mobile-sticky-action-bar with WhatsApp link",
+    "whatsapp_number": "60167301802",
+    "email": "najasafety@gmail.com"
+  },
+  "tone": "Professional, statutory-authoritative, field-first. No fluff. Every claim tied to a regulation, timeline, or credential."
+}

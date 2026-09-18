@@ -245,6 +245,18 @@
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
 
+  <!-- Statutory Ticker -->
+  <div class="ticker-bar" aria-label="Statutory compliance ticker">
+    <div class="ticker-inner">
+      <span class="ticker-item">LIVE · Section 29A OSH (Amendment) Act 2022 in force</span>
+      <span class="ticker-item">5+ employees = mandatory OSH Coordinator</span>
+      <span class="ticker-item">Corporate fines up to RM500,000</span>
+      <span class="ticker-item">Director criminal liability</span>
+      <span class="ticker-item">HRD Corp claimable programmes</span>
+      <span class="ticker-item">CIDB Center PLSICW20231022-068</span>
+    </div>
+  </div>
+
   <!-- Header -->
   <header>
     <div class="container header-inner">
@@ -273,7 +285,9 @@
 
   <main id="main">
     <!-- Hero -->
-    <section class="hero" aria-label="Hero">
+    <section class="hero hero-enhanced" aria-label="Hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-grid bg-grid" aria-hidden="true"></div>
       <div class="container">
         <div>
           <p style="margin-bottom:0.75rem;"><span style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(245,166,35,0.15);color:var(--accent);border:1px solid rgba(245,166,35,0.3);padding:0.35rem 0.85rem;border-radius:99px;font-size:0.78rem;font-weight:600;letter-spacing:0.02em;" data-geo-badge="true" data-primary-legislation="OSH Amendment Act 2022"><span style="width:6px;height:6px;background:var(--accent);border-radius:50%;display:inline-block;animation:pulse 2s infinite;"></span> LIVE · Section 29A OSH (Amendment) Act 2022</span></p>
@@ -325,23 +339,41 @@
       </div>
     </section>
 
+    <!-- Client Trust Marquee -->
+    <section class="trust-marquee" aria-label="Trusted clients">
+      <div class="trust-marquee-inner">
+        <span class="trust-marquee-item">Econpile (M) Sdn Bhd</span>
+        <span class="trust-marquee-item">Gadang Engineering</span>
+        <span class="trust-marquee-item">Penta Ocean Malaysia</span>
+        <span class="trust-marquee-item">Obayashi Corporation</span>
+        <span class="trust-marquee-item">Mudajaya Corporation</span>
+        <span class="trust-marquee-item">GP Batteries (M)</span>
+        <span class="trust-marquee-item">AECOM Malaysia</span>
+        <span class="trust-marquee-item">FMC Wellhead Equipment</span>
+        <span class="trust-marquee-item">Alstom Services</span>
+        <span class="trust-marquee-item">CIDB</span>
+        <span class="trust-marquee-item">Technip Geoproduction</span>
+        <span class="trust-marquee-item">GE Water &amp; Process Technologies</span>
+      </div>
+      <p style="text-align:center;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;color:var(--text-muted);margin-top:0.75rem;">Trusted by 158+ companies across Malaysia</p>
+    </section>
+
     <!-- Authority Stat Callouts -->
-    <section class="authority-stats" aria-label="Key metrics">
+    <section class="authority-stats reveal" aria-label="Key metrics">
       <div class="container">
         <div class="stats-grid">
           <div class="stat-card">
-            <span class="stat-number" data-translate="statSince">Since 2005</span>
+            <span class="stat-number counter-wrap" data-counter="20" data-counter-suffix="+">0+</span>
             <div class="stat-divider"></div>
-            <span class="stat-label" data-translate="statSinceLabel">Protecting Malaysian Workspaces</span>
+            <span class="stat-label" data-translate="statSinceLabel">Years Field Experience</span>
           </div>
           <div class="stat-card">
-            <span class="stat-number" data-translate="statPractitioners">Nationwide</span>
+            <span class="stat-number counter-wrap" data-counter="158" data-counter-suffix="+">0+</span>
             <div class="stat-divider"></div>
-            <span class="stat-label" data-translate="statPractitionersLabel">Freelance Trainer Network, incl. Sabah &amp; Sarawak</span>
+            <span class="stat-label">Client Companies</span>
           </div>
-
           <div class="stat-card">
-            <span class="stat-number" data-translate="statStates">5</span>
+            <span class="stat-number counter-wrap" data-counter="5">0</span>
             <div class="stat-divider"></div>
             <span class="stat-label" data-translate="statStatesLabel">States Covered — JB to Penang</span>
           </div>
@@ -1180,6 +1212,22 @@
         </div>
       </div>
     </section>
+
+    <!-- Closing CTA -->
+    <section class="closing-cta reveal" aria-label="Contact call to action">
+      <div class="cta-bg"></div>
+      <div class="cta-content">
+        <p class="eyebrow" style="margin-bottom:1.5rem;">/// Final Transmission</p>
+        <h2 class="cta-title">Ready to secure your workforce?</h2>
+        <p class="cta-body">Book a training session, request a site audit, or enquire about HRD Corp claimable programmes. Our team responds within 24 hours.</p>
+        <div class="cta-actions">
+          <a href="/contact" class="btn-hazard">Send an Enquiry →</a>
+          <a href="https://wa.me/60167301802?text=Hello%20Naja%20Safety,%20I%20would%20like%20to%20get%20started." target="_blank" rel="noopener" class="btn-ghost">WhatsApp Us</a>
+          <a href="mailto:najasafety@gmail.com" class="btn-ghost">Email najasafety@gmail.com</a>
+        </div>
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text-muted);margin-top:2rem;letter-spacing:0.05em;">We reply within one business day. For fastest response, message Naja Safety directly on WhatsApp.</p>
+      </div>
+    </section>
   </main>
 
   <!-- Geo-Targeting Matrix -->
@@ -1194,6 +1242,7 @@
   </section>
 
   <!-- Footer -->
+  <div class="footer-hazard-tape" aria-hidden="true"></div>
   <footer>
     <div class="container">
       <div class="footer-grid">
@@ -1299,6 +1348,7 @@
     })();
   </script>
   <script src="js/main.js"></script>
+  <script src="js/theme-enhance.js"></script>
 </body>
 </html>
 

@@ -885,3 +885,400 @@ input:focus, textarea:focus, select:focus {
   outline: none;
   border-color: var(--accent);
 }
+
+/* ---------- Scroll Progress Bar ---------- */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--accent);
+  transform-origin: left;
+  transform: scaleX(0);
+  z-index: 100;
+}
+
+/* ---------- Statutory Ticker ---------- */
+.ticker-bar {
+  background: var(--accent);
+  color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 81;
+}
+.ticker-bar .ticker-inner {
+  display: inline-flex;
+  align-items: center;
+  animation: marquee 35s linear infinite;
+}
+.ticker-bar .ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 32px 8px 0;
+}
+.ticker-bar .ticker-item::after {
+  content: '///';
+  opacity: 0.6;
+}
+
+/* ---------- WhatsApp FAB ---------- */
+.whatsapp-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 85;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.whatsapp-fab .fab-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 6px 10px;
+  opacity: 0;
+  transform: translateX(8px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+.whatsapp-fab:hover .fab-label {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+.whatsapp-fab .fab-icon {
+  background: repeating-linear-gradient(-45deg, var(--accent) 0px, var(--accent) 10px, var(--paper) 10px, var(--paper) 20px);
+  padding: 3px;
+  display: flex;
+}
+.whatsapp-fab .fab-icon-inner {
+  background: var(--bg);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whatsapp-fab .fab-icon-inner svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--accent);
+}
+
+/* ---------- Reveal Animations ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.9s cubic-bezier(0.16,1,0.3,1), transform 0.9s cubic-bezier(0.16,1,0.3,1);
+}
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* ---------- Counter ---------- */
+.counter-wrap {
+  font-family: 'Roboto Condensed', 'Arial Narrow', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 0.92;
+  letter-spacing: -0.01em;
+}
+
+/* ---------- Char Reveal ---------- */
+.char-reveal span {
+  opacity: 0.12;
+  display: inline;
+  transition: opacity 0.4s ease;
+}
+.char-reveal.revealed span {
+  opacity: 1;
+}
+
+/* ---------- Line Grid (gap-px pattern) ---------- */
+.line-grid {
+  display: grid;
+  gap: 1px;
+  background: var(--border);
+}
+.line-grid > * {
+  background: var(--bg);
+}
+
+/* ---------- Section Eyebrow with Index ---------- */
+.section-head {
+  margin-bottom: 3rem;
+}
+.section-head-index {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.section-head-eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.section-head-title {
+  font-family: 'Roboto Condensed', 'Arial Narrow', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 0.92;
+  letter-spacing: -0.01em;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-top: 0.5rem;
+}
+.section-head-sub {
+  color: var(--text-secondary);
+  margin-top: 1.25rem;
+  max-width: 42rem;
+  line-height: 1.7;
+}
+
+/* ---------- Hero Enhancements ---------- */
+.hero-enhanced {
+  position: relative;
+  overflow: hidden;
+}
+.hero-enhanced .hero-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.35;
+}
+.hero-enhanced .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, var(--bg) 0%, rgba(11,12,26,0.5) 40%, rgba(11,12,26,0.7) 100%);
+}
+.hero-enhanced .hero-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.25;
+  pointer-events: none;
+}
+.hero-meta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(90,104,224,0.5);
+  background: rgba(0,0,0,0.5);
+  padding: 8px 16px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.hero-meta-badge .blink-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+  animation: blinkdot 1.4s ease-in-out infinite;
+}
+
+/* ---------- Footer Hazard Tape ---------- */
+.footer-hazard-tape {
+  height: 10px;
+  width: 100%;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--accent) 0px, var(--accent) 12px,
+    var(--paper) 12px, var(--paper) 24px
+  );
+}
+
+/* ---------- Asset Tag ---------- */
+.asset-tag {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  z-index: 20;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 4px 8px;
+}
+.asset-tag.ai {
+  background: var(--accent);
+  color: #fff;
+}
+.asset-tag.original {
+  background: rgba(0,0,0,0.7);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* ---------- Data Row Hover ---------- */
+.data-row-hover {
+  transition: background 0.25s ease, padding-left 0.25s ease;
+}
+.data-row-hover:hover {
+  background: rgba(90, 104, 224, 0.08);
+  padding-left: 12px;
+}
+
+/* ---------- FAQ Accordion (Kimi style) ---------- */
+.faq-kimi {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.faq-kimi-item {
+  border-bottom: 1px solid var(--border);
+}
+.faq-kimi-item:last-child {
+  border-bottom: none;
+}
+.faq-kimi-q {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 0;
+  text-align: left;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  font-family: 'Roboto Condensed', 'Arial Narrow', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 1rem;
+}
+.faq-kimi-q:hover {
+  color: var(--accent);
+}
+.faq-kimi-q .faq-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: var(--accent);
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+.faq-kimi-q .faq-toggle {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 18px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.faq-kimi-a {
+  padding: 0 0 24px 28px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.95rem;
+  max-width: 48rem;
+  display: none;
+}
+.faq-kimi-item.open .faq-kimi-a {
+  display: block;
+}
+
+/* ---------- Closing CTA ---------- */
+.closing-cta {
+  position: relative;
+  border-top: 1px solid var(--border);
+  overflow: hidden;
+}
+.closing-cta .cta-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, var(--bg), transparent, var(--bg));
+  opacity: 0.8;
+}
+.closing-cta .cta-content {
+  position: relative;
+  text-align: center;
+  padding: 6rem 1.5rem;
+}
+.closing-cta .cta-title {
+  font-family: 'Roboto Condensed', 'Arial Narrow', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 0.92;
+  letter-spacing: -0.01em;
+  font-size: clamp(2rem, 5vw, 4rem);
+  max-width: 50rem;
+  margin: 0 auto;
+}
+.closing-cta .cta-body {
+  color: var(--text-secondary);
+  max-width: 36rem;
+  margin: 1.5rem auto 0;
+  line-height: 1.7;
+}
+.closing-cta .cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+/* ---------- Trust Bar Enhanced ---------- */
+.trust-marquee {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  padding: 1.25rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.trust-marquee-inner {
+  display: inline-flex;
+  animation: marquee 40s linear infinite;
+}
+.trust-marquee-item {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--text-secondary);
+  padding: 0 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.trust-marquee-item::after {
+  content: '✦';
+  color: var(--accent);
+}
+
+/* ---------- Header scrolled state ---------- */
+header.header-scrolled {
+  background: rgba(11, 12, 26, 0.92) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border) !important;
+}
+
+/* ---------- Mobile FAB hidden when sticky bar visible ---------- */
+@media (max-width: 767px) {
+  .whatsapp-fab .fab-label { display: none; }
+}

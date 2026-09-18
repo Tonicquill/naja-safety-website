@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect x="20" y="20" width="160" height="160" rx="20" fill="#1B4F72" stroke="#F39C12" stroke-width="6"/>
+  <text x="100" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#F39C12">HRD CORP</text>
+  <text x="100" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">ACCREDITED</text>
+  <text x="100" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">TRAINER</text>
+  <text x="100" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#F39C12">ID: 62976</text>
+</svg>
