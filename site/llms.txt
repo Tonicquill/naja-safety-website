@@ -19,7 +19,6 @@ Lead Trainer James Issachar has been an OSH consultant since May 2006 and has le
 
 The site offers 46 training programmes across 7 categories, delivered classroom or on-site nationwide:
 
-1. **OSH Training** — OSH Coordinator (OSH-C) Section 29A, First Aid & CPR, Chemical Safety, Fire Safety, Forklift & Machinery
 2. **CIDB & Construction Safety** — CIDB Green Card (SICW), Scaffold Safety, Working at Height (WAH)
 3. **Consultancy** — HIRARC & Risk Management, Safety Audit & Inspection, CHRA (USECHH 2000)
 4. **HRD Corp Support** — e-TRiS grant application guidance, levy claim assistance
@@ -48,11 +47,9 @@ The site offers 46 training programmes across 7 categories, delivered classroom 
 - `/services/chemical-health-risk-assessment-chra` — CHRA (USECHH 2000)
 - `/services/working-at-height-wah` — Working at Height Safety
 - `/services/safety-audit-inspection` — Safety Audit & Inspection
-- `/services/osh-coordinator-section-29a` — OSH-C Appointment Advisory
 
 ## Key Course Pages
 
-- `/courses/osh-coordinator` — OSH Coordinator (OSH-C) Training
 - `/courses/cidb-green-card` — CIDB Green Card (SICW)
 - `/courses/scaffold-safety` — Scaffold Safety Awareness
 - `/courses/chemical-handling` — Chemical Safety
@@ -70,7 +67,7 @@ Language can be set via URL query parameter `?lang=ms`, `?lang=zh`, or `?lang=ta
 ## Contact
 
 - **Phone / WhatsApp:** 016-730-1802
-- **Email:** najasafety@gmail.com
+- **Email:** info@safetyconsultants.com.my
 - **Address:** 09-03, Blok C, Kompleks Austin Perdana, Taman Mount Austin, 81100 Johor Bahru, Johor, Malaysia
 - **Business Hours:** Monday–Friday, 08:30–17:30 (MYT)
 
